@@ -53,7 +53,7 @@ a.link::after {
 }
 
 a.link--external:after { content: "\2009\e900"; }
-a.link__github:after { content: "\2009\eab0"; }
+a.link--github:after { content: "\2009\eab0"; }
 
 a.link:focus,
 a.link:hover {
