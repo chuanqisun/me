@@ -23,10 +23,12 @@
 
 .display-font {
     font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }
 
 .body-font {
     font-family: 'EB Garamond', serif;
+    font-weight: normal;
 }
 
 body {
@@ -47,10 +49,11 @@ abbr {
 a.link::after {
     font-size: 0.75em;
     font-family: 'IconFont';
+    font-weight: normal;
 }
 
-a.link--external:after { content: "\202f\e900"; }
-a.link__github:after { content: "\202f\eab0"; }
+a.link--external:after { content: "\2002\e900"; }
+a.link__github:after { content: "\2002\eab0"; }
 
 a.link:focus,
 a.link:hover {
