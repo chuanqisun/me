@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'IconFont';
+    src:  url('fonts/icomoon.eot?hxhqma');
+    src:  url('fonts/icomoon.eot?hxhqma#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?hxhqma') format('truetype'),
+        url('fonts/icomoon.woff?hxhqma') format('woff'),
+        url('fonts/icomoon.svg?hxhqma#icomoon') format('svg');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* type-ramp*/
+.font-800 { font-size: 3rem; line-height: 4.5rem; }
+.font-600 { font-size: 2rem; line-height: 3rem; }
+.font-400 { font-size: 1.4rem; line-height: 2rem; }
+.font-200 { font-size: 1.2rem; line-height: 1.4rem; }
+.font-100 { font-size: 1rem; line-height: 1.2rem; }
+.font-80 { font-size: 0.8rem; line-height: 1rem;}
+
+.display-font {
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+}
+
+.body-font {
+    font-family: 'EB Garamond', serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+a.link::after {
+    font-size: 0.75em;
+    font-family: 'IconFont';
+}
+
+a.link--external:after { content: "\202f\e900"; }
+a.link__github:after { content: "\202f\eab0"; }
+
+a.link:focus,
+a.link:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 50em;
+}
+
+.basic-info {
+    margin: 1rem;
+}
+
+.basic-info__delimited-items {
+    margin: 1em 0 1.5em 0;
+}
+
+.basic-info__delimited-item {
+    white-space: nowrap;
+}
+
+.basic-info__delimited-item:not(:last-child) {
+    padding-right: 0.5em;
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    margin-right: 0.5em;
+}
+
+.overview {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+}
+
+.overview__card {
+    flex: 1 1 15em;
+    margin: 0.5rem;
+}
+
+.overview__card__heading {
+    margin-bottom: 0.5rem;
+}
+
+.projects-intro {
+    margin: 1rem;
+}
+
+.projects-detail {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+}
+
+.projects-detail__card {
+    flex: 1 1 10em;
+    margin: 0.5rem;
+}
+
+.projects-detail__card__heading {
+    margin-bottom: 0.5rem;
+}
+
+.projects-detail__card__description {
+    margin-bottom: 0.5rem;
+}
+
+.skills-list {
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    margin-left: -0.2rem;
+}
+
+.skills-list__tem {
+    margin: 0.2rem;
+    padding: 0.2rem 0.4rem;
+    color: rgba(0, 0, 0, 0.75);
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.skills-list__tem:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: #444;
+}
