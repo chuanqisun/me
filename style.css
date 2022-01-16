@@ -6,8 +6,17 @@
  * 01 RESET *
  ************/
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
-  /* all: unset;
-  display: revert; */
+  all: unset;
+  display: revert;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+summary {
+  list-style: revert;
 }
 
 *,
@@ -24,13 +33,69 @@ body {
     "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
+a {
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
 /****************
  * 03 COMPOENNT *
  ****************/
-.c-timeline-grid {
-  display: grid;
-  grid-template: "rail content" auto / auto 1fr;
+
+.c-site-nav {
+  height: 60px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid rgb(34, 34, 34);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-inline: 24px;
 }
+
+.c-terminal {
+  padding: 24px;
+  display: block;
+  color: white;
+  font-size: 32px;
+  background-color: rgb(34, 34, 34);
+}
+
+.c-nav-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2ch;
+}
+
+.c-nav-list__item {
+  height: 100%;
+  display: flex;
+}
+
+.c-nav-list__item--end {
+  margin-left: auto;
+}
+
+.c-nav-link {
+  font-size: 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.c-main-grid {
+  display: grid;
+  gap: 32px;
+  overflow: auto;
+}
+
 /************
  * 04 UTILS *
  ************/
