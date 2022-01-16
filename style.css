@@ -1,6 +1,9 @@
 /**********
  * 00 VAR *
  **********/
+:root {
+  --site-gutter: 40px;
+}
 
 /************
  * 01 RESET *
@@ -8,6 +11,12 @@
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
   all: unset;
   display: revert;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 ul,
@@ -42,24 +51,32 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 /****************
  * 03 COMPOENNT *
  ****************/
-
-.c-site-nav {
-  height: 60px;
-  background-color: white;
+.c-site-header {
   position: sticky;
   top: 0;
+  height: 60px;
+}
+.c-site-nav {
+  height: 100%;
+  background-color: white;
   border-bottom: 2px solid rgb(34, 34, 34);
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding-inline: 24px;
+  padding-inline: var(--site-gutter);
 }
 
 .c-terminal {
-  padding: 24px;
+  padding-inline: var(--site-gutter);
+  padding-block: 32px;
   display: block;
   color: white;
   font-size: 32px;
@@ -71,7 +88,7 @@ h2 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2ch;
+  gap: 24px;
 }
 
 .c-nav-list__item {
@@ -92,10 +109,30 @@ h2 {
 
 .c-main-grid {
   display: grid;
-  gap: 32px;
-  overflow: auto;
+  grid-template-columns: var(--site-gutter) 1fr var(--site-gutter);
+  row-gap: 64px;
+}
+.c-main-grid > * {
+  grid-column: 2 / span 1;
+}
+.c-main-grid > .c-main-grid__item--fill {
+  grid-column: 1 / -1;
 }
 
+.c-section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 24px;
+}
+.c-section-grid > .c-section-grid__item--fill {
+  grid-column: 1 / -1;
+}
+
+.c-entry-grid {
+  display: grid;
+  grid-gap: 8px;
+  align-content: start;
+}
 /************
  * 04 UTILS *
  ************/

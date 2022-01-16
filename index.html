@@ -13,40 +13,42 @@
   </head>
 
   <body>
-    <nav class="c-site-nav">
-      <h1 class="c-site-title"><a class="c-nav-link" href="">CS</a></h1>
-      <ul class="c-nav-list">
-        <li class="c-nav-list__item">
-          <a class="c-nav-link" href="#work">Work</a>
-        </li>
-        <li class="c-nav-list__item">
-          <a class="c-nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="c-nav-list__item">
-          <a class="c-nav-link" href="#shelf">Shelf</a>
-        </li>
-        <li class="c-nav-list__item">
-          <a class="c-nav-link" href="#about">About</a>
-        </li>
-      </ul>
-    </nav>
-    <header>
-      <output class="c-terminal">
+    <header class="c-site-header">
+      <nav class="c-site-nav">
+        <ul class="c-nav-list">
+          <li class="c-nav-list__item">
+            <a class="c-nav-link" href=""><h1>CS</h1></a>
+          </li>
+          <li class="c-nav-list__item">
+            <a class="c-nav-link" href="#work">Work</a>
+          </li>
+          <li class="c-nav-list__item">
+            <a class="c-nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="c-nav-list__item">
+            <a class="c-nav-link" href="#shelf">Shelf</a>
+          </li>
+          <li class="c-nav-list__item">
+            <a class="c-nav-link" href="#about">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="c-main-grid">
+      <output class="c-terminal c-main-grid__item--fill">
         > Hello world!<br />
         > My name is Chuánqí.<br />
         > I create tools for the curious mind.
       </output>
-    </header>
-    <main>
-      <section>
-        <h2 id="work">Work</h2>
-        <p>
+      <section class="c-main-section c-main-grid__item c-section-grid">
+        <h2 id="work" class="c-section-grid__item--fill">Work</h2>
+        <p class="c-section-grid__item--fill">
           I lead UX design and frontend development at Microsoft. I wear both designer's and engineer's (and
           increasingly PM's) hat from day one of each project. My unique trans-discplinary process finds the Goldilocks
           zone in product development where the needs and constraints from business, users, and technology are in
           perfect balance.
         </p>
-        <section>
+        <section class="c-entry-grid">
           <h3>HITS</h3>
           <p>The knowledge base for every product decision maker at Microsoft. knowledge among the users.</p>
           <details>
@@ -80,7 +82,7 @@
             </dl>
           </details>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>Dynamics 365</h3>
           <p>
             I've worked on the design system for the entire platform, and on applications built on top of the platform:
@@ -116,7 +118,7 @@
             </dl>
           </details>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>Power BI</h3>
           <p>
             Business intelligence app at enterprise scale. I worked at the intersection between backend and frontend.
@@ -154,12 +156,14 @@
           </details>
         </section>
       </section>
-      <section>
-        <h2 id="projects">Projects</h2>
-        I'm a Human-Computer Interaction nerd. I go to great lengths to create systems, tools, and experiences that are
-        functional and visual delights for individuals. These are the side projects I worked on all night without
-        looking at my watch.
-        <section>
+      <section class="c-main-section c-main-grid__item c-section-grid">
+        <h2 id="projects" class="c-section-grid__item--fill">Projects</h2>
+        <p class="c-section-grid__item--fill">
+          I'm a Human-Computer Interaction nerd. I go to great lengths to create systems, tools, and experiences that
+          are functional and visual delights for individuals. These are the side projects I worked on all night without
+          looking at my watch.
+        </p>
+        <section class="c-entry-grid">
           <h3>osmoscraft</h3>
           <p>
             A growing knowledge toolbox that pushes you to discover, ingest, organize, connect, generate, and share
@@ -195,7 +199,7 @@
             </dl>
           </details>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>3Dconnexion SpaceMouse Driver for Figma</h3>
           <p>Allow direct manipulation of the 2D canvas using the 3Dconnexion SpaceMouse hardware</p>
           <details>
@@ -214,7 +218,7 @@
             </p>
           </details>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>Accessifiers</h3>
           <p>A non-profit service to help people discover accessible apps.</p>
           <details>
@@ -238,7 +242,7 @@
             </dl>
           </details>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>Clicademy</h3>
           <p>A platform for digital marketing students to understand and practice online analytics</p>
           <details>
@@ -253,7 +257,7 @@
             </dl>
           </details>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>Switchboard</h3>
           <p>A tool for Microsoft Dynamics 365 teammates to quickly access demon environments</p>
           <details>
@@ -286,7 +290,7 @@
             </dl>
           </details>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>Cursors</h3>
           <p>Podcast website for designers at Microsoft</p>
           <details>
@@ -301,7 +305,7 @@
             </dl>
           </details>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>Power Loops</h3>
           <p>
             A hackathon project that allows 3rd party developers to create UI components for the Dynamics 365 Platform
@@ -319,21 +323,21 @@
           </details>
         </section>
 
-        <section>
+        <section class="c-entry-grid">
           <h3>Contrast Matrix</h3>
           <p>Validate contrast ratio for all colors in a palette at once.</p>
         </section>
 
-        <section>
+        <section class="c-entry-grid">
           <h3>Oblique</h3>
           <p>Source of inspiration for any creative professional.</p>
         </section>
 
-        <section>
+        <section class="c-entry-grid">
           <h3>Jasmine Mock Factory</h3>
           <p>A Jasmine test utility that creates a mock of anything.</p>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>Course inSight</h3>
           <p>A course catelog that uses NLP to help students discover courses beyond the department boundary.</p>
           <details>
@@ -355,11 +359,11 @@
             </dl>
           </details>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>Smart lights control system</h3>
           <p>Conversing energy and provide intuitive control to industrial lighting system in a gym.</p>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>Perceptual computing</h3>
           <p>Game developed to encourage reading in a 3D environment.</p>
           <details>
@@ -374,16 +378,16 @@
             </dl>
           </details>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>MidiEvo</h3>
           <p>A sequencer and looper for any MIDI input device.</p>
         </section>
-        <section>
+        <section class="c-entry-grid">
           <h3>Eye tracking</h3>
           <p>Predict eye movement based on succade path</p>
         </section>
       </section>
-      <section>
+      <section class="c-main-section c-main-grid__item c-section-grid">
         <h2 id="shelf">Shelf</h2>
         <ul>
           <li>Vanishing</li>
@@ -392,7 +396,7 @@
         </ul>
         <div>My reading, classes, talks</div>
       </section>
-      <section>
+      <section class="c-main-section c-main-grid__item c-section-grid">
         <h2 id="about">About</h2>
         <ul>
           <li>GitHub link</li>
