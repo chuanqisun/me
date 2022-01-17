@@ -23,6 +23,7 @@
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
   all: unset;
   display: revert;
+  outline: revert;
 }
 
 html {
@@ -38,6 +39,7 @@ ol {
 
 summary {
   list-style: revert;
+  user-select: none;
 }
 
 *,
@@ -242,20 +244,16 @@ output {
 
 .u-palette-aqua {
   --accent: #8ec07c;
-  /* --accent-light: #689d6a; */
 }
 
 .u-palette-purple {
   --accent: #d3869b;
-  /* --accent-light: #689d6a; */
 }
 
 .u-palette-yellow {
   --accent: #fabd2f;
-  /* --accent-light: #d79921; */
 }
 
 .u-palette-orange {
   --accent: #fe8019;
-  /* --accent-light: #98971a; */
 }
