@@ -12,7 +12,9 @@
   --terminal-text-light: #928374;
   --body-text: #22201f;
   --body-text-light: #68615e;
+  --body-divider: #bdb6b4;
   --body-background: white;
+  --entry-padding-inline: 12px;
 }
 
 /************
@@ -105,6 +107,9 @@ output {
   display: grid;
   grid-gap: 8px;
   align-content: start;
+  border: 1px solid var(--body-divider);
+  border-radius: 4px;
+  padding: var(--entry-padding-inline) 24px;
 }
 
 .c-main-grid {
@@ -164,13 +169,32 @@ output {
 
 .c-section-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 24px;
 }
 
 .c-section-grid__item--fill {
   grid-column: 1 / -1;
 }
+
+@media screen and (min-width: 60rem) {
+  .c-section-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .c-section-grid__item--double {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .c-section-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .c-section-grid__item--double {
+    grid-column: span 1;
+  }
+}
+
 .c-site-header {
   position: sticky;
   top: 0;
