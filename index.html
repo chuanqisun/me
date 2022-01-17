@@ -35,6 +35,10 @@
       </nav>
     </header>
     <main id="main">
+      <!-------------------- 
+        TERMINAL EMULATOR
+      ---------------------->
+
       <output class="c-terminal">
         <span class="c-terminal__prompt">&gt;</span> Hello world!<br />
         <span class="c-terminal__prompt">&gt;</span> My name is
@@ -42,6 +46,10 @@
         >.<br />
         <span class="c-terminal__prompt">&gt;</span> I create tools for the curious mind.
       </output>
+
+      <!-------------------- 
+        WORK SECTION
+      ---------------------->
 
       <section class="c-main-section c-section-grid u-palette-yellow">
         <h2 id="work" class="c-section-grid__item--fill">WORK</h2>
@@ -93,7 +101,7 @@
 
         <section class="c-entry-grid c-entry-section">
           <h3>Dynamics 365</h3>
-          <p>Microsoft's business application platform</p>
+          <p>Microsoft's business application platform.</p>
           <div>
             <details class="c-accordion">
               <summary class="c-accordion__trigger">Details</summary>
@@ -129,7 +137,7 @@
 
         <section class="c-entry-grid c-entry-section">
           <h3>Power BI</h3>
-          <p>Microsoft's Business intelligence solution</p>
+          <p>Microsoft's Business intelligence solution.</p>
           <div>
             <details class="c-accordion">
               <summary class="c-accordion__trigger">Details</summary>
@@ -160,7 +168,62 @@
             <li>2014-2017</li>
           </ul>
         </section>
+
+        <section class="c-entry-grid c-entry-section">
+          <h3>Commvault</h3>
+          <p>Enable file backup and restore in macOS Finder.</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  Commvault is an enterprise-facing data storage service. My internship project aims to enable OS level
+                  integration to allow file-related operations similar to what Dropbox offers. macOS is known to be
+                  locked down so I had to come up with creative ways to "hack" my way out.
+                </p>
+                <ul class="c-tech-list">
+                  <li>Objective C</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+          <ul class="c-meta-list">
+            <li>Intern engineer</li>
+            <li>2014</li>
+          </ul>
+        </section>
+
+        <section class="c-entry-grid c-entry-section">
+          <h3>Lenovo</h3>
+          <p>Stress testing the original ThnkPad X1.</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  As a huge fan of the ThinkPad product line, I joined Lenovo when it was preparing for its integration
+                  with Windows 8. I learned about UEFI, SMBus, and Windows Management Instrumentation. I stress tested
+                  the BIOS module and learned that hardware must operate with fault tolerance. Despite the excitement
+                  from my first exposure to the industry, this internship steered me more towards the "soft" side of
+                  engineering.
+                </p>
+                <ul class="c-tech-list">
+                  <li>C Language</li>
+                  <li>Windows 8 ADK</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+          <ul class="c-meta-list">
+            <li>Intern engineer</li>
+            <li>2013</li>
+          </ul>
+        </section>
       </section>
+
+      <!-------------------- 
+        PROJECTS SECTION
+      ---------------------->
 
       <section class="c-main-section c-section-grid c-section-grid--third u-palette-purple u-dot-background">
         <h2 id="projects" class="c-section-grid__item--fill">PROJECTS</h2>
@@ -170,25 +233,25 @@
         </p>
         <section class="c-entry-grid c-entry-section c-section-grid__item--fill">
           <h3>osmoscraft</h3>
-          <p>
-            A growing knowledge toolbox that pushes you to discover, ingest, organize, connect, generate, and share
-            knowledge.
-          </p>
+          <p>Push people to disocver, ingest, organize, connect, generate, and share knowledge.</p>
           <div>
             <details class="c-accordion" open>
               <summary class="c-accordion__trigger">Details</summary>
               <div class="c-accordion__body">
+                <p>The project includes a set of apps that share similar goals.</p>
+                <ul class="c-inline-list">
+                  <li>A web-based RSS reader running entirely from a GitHub repo.</li>
+                  <li>A browser bookmark manager optimized for capture and retrieval speed.</li>
+                  <li>A web-based text editor for networked note-taking, self-hostable on any Git repository.</li>
+                  <li>(In progress) An offline-first distributed TODO manager, with backup and sync from the cloud.</li>
+                  <li>(Planned) An all-in-one learning environment that brings together all of the above.</li>
+                </ul>
                 <p>
-                  As a designer, I started experimenting with various design languages, from console-inspired base64
-                  theming system to modern minimalist material design. In the short term, the toolbox focuses on
-                  secondary tasks: reading articles, bookmarking websites, and taking notes.<br />
-                  In the long term, the toolbox creates a personalized learning environment for discovering new
-                  knowledge and synthesizing new insights.
-                </p>
-                <p>
-                  The project aims to have zero dependency. Thanks to this constraint, I learned how to write a text
-                  editor, how to build a template engine, and how to handle DOM diffing for state-based rendering. I
-                  built a testing framework from scratch. And built a custom XML parser for handling RSS feed.
+                  The project helped me grow from a consumer of libraries and frameworks to a creator of them. For this
+                  project, I've designed a concurrent task schedular, a WYSIWYG text editor, an HTML templating engine,
+                  a DOM diffing and rendering algorithm, a RSS/Atom feed parser, and a unit test framework, all from
+                  scratch. I'm currently designing an operation-based conflict-free replicated data type for the TODO
+                  app.
                 </p>
                 <ul class="c-tech-list">
                   <li>Docker</li>
@@ -200,156 +263,274 @@
           </div>
           <ul class="c-meta-list">
             <li>Author</li>
-            <li>2021+</li>
-            <li>GitHub</li>
+            <li>2018+</li>
           </ul>
         </section>
 
         <section class="c-entry-grid c-entry-section">
           <h3>3Dconnexion SpaceMouse Driver for Figma</h3>
-          <p>Allow direct manipulation of the 2D canvas using the 3Dconnexion SpaceMouse hardware</p>
+          <p>Turn your 3Dconnexion SpaceMouse into a panning and zooming tool.</p>
           <div>
             <details class="c-accordion">
               <summary class="c-accordion__trigger">Details</summary>
               <div class="c-accordion__body">
                 <p>
-                  Performance is key in drivers. The project uses web animation API to reduce trashing and hand coded
-                  the entire UI and data process logic to reduce memory and CPU load. The logic is inspired by the
-                  "update loop" model in video games and real time systems.
+                  This project is my HCI treasure trove. It was challenging to identify the most intuitive direct
+                  manipulation model. Based on experiments and user feedback, I built dozens of prototypes with
+                  different sensitivity curves and activation thresholds, and evaludated their effectiveness on
+                  realistic tasks. The final solution respects the individual preference for manipulation target (canvas
+                  vs. camera) and offers customization for the power user.
                 </p>
                 <p>
-                  The tool went throught several iterations to fine-tuning the sensitivity and activation threshold. It
-                  also designed to account for mental models: manipulating canvas vs. manipulating camera.
+                  The technical design prioritizes performance. The app was written with no dependency to reduce CPU and
+                  memory load. A "game loop" was implemented from scratch to achieve the bare-metal speed. Smooth
+                  interaction was achieved with the requestAnimationFrame API.
                 </p>
+                <ul class="c-tech-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
               </div>
             </details>
             <ul class="c-meta-list">
               <li>Author</li>
-              <li>20??</li>
-              <li>GitHub</li>
+              <li>2019+</li>
             </ul>
           </div>
         </section>
+
         <section class="c-entry-grid c-entry-section">
           <h3>Accessifiers</h3>
           <p>A non-profit service to help people discover accessible apps.</p>
           <div>
             <details class="c-accordion">
               <summary class="c-accordion__trigger">Details</summary>
-              <p class="c-accordion__body">
-                To align with the project's goal and account for the frequent rotation of volunteer developers, I
-                emphasized on the learning curve and accessibility of the tech stack itself. By using plain CSS, instead
-                of CSS-in-JS and semantic HTML, instead of off the shelf UI toolkits, the project allows for easy
-                onboarding and cross-contribution between designers who can code.
-              </p>
-              <ul class="c-tech-list">
-                <li>React</li>
-                <li>Storybook</li>
-              </ul>
+              <div class="c-accordion__body">
+                <p>
+                  The project is contrained by engineering resource and requires high standards on accessibility. I
+                  emphasized on reducing complexity of the tech stack so volunteers from diverse backgrounds can feel at
+                  ease when contributing. I promoted plain CSS over CSS-in-JS, semantic HTML with BEM over off-the-shelf
+                  UI toolkits so the app will be accessible and will remain accessible despite the ever-changing
+                  landscape of frontend frameworks. To faciliate asynchronous collaboration, I improvised a preview
+                  system based on GitHub actions so each PR has an immutable URL for sharing.
+                </p>
+                <ul class="c-tech-list">
+                  <li>React</li>
+                  <li>Storybook</li>
+                  <li>HTMl</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
             </details>
             <ul class="c-meta-list">
               <li>Volunteer frontend lead</li>
-              <li>20??+</li>
+              <li>2021+</li>
             </ul>
           </div>
         </section>
+
         <section class="c-entry-grid c-entry-section">
           <h3>Clicademy</h3>
-          <p>A platform for digital marketing students to understand and practice online analytics</p>
+          <p>A sandbox for digital marketing students.</p>
           <details class="c-accordion">
             <summary class="c-accordion__trigger">Details</summary>
             <div class="c-accordion__body">
-              <p>...Branding and design</p>
+              <p>
+                It's difficult to become a market analyst without real data. It's difficult to get real data without
+                becoming a market analyst. The product solves the problem by creating a self-sustained sandbox that
+                allows user to generate data while learning analytics.
+              </p>
+              <p>
+                I produced branding assets and lead frontend engineering for this project. The constraints posed by the
+                WordPress platform required careful tradeoff between cost of maintanence and brand expression. My rapid
+                prototyping helped the product owner validate the market against real customers by.
+              </p>
               <ul class="c-tech-list">
                 <li>WordPress</li>
-                <li>Google Cloud Computing</li>
               </ul>
             </div>
           </details>
           <ul class="c-meta-list">
-            <li>Co-founder</li>
-            <li>20??+</li>
+            <li>CTO</li>
+            <li>2020+</li>
           </ul>
         </section>
+
+        <section class="c-entry-grid c-entry-section">
+          <h3>Azure Cognitive Search Filter Builder</h3>
+          <p>A library that programmatically builds the OData filter expression for the Azure Cognitive Search API.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                A spin-off project from the HITS product. I enjoyed the challenge in the nitty-gritty of compiler
+                design. The project allowed me to practice test-driven development and architect the system with
+                Object-oriented design. It was rewarding to see multiple layers of abstraction working in unison to
+                serialize the syntax tree into the correct expression. The library currently powers the search
+                experience in the HITS product.
+              </p>
+              <ul class="c-tech-list">
+                <li>TypeScript</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Author</li>
+            <li>2021</li>
+          </ul>
+        </section>
+
         <section class="c-entry-grid c-entry-section">
           <h3>Switchboard</h3>
-          <p>A tool for Microsoft Dynamics 365 teammates to quickly access demon environments</p>
+          <p>Instant access to Dynamics 365 demo environments.</p>
           <div>
             <details class="c-accordion">
               <summary class="c-accordion__trigger">Details</summary>
               <div class="c-accordion__body">
                 <p>
-                  Dynamics 365 is a B2B platform that creates apps on-demand for each business. This made it difficult
-                  for the designers to access the environment. The tool provides a one-click solution to allow instant
-                  access to demo environments. The project itself also embodies the progression of HCI paradigms. V1 was
-                  CLI that converses with the user. V2 was a desktop app that user to install and interact with. V3 is
-                  currently a cloud service that provides what user needs just in time.
+                  Dynamics 365 is a B2B platform that creates apps on-demand for each customer, causing difficulty when
+                  designers and PMs need to view their own work. The tool provides a one-click solution to allow instant
+                  access to demo environments.
                 </p>
                 <p>
-                  The app repurposed browser automation testing tool to become a co-pilot of human users, allowing
-                  instant typing of sign-in credentials. This was create before RPA became cool. The tool also went
-                  through several replatforms, allowing me to experiment and pick up new frameworks along the journey.
+                  The app repurposed browser automation testing tool to co-pilot with human users, eliminating
+                  repetitive and error prone steps. The tool was written from scratch three times, with each iteration
+                  learning from it predecessor and exploring new opportunities.
                 </p>
+                <ul class="c-inline-list">
+                  <li>
+                    Initial version was a CLI. It was fast and nerdy, but became difficult for non-technical users.
+                  </li>
+                  <li>
+                    The second version was GUI app based on electron. It was intuitive to use but app installation
+                    became a bottleneck for adoption.
+                  </li>
+                  <li>
+                    The current version is a cloud service that requires no installation. It has the lowest barrier to
+                    entry at the cost of limited integration with the native OS.
+                  </li>
+                </ul>
                 <ul class="c-tech-list">
                   <li>Node.js</li>
                   <li>Electron</li>
                   <li>Puppeteer</li>
                   <li>Svelte</li>
-                  <li>Serverless</li>
+                  <li>Lit</li>
                 </ul>
               </div>
             </details>
             <ul class="c-meta-list">
               <li>Author</li>
-              <li>201?+</li>
+              <li>2019+</li>
             </ul>
           </div>
         </section>
+
         <section class="c-entry-grid c-entry-section">
           <h3>Cursors</h3>
-          <p>Podcast website for designers at Microsoft</p>
+          <p>A podcast for designers at Microsoft.</p>
           <details class="c-accordion">
             <summary class="c-accordion__trigger">Details</summary>
             <div class="c-accordion__body">
-              <p>TBD</p>
+              <p>
+                The project considers the producers' experience as important as the listeners'. I adopted WordPress as a
+                headless CMS for its simple admin experience. The frontend was intentionally decoupled from WordPress to
+                realize a highly custom brutalist design by
+                <a href="https://jeremybarnesdesign.com/" target="_blank">Jeremy Barnes</a>. I also learned a great deal
+                building an audio player from scratch, and publishing the podcast on iTunes.
+              </p>
               <ul class="c-tech-list">
                 <li>Headless WordPress</li>
-                <li>Web Audio API</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Web Audio</li>
               </ul>
             </div>
           </details>
           <ul class="c-meta-list">
-            <li>Author</li>
-            <li>201?+</li>
+            <li>Full-stack engineer</li>
+            <li>2017-2018</li>
           </ul>
         </section>
+
         <section class="c-entry-grid c-entry-section">
-          <h3>Power Loops</h3>
-          <p>
-            A hackathon project that allows 3rd party developers to create UI components for the Dynamics 365 Platform
-          </p>
+          <h3>529 Legion</h3>
+          <p>Website and print resume for a sports team.</p>
           <details class="c-accordion">
             <summary class="c-accordion__trigger">Details</summary>
             <div class="c-accordion__body">
-              <p>TBD</p>
+              <p>
+                529 Legion is a mountain bike racing team and community event organizer. 529 Legion renews its
+                sponsorship every year by presenting its achievement and calling for new levels of suppport. I worked
+                with the team manager to design and produce the print resume and the team website for three years in a
+                row.
+              </p>
+              <ul class="c-tech-list">
+                <li>Adobe Illustrator</li>
+                <li>Figma</li>
+                <li>Squarespace</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Designer</li>
+            <li>2016-2019</li>
+          </ul>
+        </section>
+
+        <section class="c-entry-grid c-entry-section">
+          <h3>Power Loops</h3>
+          <p>The next gen dev experience for Microsoft Power Apps Control Framework.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                The project was a concept demo, inspired the hot module reload pattern popularized by webpack. Developer
+                productivity was bottlenecked by the desperate wait time when each change requires a full deployment to
+                preview. The concept demo solves the problem by creating a mini container environment to satisfy all the
+                I/O requirements (similar to Docker), so developers can preview their changes locally, with instant
+                reload.
+              </p>
+              <p>
+                The project was successfully productionized into the
+                <a
+                  href="https://docs.microsoft.com/en-us/powerapps/developer/data-platform/powerapps-cli"
+                  target="_blank"
+                  >Power Platform CLI</a
+                >.
+              </p>
               <ul class="c-tech-list">
                 <li>Node.js</li>
+                <li>Yeoman</li>
+                <li>Commander</li>
               </ul>
             </div>
           </details>
           <ul class="c-meta-list">
             <li>Co-author</li>
-            <li>2018?</li>
+            <li>2018</li>
           </ul>
         </section>
 
         <section class="c-entry-grid c-entry-section">
           <h3>Contrast Matrix</h3>
-          <p>Validate contrast ratio for all colors in a palette at once.</p>
+          <p>Ensure accessibility for an entire palette</p>
           <details class="c-accordion">
             <summary class="c-accordion__trigger">Details</summary>
             <div class="c-accordion__body">
-              <p>TBD</p>
+              <p>
+                WCAG 2.0 requires minimum contrast ratio for UI elements. Existing tools only validate one
+                foreground/background pair at a time, creating a bottleneck in the designer's workflow as their work
+                scales. The tool solves the problem by generating a matrix of foreground/background color pairs so all
+                possible color pairs can be validated at once, and allowing export/import for persistent storage of the
+                palette.
+              </p>
+              <p>I collaborated with <a href="https://adamferch.com">Adam Ferch</a> to realize his design in code.</p>
               <ul class="c-tech-list">
                 <li>HTML</li>
                 <li>CSS</li>
@@ -358,104 +539,130 @@
             </div>
           </details>
           <ul class="c-meta-list">
-            <li>Author</li>
-            <li>20??</li>
-          </ul>
-        </section>
-
-        <section class="c-entry-grid c-entry-section">
-          <h3>Oblique</h3>
-          <p>Source of inspiration for any creative professional.</p>
-          <details class="c-accordion">
-            <summary class="c-accordion__trigger">Details</summary>
-            <div class="c-accordion__body">
-              <p>TBD</p>
-              <ul class="c-tech-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
-          </details>
-          <ul class="c-meta-list">
-            <li>Author</li>
-            <li>20??</li>
+            <li>Engineer</li>
+            <li>2016</li>
           </ul>
         </section>
 
         <section class="c-entry-grid c-entry-section">
           <h3>Jasmine Mock Factory</h3>
-          <p>A Jasmine test utility that creates a mock of anything.</p>
+          <p>A unit test utility that creates a mock of anything.</p>
           <details class="c-accordion">
             <summary class="c-accordion__trigger">Details</summary>
             <div class="c-accordion__body">
-              <p>TBD</p>
+              <p>
+                Test-driven development was hard to practice because of the up-front cost in test fixture investment.
+                This utility solves the problem by providing a universal mock object that requires little to no settle
+                for every unit test scenario.
+              </p>
+              <p>
+                I practiced TDD for project itself and leveled up my TypeScript game as I worked with self-referential
+                types from the ES6 proxy API. To enable open-source contributions, I implemented a CI/CD pipeline with
+                automated testing and coverage report.
+              </p>
               <ul class="c-tech-list">
                 <li>TypeScript</li>
-                <li>ES6 Proxy</li>
+                <li>Karma</li>
+                <li>Jasmine</li>
+                <li>Travis</li>
+                <li>Coveralls</li>
               </ul>
             </div>
           </details>
           <ul class="c-meta-list">
             <li>Author</li>
-            <li>20??</li>
+            <li>2016-2019</li>
+          </ul>
+        </section>
+
+        <section class="c-entry-grid c-entry-section">
+          <h3>Oblique</h3>
+          <p>Source of inspiration for creative professional.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                A tongue-in-cheek inspiration generator. I practiced social platform API integration at the height of
+                the Web 2.0 movement. I also sweat the details in the logo.
+              </p>
+              <ul class="c-tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Facebook API</li>
+                <li>Twitter API</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Author</li>
+            <li>2017</li>
           </ul>
         </section>
 
         <section class="c-entry-grid c-entry-section">
           <h3>Course inSight</h3>
-          <p>A course catelog that uses NLP to help students discover courses beyond the department boundary.</p>
-          <details class="c-accordion">
-            <summary class="c-accordion__trigger">Engineering</summary>
-            <p class="c-accordion__body">
-              Putting together my learning from Microsoft Internship, the Search Engine design from CS50, and my passion
-              for ML and data visualization.
-            </p>
-          </details>
-          <details class="c-accordion">
-            <summary class="c-accordion__trigger">Fact sheet</summary>
-            <dl class="c-accordion__body">
-              <dt>Role</dt>
-              <dd>Author</dd>
-              <dt>Timeline</dt>
-              <dd>2014</dd>
-              <dt>Technology</dt>
-              <dd>D3.js, IBM Watson (prev. Alchemy)</dd>
-            </dl>
-          </details>
-        </section>
-        <section class="c-entry-grid c-entry-section">
-          <h3>Smart lights control system</h3>
-          <p>Conversing energy and provide intuitive control to industrial lighting system in a gym.</p>
+          <p>
+            Interactive course browser that uses machine learning and data visualization to help students discover go
+            beyond the department boundary.
+          </p>
           <details class="c-accordion">
             <summary class="c-accordion__trigger">Details</summary>
             <div class="c-accordion__body">
-              <p>TBD</p>
+              <p>
+                An academic research project that integrates a course catalog with natural language processing and cloud
+                database to provide recommendations based on the concepts extracted from a given course, revealing
+                meaningful connections between courses that are not available through existing technologies.
+              </p>
+              <p>The project synthesized serveral concepts floating in my head around that time</p>
+              <ul class="c-inline-list">
+                <li>The course catelog crawling was designed based on the search entgine crawler from CS50</li>
+                <li>The data visualization was inspired by my internship with Microsoft on the Power BI product</li>
+                <li>
+                  The Natural Language Processing algorithm was inspired by the Machine Learning lectures from CS74
+                </li>
+              </ul>
+              <p>
+                You can learn more about this project in my senior thesis for the computer science department at
+                Dartmouth.
+              </p>
               <ul class="c-tech-list">
-                <li>Backbone</li>
+                <li>Bash script</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>D3.js</li>
+                <li>Alchemy API (now IBM Watson)</li>
               </ul>
             </div>
           </details>
           <ul class="c-meta-list">
-            <li>Co-author</li>
-            <li>20??</li>
+            <li>Author</li>
+            <li>2015</li>
           </ul>
         </section>
 
         <section class="c-entry-grid c-entry-section">
-          <h3>Perceptual computing</h3>
-          <p>Game developed to encourage reading in a 3D environment.</p>
+          <h3>Hanover Weather Data Audiovisual Experience</h3>
+          <p>Transform weather data into an audiovisual rollercoaster ride.</p>
           <details class="c-accordion">
             <summary class="c-accordion__trigger">Details</summary>
-            <ul class="c-tech-list">
-              <li>Unity</li>
-              <li>Intel Perceptual SDK</li>
-              <li>C#</li>
-            </ul>
+            <div class="c-accordion__body">
+              <p>
+                A experiential art project produced for a film and music studies class. To put my learning from CS02
+                (Programming for Interactive Audio-Visual Arts) into practice, I composed this piece in Processing and
+                had loads of fun watching the reactions from my professor and classmates. While collaborating with 2
+                other students, I am the primary creator of the experience.
+              </p>
+              <ul class="c-tech-list">
+                <li>Processing</li>
+                <li>Java</li>
+              </ul>
+            </div>
           </details>
           <ul class="c-meta-list">
-            <li>Engineering lead</li>
-            <li>20??</li>
+            <li>Artist</li>
+            <li>2015</li>
           </ul>
         </section>
 
@@ -465,28 +672,41 @@
           <details class="c-accordion">
             <summary class="c-accordion__trigger">Details</summary>
             <div class="c-accordion__body">
-              <p>TBD</p>
+              <p>
+                A tool for musicians to compose MIDI loops. As the real time application, the speed of I/O became the
+                bottleneck. Without using expensive hardware, I implmented quantized time alignment algorithm to improve
+                the output quality. It was the final project for CS02 (Programming for Interactive Audio-Visual Arts)
+              </p>
               <ul class="c-tech-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+                <li>Processing</li>
+                <li>Java</li>
+                <li>MIDI</li>
               </ul>
             </div>
           </details>
           <ul class="c-meta-list">
             <li>Author</li>
-            <li>20??</li>
+            <li>2015</li>
           </ul>
         </section>
 
         <section class="c-entry-grid c-entry-section">
-          <h3>Eye tracking</h3>
-          <p>Predict eye movement based on succade path</p>
+          <h3>Smart lights control system</h3>
+          <p>IoT Hub controlling smart lights for a 91,800 sqft field house.</p>
           <details class="c-accordion">
             <summary class="c-accordion__trigger">Details</summary>
             <div class="c-accordion__body">
-              <p>TBD</p>
+              <p>
+                The smart lights installed in the field house at Dartmouth was not conversing energy as much as it
+                should due an out-dated centralized scheduling system. To improve lighting efficiency, I worked with
+                DALI lab to allow field house users adjust lighting on-demand. The project taught me lessons in
+                collaboration with stakeholders and designers. I also had found learning Cloud database and Backbone
+                framework.
+              </p>
               <ul class="c-tech-list">
+                <li>IoT</li>
+                <li>Parse</li>
+                <li>Backbone</li>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -494,8 +714,82 @@
             </div>
           </details>
           <ul class="c-meta-list">
+            <li>Full-stack engineer</li>
+            <li>2014</li>
+          </ul>
+        </section>
+
+        <section class="c-entry-grid c-entry-section">
+          <h3>Gesture-controlled Learning Game</h3>
+          <p>Help user achieve learning goals while winning $1000 from Intel.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                Working with a prototype infrared head and hand tracking camera and a machine learning SDK, I created a
+                primitive 3D environment to explore the use cases of the novel technology. The project revealed the
+                performance limitation from the hardware and the software at the time. It was still a meaningful trial
+                for the interaction patterns commonly seen in the AR/VR based applications today.
+              </p>
+              <p>My team has won the early submission price from the Intel Perceptual Computing Challenge.</p>
+              <a>https://www.youtube.com/watch?v=N_xgy5yofBw</a>
+              <ul class="c-tech-list">
+                <li>Intel Perceptual SDK</li>
+                <li>Unity</li>
+                <li>C#</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Lead engineer</li>
+            <li>2013</li>
+          </ul>
+        </section>
+
+        <section class="c-entry-grid c-entry-section">
+          <h3>Eye Tracker Data Analysis</h3>
+          <p>Modeling cognitive bias from eye movement.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                A research project lead by Alireza Soltani. I used Machine Learning techniques to identify correlations
+                between brain activities and eye succades. The research project taught me about the rigor and patience,
+                and also showed me the practical side of machine learning just as I finished CS74 (Machine Learning and
+                Statistical Data Analysis).
+              </p>
+              <ul class="c-tech-list">
+                <li>MATLAB</li>
+                <li>Suppor Vector Machine</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
             <li>Research engineer</li>
-            <li>20??</li>
+            <li>2013-2014</li>
+          </ul>
+        </section>
+
+        <section class="c-entry-grid c-entry-section">
+          <h3>Language detection from speech samples</h3>
+          <p>Detect spoken language using a natural language processing pipeline.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                A research project for CS74 (Machine Learning and Statistical Data analysis). I experiemented with
+                Support Vector Machine and Neural Network to differentiate Chinese, French, and English.
+              </p>
+              <ul class="c-tech-list">
+                <li>MATLAB</li>
+                <li>Suppor Vector Machine</li>
+                <li>Neural Network</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Engineer</li>
+            <li>2013</li>
           </ul>
         </section>
       </section>

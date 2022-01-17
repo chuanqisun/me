@@ -132,6 +132,11 @@ output {
   padding: var(--entry-padding-inline) 24px;
 }
 
+.c-inline-list {
+  padding-left: 24px;
+  list-style: revert;
+}
+
 .c-main-section {
   padding: 64px var(--site-gutter);
   background-color: var(--main-section-background);
