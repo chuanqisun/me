@@ -2,7 +2,17 @@
  * 00 VAR *
  **********/
 :root {
+  --propotional-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  --monospace-font: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
+    "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   --site-gutter: 40px;
+  --terminal-background: #282828;
+  --terminal-text: #ebdbb2;
+  --terminal-text-light: #928374;
+  --body-text: #22201f;
+  --body-text-light: #68615e;
+  --body-background: white;
 }
 
 /************
@@ -38,9 +48,11 @@ summary {
  * 02 ELEMENT *
  **************/
 body {
-  font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
-    "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  font-family: var(--propotional-font);
   font-size: 18px;
+  color: var(--body-text);
+  background-color: var(--body-background);
+  line-height: 1.4;
 }
 
 a {
@@ -48,48 +60,80 @@ a {
 }
 
 h2 {
+  line-height: 1.2;
   font-size: 32px;
   font-weight: bold;
+  font-family: var(--monospace-font);
 }
 
 h3 {
+  line-height: 1.2;
   font-size: 24px;
   font-weight: bold;
+  font-family: var(--monospace-font);
+}
+
+summary {
+  cursor: pointer;
+  font-family: var(--monospace-font);
+}
+
+output {
+  font-family: var(--monospace-font);
 }
 
 /****************
  * 03 COMPOENNT *
  ****************/
-.c-site-header {
-  position: sticky;
-  top: 0;
-  height: 60px;
-}
-.c-site-nav {
-  height: 100%;
-  background-color: white;
-  border-bottom: 2px solid rgb(34, 34, 34);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  padding-inline: var(--site-gutter);
+
+.c-accordion__trigger {
+  padding-block: 4px;
 }
 
-.c-terminal {
-  padding-inline: var(--site-gutter);
-  padding-block: 32px;
-  display: block;
-  color: white;
-  font-size: 32px;
-  background-color: rgb(34, 34, 34);
+.c-accordion__trigger:hover {
+  font-weight: bold;
+}
+
+.c-accordion__body {
+  padding-block: 4px 16px;
+  padding-inline-start: 20px;
+  display: grid;
+  gap: 8px;
+}
+
+.c-entry-grid {
+  display: grid;
+  grid-gap: 8px;
+  align-content: start;
+}
+
+.c-main-grid {
+  display: grid;
+  grid-template-columns: var(--site-gutter) 1fr var(--site-gutter);
+  row-gap: 64px;
+}
+.c-main-grid > * {
+  grid-column: 2 / span 1;
+}
+
+.c-main-grid__item--fill {
+  grid-column: 1 / -1;
+}
+
+.c-meta-list {
+  color: var(--body-text-light);
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.c-meta-list > :not(:first-child)::before {
+  content: " · ";
 }
 
 .c-nav-list {
   height: 100%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
 }
 
 .c-nav-list__item {
@@ -103,21 +147,19 @@ h3 {
 
 .c-nav-link {
   font-size: 24px;
+  padding-inline: 16px;
   height: 100%;
   display: flex;
+  font-family: var(--monospace-font);
   align-items: center;
 }
+.c-nav-link:hover {
+  background-color: var(--terminal-background);
+  color: var(--terminal-text);
+}
 
-.c-main-grid {
-  display: grid;
-  grid-template-columns: var(--site-gutter) 1fr var(--site-gutter);
-  row-gap: 64px;
-}
-.c-main-grid > * {
-  grid-column: 2 / span 1;
-}
-.c-main-grid > .c-main-grid__item--fill {
-  grid-column: 1 / -1;
+.c-pronounced {
+  text-decoration: underline;
 }
 
 .c-section-grid {
@@ -125,15 +167,52 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 24px;
 }
-.c-section-grid > .c-section-grid__item--fill {
+
+.c-section-grid__item--fill {
   grid-column: 1 / -1;
 }
-
-.c-entry-grid {
-  display: grid;
-  grid-gap: 8px;
-  align-content: start;
+.c-site-header {
+  position: sticky;
+  top: 0;
+  height: 60px;
 }
+.c-site-nav {
+  height: 100%;
+  font-weight: bold;
+  background-color: white;
+  border-bottom: 2px solid var(--terminal-background);
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: var(--site-gutter);
+}
+
+.c-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.c-tech-list > * {
+  border: 1px solid #aaa;
+  padding-inline: 12px;
+  padding-block: 2px;
+  padding-inline: 8px;
+  border-radius: 4px;
+}
+
+.c-terminal {
+  padding-inline: var(--site-gutter);
+  padding-block: 48px;
+  display: block;
+  color: var(--terminal-text);
+  font-size: 32px;
+  font-weight: bold;
+  background-color: var(--terminal-background);
+}
+
+.c-terminal__prompt {
+  color: var(--terminal-text-light);
+}
+
 /************
  * 04 UTILS *
  ************/

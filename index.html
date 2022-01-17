@@ -17,151 +17,166 @@
       <nav class="c-site-nav">
         <ul class="c-nav-list">
           <li class="c-nav-list__item">
-            <a class="c-nav-link" href=""><h1>CS</h1></a>
+            <a class="c-nav-link" href="#main"><h1>MAIN</h1></a>
           </li>
           <li class="c-nav-list__item">
-            <a class="c-nav-link" href="#work">Work</a>
+            <a class="c-nav-link" href="#work">WORK</a>
           </li>
           <li class="c-nav-list__item">
-            <a class="c-nav-link" href="#projects">Projects</a>
+            <a class="c-nav-link" href="#projects">PROJ</a>
           </li>
           <li class="c-nav-list__item">
-            <a class="c-nav-link" href="#shelf">Shelf</a>
+            <a class="c-nav-link" href="#io">I/O</a>
           </li>
           <li class="c-nav-list__item">
-            <a class="c-nav-link" href="#about">About</a>
+            <a class="c-nav-link" href="#etc">ETC</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="c-main-grid">
+    <main id="main" class="c-main-grid">
       <output class="c-terminal c-main-grid__item--fill">
-        > Hello world!<br />
-        > My name is Chuánqí.<br />
-        > I create tools for the curious mind.
+        <span class="c-terminal__prompt">&gt;</span> Hello world!<br />
+        <span class="c-terminal__prompt">&gt;</span> My name is
+        <a class="c-pronounced" href="pronunciation/chuanqi.mp3" target="_blank" title="Click to pronounce">Chuánqí</a
+        >.<br />
+        <span class="c-terminal__prompt">&gt;</span> I create tools for the curious mind.
       </output>
+
       <section class="c-main-section c-main-grid__item c-section-grid">
-        <h2 id="work" class="c-section-grid__item--fill">Work</h2>
+        <h2 id="work" class="c-section-grid__item--fill">WORK</h2>
         <p class="c-section-grid__item--fill">
-          I am engineer by trade but I put on my designer's (and increasingly PM's) hat from day one of each project. My
-          trans-discplinary process finds the Goldilocks zone in product development where the needs and constraints
-          from business, users, and technology are in perfect balance. Currently, I lead UX design and frontend
-          development at Microsoft.
+          I wear multiple hats at work. One as an engineer, another as a designer, and increasingly, a third one as a
+          PM. My trans-discplinary process navigates the product team towards the Goldilocks zone of collaboration,
+          where the needs and constraints from business, users, and technology are in perfect balance. Currently, I lead
+          UX design and frontend development at Microsoft.
         </p>
+
         <section class="c-entry-grid">
           <h3>HITS</h3>
-          <p>The knowledge base for every product decision maker at Microsoft. knowledge among the users.</p>
-          <details>
-            <summary>Design and Business</summary>
-            <p>
-              My work inspires the sharing and reuse of. As a designer, the project honed my skills on creating and then
-              maintaining a design system that balances internal and external consistencies. It also challenges me
-              design incentive mechanisms for the long-term benefit of the users and the sustainability of the entire
-              ecosystem.
-            </p>
-          </details>
-          <details>
-            <summary>Engineering</summary>
-            <p>
-              As an engineer, the project has taught me invalueable lessions in working with legacy systems. I
-              successfully architected the migration of a full stack application without interrupting existing
-              functionalities that involved swaping ASP.NET + Knockout.js with React, GraphQL and JAMStack.
-              <br />
-              Tech innovations: abstract syntax tree parser. Design system for email rendering.
-            </p>
-          </details>
-          <details>
-            <summary>Fact sheet</summary>
-            <dl>
-              <dt>Role</dt>
-              <dd>Design lead + Frontend tech lead</dd>
-              <dt>Timeline</dt>
-              <dd>2020 - Present</dd>
-              <dt>Technology</dt>
-              <dd>React, GraphQL, TypeScript, Serverless, JAMStack</dd>
-            </dl>
-          </details>
+          <p>Microsoft's knowledge base for product decision makers.</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Design and Business</summary>
+              <p class="c-accordion__body">
+                HITS is a two-sided network for creators and consumer. I draw inspiration from behavioral economics to
+                design mechanisms that bootstrap the ecosystem. The project also honed my skills on creating and
+                maintaining an enterprise-scale design system that balances internal vs. external consistencies and
+                reconciles historical conventions vs. newly formed interaction patterns.
+              </p>
+            </details>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Engineering</summary>
+              <div class="c-accordion__body">
+                <p>
+                  HITS taught me invalueable lessions in working with legacy systems: how to prevent the dev team from
+                  drowning in technical debt and how to replatform without business disruption. During the project, I
+                  also implemented an query expression builder from scratch using abstract syntax tree, and hacked
+                  Stroybook for rendering testing emails.
+                </p>
+                <ul class="c-tech-list">
+                  <li>GraphQL</li>
+                  <li>JAMStack</li>
+                  <li>Knockout</li>
+                  <li>React</li>
+                  <li>Serverless</li>
+                  <li>TypeScript</li>
+                  <li>.NET</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+          <ul class="c-meta-list">
+            <li>Design lead</li>
+            <li>Frontend lead</li>
+            <li>2020+</li>
+          </ul>
         </section>
+
         <section class="c-entry-grid">
           <h3>Dynamics 365</h3>
-          <p>
-            I've worked on the design system for the entire platform, and on applications built on top of the platform:
-            a human capital management solution and an ecommerce solution.
-          </p>
-          <details>
-            <summary>Design and Business</summary>
-            <p>
-              As a designer, Dynamics 365 introduced me to system thinking. The platform is a multi-sided value network
-              that involves the platform team, internal solution teams, partner solution teams, business organization,
-              and business' customers. I learned valueable lessons in balancing the interests from all of the
-              stakeholders above and designing mechanism that outlasts the change of people and processes.
-            </p>
-          </details>
-          <details>
-            <summary>Engineering</summary>
-            <p>
-              As an engineer, I honed my rapid prototying skills, from highly specific interactions to horizontal user
-              flows. I also co-authored the design system that an whole of frontend engineers depend on.
-              <br />
-              Tech innovations: iframe for design system documentation (before Storybook)
-            </p>
-          </details>
-          <details>
-            <summary>Fact sheet</summary>
-            <dl>
-              <dt>Role</dt>
-              <dd>Frontend developer, Prototyper, Designer</dd>
-              <dt>Timeline</dt>
-              <dd>2017 - 2020</dd>
-              <dt>Technology</dt>
-              <dd>Angular, React, RxJS</dd>
-            </dl>
-          </details>
+          <p>Microsoft's business application platform</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Design and Business</summary>
+              <p class="c-accordion__body">
+                Dynamics 365 introduced me to system thinking. Every problem must solved at the interconnect between the
+                platform team, internal solution teams, partner solution teams, business organization, and business'
+                customers. I learned valueable lessons in balancing the interests from all of the stakeholders above and
+                designed systems that outlasts the change of people and processes.
+              </p>
+            </details>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Engineering</summary>
+              <div class="c-accordion__body">
+                <p>
+                  I used in-browser rapid prototying to communicate and inform design decisions for global navigation. I
+                  co-authored three design systems that empowered an entire team of frontend engineers. I piorneered an
+                  algorithmic color contrasting system and invented an iframe based technique for documenting React
+                  components.
+                </p>
+                <ul class="c-tech-list">
+                  <li>Angular</li>
+                  <li>React</li>
+                  <li>RxJS</li>
+                  <li>TypeScript</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+          <ul class="c-meta-list">
+            <li>Designer</li>
+            <li>Prototyper</li>
+            <li>Frontend engineer</li>
+            <li>2017-2020</li>
+          </ul>
         </section>
+
         <section class="c-entry-grid">
           <h3>Power BI</h3>
-          <p>
-            Business intelligence app at enterprise scale. I worked at the intersection between backend and frontend.
-            Building services that transfer data between on-premises servers and cloud hosted servers.
-          </p>
-          <details>
-            <summary>Design</summary>
-            <p>
-              I had never received design traning until this project. I was luck enough to be taken under the wings of a
-              few talents designers. Through them, I discovered the great work from Edward Tufte and started reading
-              volume after volume on typography, color theory, information architecture, and interaction design. I
-              pushed the adoption of design system before it was popularized by Brad Frost. This period of learning
-              paved the foundation for my later work as a designer.
-            </p>
-          </details>
-          <details>
-            <summary>Engineering</summary>
-            <p>
-              As a engineer, the project taught me my first lessons in building MV* applications. Many great developers
-              selflessly coached me on design patterns, unit testing, asynchronous programming, and the cryptic art of
-              debug CSS when IE support was a must. I also picked by D3.js as my go-to tool for data-driven
-              visiualization.
-            </p>
-          </details>
-          <details>
-            <summary>Fact sheet</summary>
-            <dl>
-              <dt>Role</dt>
-              <dd>Full stack developers</dd>
-              <dt>Timeline</dt>
-              <dd>2014 - 2017</dd>
-              <dt>Technology</dt>
-              <dd>.NET, AngularJS, D3.js</dd>
-            </dl>
-          </details>
+          <p>Microsoft's Business intelligence solution</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Design</summary>
+              <p class="c-accordion__body">
+                I was not on the Power BI design team but through collaboration and mentorship with them, I was
+                introduced me to data visualization and info graphcis design. I devoured the classic designer books from
+                Edward Tufte, Don Normon, Steve Krug, and Alan Cooprer, and took online courses on typography, color
+                theory, information architecture, and interaction design. This period of learning paved the foundation
+                for my later work as a designer.
+              </p>
+            </details>
+
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Engineering</summary>
+              <div class="c-accordion__body">
+                <p>
+                  I learned my first lessons in MV* framework. Many great developers selflessly coached me on design
+                  patterns, unit testing, asynchronous programming, and the cryptic art of debug CSS when IE support was
+                  still a must. I picked up D3.js as my go-to tool for data visiualization and pushed the adoption for
+                  design systems before Brad Frost popularized the practice.
+                </p>
+                <ul class="c-tech-list">
+                  <li>.NET</li>
+                  <li>AngularJS</li>
+                  <li>D3.js</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+          <ul class="c-meta-list">
+            <li>Full-stack engineer</li>
+            <li>2014-2017</li>
+          </ul>
         </section>
       </section>
+
       <section class="c-main-section c-main-grid__item c-section-grid">
         <h2 id="projects" class="c-section-grid__item--fill">Projects</h2>
         <p class="c-section-grid__item--fill">
           I'm a Human-Computer Interaction nerd. I go to great lengths to create systems, tools, and experiences that
-          are functional and visual delights for individuals. These are the side projects I worked on all night without
-          looking at my watch.
+          are functional and visual delights for individuals. These are the side projects I would happily trade my sleep
+          for.
         </p>
         <section class="c-entry-grid">
           <h3>osmoscraft</h3>
@@ -169,17 +184,17 @@
             A growing knowledge toolbox that pushes you to discover, ingest, organize, connect, generate, and share
             knowledge.
           </p>
-          <details>
-            <summary>Engineering</summary>
-            <p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Engineering</summary>
+            <p class="c-accordion__body">
               The project aims to have zero dependency. Thanks to this constraint, I learned how to write a text editor,
               how to build a template engine, and how to handle DOM diffing for state-based rendering. I built a testing
               framework from scratch. And built a custom XML parser for handling RSS feed.
             </p>
           </details>
-          <details>
-            <summary>Design</summary>
-            <p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Design</summary>
+            <p class="c-accordion__body">
               As a designer, I started experimenting with various design languages, from console-inspired base64 theming
               system to modern minimalist material design. In the short term, the toolbox focuses on secondary tasks:
               reading articles, bookmarking websites, and taking notes.<br />
@@ -187,9 +202,9 @@
               and synthesizing new insights.
             </p>
           </details>
-          <details>
-            <summary>Fact sheet</summary>
-            <dl>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Fact sheet</summary>
+            <dl class="c-accordion__body">
               <dt>Role</dt>
               <dd>Author</dd>
               <dt>Timeline</dt>
@@ -202,16 +217,16 @@
         <section class="c-entry-grid">
           <h3>3Dconnexion SpaceMouse Driver for Figma</h3>
           <p>Allow direct manipulation of the 2D canvas using the 3Dconnexion SpaceMouse hardware</p>
-          <details>
-            <summary>Design</summary>
-            <p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Design</summary>
+            <p class="c-accordion__body">
               The tool went throught several iterations to fine-tuning the sensitivity and activation threshold. It also
               designed to account for mental models: manipulating canvas vs. manipulating camera.
             </p>
           </details>
-          <details>
-            <summary>Engineering</summary>
-            <p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Engineering</summary>
+            <p class="c-accordion__body">
               Performance is key in drivers. The project uses web animation API to reduce trashing and hand coded the
               entire UI and data process logic to reduce memory and CPU load. The logic is inspired by the "update loop"
               model in video games and real time systems.
@@ -221,18 +236,18 @@
         <section class="c-entry-grid">
           <h3>Accessifiers</h3>
           <p>A non-profit service to help people discover accessible apps.</p>
-          <details>
-            <summary>Engineering</summary>
-            <p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Engineering</summary>
+            <p class="c-accordion__body">
               To align with the project's goal and account for the frequent rotation of volunteer developers, I
               emphasized on the learning curve and accessibility of the tech stack itself. By using plain CSS, instead
               of CSS-in-JS and semantic HTML, instead of off the shelf UI toolkits, the project allows for easy
               onboarding and cross-contribution between designers who can code.
             </p>
           </details>
-          <details>
-            <summary>Fact sheet</summary>
-            <dl>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Fact sheet</summary>
+            <dl class="c-accordion__body">
               <dt>Role</dt>
               <dd>Frontend lead</dd>
               <dt>Timeline</dt>
@@ -245,9 +260,9 @@
         <section class="c-entry-grid">
           <h3>Clicademy</h3>
           <p>A platform for digital marketing students to understand and practice online analytics</p>
-          <details>
-            <summary>Fact sheet</summary>
-            <dl>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Fact sheet</summary>
+            <dl class="c-accordion__body">
               <dt>Role</dt>
               <dd>Co-founder, CTO</dd>
               <dt>Timeline</dt>
@@ -260,9 +275,9 @@
         <section class="c-entry-grid">
           <h3>Switchboard</h3>
           <p>A tool for Microsoft Dynamics 365 teammates to quickly access demon environments</p>
-          <details>
-            <summary>Design</summary>
-            <p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Design</summary>
+            <p class="c-accordion__body">
               Dynamics 365 is a B2B platform that creates apps on-demand for each business. This made it difficult for
               the designers to access the environment. The tool provides a one-click solution to allow instant access to
               demo environments. The project itself also embodies the progression of HCI paradigms. V1 was CLI that
@@ -270,17 +285,17 @@
               cloud service that provides what user needs just in time.
             </p>
           </details>
-          <details>
-            <summary>Engineering</summary>
-            <p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Engineering</summary>
+            <p class="c-accordion__body">
               The app repurposed browser automation testing tool to become a co-pilot of human users, allowing instant
               typing of sign-in credentials. This was create before RPA became cool. The tool also went through several
               replatforms, allowing me to experiment and pick up new frameworks along the journey.
             </p>
           </details>
-          <details>
-            <summary>Fact sheet</summary>
-            <dl>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Fact sheet</summary>
+            <dl class="c-accordion__body">
               <dt>Role</dt>
               <dd>Author</dd>
               <dt>Timeline</dt>
@@ -293,9 +308,9 @@
         <section class="c-entry-grid">
           <h3>Cursors</h3>
           <p>Podcast website for designers at Microsoft</p>
-          <details>
-            <summary>Fact sheet</summary>
-            <dl>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Fact sheet</summary>
+            <dl class="c-accordion__body">
               <dt>Role</dt>
               <dd>Engineering lead</dd>
               <dt>Timeline</dt>
@@ -310,9 +325,9 @@
           <p>
             A hackathon project that allows 3rd party developers to create UI components for the Dynamics 365 Platform
           </p>
-          <details>
-            <summary>Fact sheet</summary>
-            <dl>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Fact sheet</summary>
+            <dl class="c-accordion__body">
               <dt>Role</dt>
               <dd>Co-author</dd>
               <dt>Timeline</dt>
@@ -340,16 +355,16 @@
         <section class="c-entry-grid">
           <h3>Course inSight</h3>
           <p>A course catelog that uses NLP to help students discover courses beyond the department boundary.</p>
-          <details>
-            <summary>Engineering</summary>
-            <p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Engineering</summary>
+            <p class="c-accordion__body">
               Putting together my learning from Microsoft Internship, the Search Engine design from CS50, and my passion
               for ML and data visualization.
             </p>
           </details>
-          <details>
-            <summary>Fact sheet</summary>
-            <dl>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Fact sheet</summary>
+            <dl class="c-accordion__body">
               <dt>Role</dt>
               <dd>Author</dd>
               <dt>Timeline</dt>
@@ -366,9 +381,9 @@
         <section class="c-entry-grid">
           <h3>Perceptual computing</h3>
           <p>Game developed to encourage reading in a 3D environment.</p>
-          <details>
-            <summary>Fact sheet</summary>
-            <dl>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Fact sheet</summary>
+            <dl class="c-accordion__body">
               <dt>Role</dt>
               <dd>Engineering lead</dd>
               <dt>Timeline</dt>
@@ -387,17 +402,78 @@
           <p>Predict eye movement based on succade path</p>
         </section>
       </section>
+
       <section class="c-main-section c-main-grid__item c-section-grid">
-        <h2 id="shelf">Shelf</h2>
-        <ul>
-          <li>Vanishing</li>
-          <li>Second Life</li>
-          <li>Agasint Pixel-perfect</li>
-        </ul>
-        <div>My reading, classes, talks</div>
+        <h2 id="io" class="c-section-grid__item--fill">I/O</h2>
+        <p class="c-section-grid__item--fill">
+          I collect gems from other beautiful minds, and occasionally throw a few pebbles back into the pond, watching
+          its ripple grow.
+        </p>
+        <section>
+          <h3>Education</h3>
+          <p>
+            I'm forever grateful for my liberal arts education at Dartmouth College. In addition to all the courses you
+            would expect a C.S. major to have taken, I have also received introductory-level and yet rigorous training
+            in drawing, photography, film studies, audio-visual programming, and 3D animation. The most unforgettable
+            lecture? Having Alison Ouellette-Kirby and Noah Kirby teach us melting and pouring 2,220 °F liquid iron into
+            our hand-prepared clay molds! I graduated in 2015 with highest honors.
+          </p>
+        </section>
+        <section>
+          <h3>Influenced by</h3>
+          <ul>
+            <li>Bret Victor: for helping me find my principles</li>
+            <li>Brad Frost: for introducing me to design systems</li>
+            <li>Jeremy Keith: for long-term thinking</li>
+            <li>Elon Musk: for the grit</li>
+            <li>Seth Godin: for the practice</li>
+            <li>Eugen Herrigel: for untangling cause and effect</li>
+            <li>Robert M. Pirsig: for inquiry into Values</li>
+            <li>Ayn Rand: for the individualism</li>
+            <li>Karen Gocsik: for the power of words</li>
+            <li>Zash Denton: for inspiring to become a hacker</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Writings</h3>
+          <ul class="c-section-grid__item--fill">
+            <li>
+              <a href="https://uxdesign.cc/the-vanishing-designer-6d3d999f9540">The Vanishing Designer</a>
+            </li>
+            <li>
+              <a href="https://uxdesign.cc/a-case-against-pixel-perfect-design-ce00cd3eabc9"
+                >A case against “pixel perfect” design</a
+              >
+            </li>
+            <li>
+              <a href="https://uxdesign.cc/are-you-experiencing-the-kessler-syndrome-23bab3cdd446"
+                >Are you experiencing the Kessler Syndrome?</a
+              >
+            </li>
+            <li>
+              <a href="https://medium.com/@chuanqisun/post-occupancy-evaluation-466d86d0c136">Don't Be an Ostrich</a>
+            </li>
+            <li>
+              <a href="https://medium.com/@chuanqisun/functional-prototyping-e1bc243b0707">Functional Prototyping</a>
+            </li>
+            <li>
+              <a
+                href="https://medium.com/@chuanqisun/beyond-artboards-the-pursuit-of-lossless-design-development-handoffs-9abb698b7ee8"
+                >Beyond Artboards</a
+              >
+            </li>
+            <li>
+              <a href="">The Ride that was never told</a>
+            </li>
+            <li>
+              <a href="">Virtual Religion in Second life</a>
+            </li>
+            <li>Agasint Pixel-perfect</li>
+          </ul>
+        </section>
       </section>
-      <section class="c-main-section c-main-grid__item c-section-grid">
-        <h2 id="about">About</h2>
+      <section class="c-main-section c-main-grid__item">
+        <h2 id="etc">ETC</h2>
         <ul>
           <li>GitHub link</li>
           <li>LinkedIn</li>
