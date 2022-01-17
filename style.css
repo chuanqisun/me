@@ -7,13 +7,13 @@
   --monospace-font: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
     "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   --site-gutter: 40px;
+  --header-background: black;
   --terminal-background: #282828;
   --terminal-text: #ebdbb2;
   --terminal-text-light: #928374;
-  --body-text: #22201f;
-  --body-text-light: #68615e;
-  --body-divider: #bdb6b4;
-  --body-background: white;
+  --body-text: #ebdbb2;
+  --body-text-light: #a89984;
+  --body-background: #3c3836;
   --entry-padding-inline: 12px;
 }
 
@@ -62,6 +62,7 @@ a {
 }
 
 h2 {
+  color: var(--accent, inherit);
   line-height: 1.2;
   font-size: 32px;
   font-weight: bold;
@@ -94,6 +95,7 @@ output {
 
 .c-accordion__trigger:hover {
   font-weight: bold;
+  color: var(--accent);
 }
 
 .c-accordion__body {
@@ -107,8 +109,7 @@ output {
   display: grid;
   grid-gap: 8px;
   align-content: start;
-  border: 1px solid var(--body-divider);
-  border-radius: 4px;
+  background-color: var(--terminal-background);
   padding: var(--entry-padding-inline) 24px;
 }
 
@@ -155,12 +156,12 @@ output {
   padding-inline: 16px;
   height: 100%;
   display: flex;
+  color: var(--accent, inherit);
   font-family: var(--monospace-font);
   align-items: center;
 }
 .c-nav-link:hover {
-  background-color: var(--terminal-background);
-  color: var(--terminal-text);
+  background-color: var(--body-background);
 }
 
 .c-pronounced {
@@ -203,8 +204,7 @@ output {
 .c-site-nav {
   height: 100%;
   font-weight: bold;
-  background-color: white;
-  border-bottom: 2px solid var(--terminal-background);
+  background-color: var(--header-background);
   display: flex;
   flex-wrap: wrap;
   padding-inline: var(--site-gutter);
@@ -216,11 +216,10 @@ output {
   gap: 4px;
 }
 .c-tech-list > * {
-  border: 1px solid #aaa;
+  border: 1px solid var(--body-text-light);
   padding-inline: 12px;
   padding-block: 2px;
   padding-inline: 8px;
-  border-radius: 4px;
 }
 
 .c-terminal {
@@ -240,3 +239,23 @@ output {
 /************
  * 04 UTILS *
  ************/
+
+.u-palette-aqua {
+  --accent: #8ec07c;
+  /* --accent-light: #689d6a; */
+}
+
+.u-palette-purple {
+  --accent: #d3869b;
+  /* --accent-light: #689d6a; */
+}
+
+.u-palette-yellow {
+  --accent: #fabd2f;
+  /* --accent-light: #d79921; */
+}
+
+.u-palette-orange {
+  --accent: #fe8019;
+  /* --accent-light: #98971a; */
+}
