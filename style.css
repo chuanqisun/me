@@ -6,15 +6,27 @@
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   --monospace-font: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
     "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-  --site-gutter: 40px;
+  --site-gutter: 24px;
   --header-background: black;
   --terminal-background: #282828;
   --terminal-text: #ebdbb2;
   --terminal-text-light: #928374;
   --body-text: #ebdbb2;
-  --body-text-light: #a89984;
+  --body-text-light: #bdae93;
   --body-background: #3c3836;
   --entry-padding-inline: 12px;
+}
+
+@media screen and (min-width: 40rem) {
+  :root {
+    --site-gutter: 40px;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  :root {
+    --site-gutter: 120px;
+  }
 }
 
 /************
@@ -64,7 +76,7 @@ a {
 }
 
 h2 {
-  color: var(--accent, inherit);
+  color: var(--h2-color);
   line-height: 1.2;
   font-size: 32px;
   font-weight: bold;
@@ -97,7 +109,7 @@ output {
 
 .c-accordion__trigger:hover {
   font-weight: bold;
-  color: var(--accent);
+  color: var(--accordion-text);
 }
 
 .c-accordion__body {
@@ -106,28 +118,25 @@ output {
   display: grid;
   gap: 8px;
 }
+.c-entry-section {
+  color: var(--entry-section-text);
+  background-color: var(--entry-section-background);
+  border: 2px solid var(--entry-section-border);
+  border-radius: 8px;
+}
 
 .c-entry-grid {
   display: grid;
-  grid-gap: 8px;
+  gap: 8px;
   align-content: start;
-  background-color: var(--terminal-background);
   padding: var(--entry-padding-inline) 24px;
 }
 
-.c-main-grid {
-  display: grid;
-  grid-template-columns: var(--site-gutter) 1fr var(--site-gutter);
-  row-gap: 64px;
+.c-main-section {
+  padding: 64px var(--site-gutter);
+  background-color: var(--main-section-background);
+  color: var(--main-section-text);
 }
-.c-main-grid > * {
-  grid-column: 2 / span 1;
-}
-
-.c-main-grid__item--fill {
-  grid-column: 1 / -1;
-}
-
 .c-meta-list {
   color: var(--body-text-light);
   display: flex;
@@ -158,7 +167,7 @@ output {
   padding-inline: 16px;
   height: 100%;
   display: flex;
-  color: var(--accent, inherit);
+  color: var(--nav-link-text, inherit);
   font-family: var(--monospace-font);
   align-items: center;
 }
@@ -173,7 +182,7 @@ output {
 .c-section-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 24px;
+  grid-gap: 32px;
 }
 
 .c-section-grid__item--fill {
@@ -184,17 +193,11 @@ output {
   .c-section-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .c-section-grid__item--double {
-    grid-column: span 2;
-  }
 }
 
 @media screen and (min-width: 90rem) {
-  .c-section-grid {
+  .c-section-grid--third {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  .c-section-grid__item--double {
-    grid-column: span 1;
   }
 }
 
@@ -215,10 +218,11 @@ output {
 .c-tech-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 8px;
 }
 .c-tech-list > * {
   border: 1px solid var(--body-text-light);
+  border-radius: 4px;
   padding-inline: 12px;
   padding-block: 2px;
   padding-inline: 8px;
@@ -243,17 +247,48 @@ output {
  ************/
 
 .u-palette-aqua {
-  --accent: #8ec07c;
+  --accent: #83a598;
+  --main-section-text: black;
+  --main-section-background: var(--accent);
+  --nav-link-text: var(--accent);
 }
 
 .u-palette-purple {
   --accent: #d3869b;
+  --accordion-text: var(--accent);
+  --entry-section-background: var(--body-background);
+  --entry-section-border: var(--body-background);
+  --entry-section-text: var(--terminal-text);
+  --h2-color: var(--accent);
+  --main-section-background: var(--terminal-background);
+  --nav-link-text: var(--accent);
+  --dot-color: var(--accent);
+  --dot-background: var(--terminal-background);
 }
 
 .u-palette-yellow {
   --accent: #fabd2f;
+  --accordion-text: var(--accent);
+  --entry-section-background: var(--body-background);
+  --entry-section-border: var(--body-background);
+  --entry-section-text: var(--terminal-text);
+  --main-section-background: var(--accent);
+  --main-section-text: black;
+  --nav-link-text: var(--accent);
 }
 
 .u-palette-orange {
   --accent: #fe8019;
+  --h2-color: #fe8019;
+  --nav-link-text: var(--accent);
+}
+
+.u-dot-background {
+  /* background: linear-gradient(90deg, var(--dot-background) 21 px, transparent 1%) center,
+    linear-gradient(var(--dot-background) 21 px, transparent 1%) center, var(--dot-color); */
+
+  background: linear-gradient(90deg, var(--terminal-background) 15px, transparent 1%) center,
+    linear-gradient(var(--terminal-background), 15px, transparent 1%) center, var(--dot-color);
+
+  background-size: 16px 16px;
 }
