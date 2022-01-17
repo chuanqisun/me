@@ -2,10 +2,10 @@
  * 00 VAR *
  **********/
 :root {
-  --propotional-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  --monospace-font: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
-    "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --propotional-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  --monospace-font: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   --site-gutter: 24px;
   --header-background: black;
   --terminal-background: #282828;
@@ -15,6 +15,7 @@
   --body-text-light: #bdae93;
   --body-background: #3c3836;
   --entry-padding-inline: 12px;
+  --site-header-height: 60px;
 }
 
 @media screen and (min-width: 40rem) {
@@ -118,6 +119,13 @@ output {
   display: grid;
   gap: 8px;
 }
+
+.c-copyright {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .c-entry-section {
   color: var(--entry-section-text);
   background-color: var(--entry-section-background);
@@ -132,16 +140,64 @@ output {
   padding: var(--entry-padding-inline) 24px;
 }
 
+.c-footer-link {
+  font-size: 20px;
+}
+.c-footer-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.c-influence-item {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+.c-influence-item > a {
+  width: 10rem;
+}
+
+.c-inline-link {
+  text-decoration: underline;
+}
+.c-inline-link:hover {
+  color: var(--accent);
+}
+
 .c-inline-list {
   padding-left: 24px;
   list-style: revert;
+}
+
+.c-io-section {
+  display: grid;
+  gap: 16px;
+}
+
+.c-io-link {
+  font-size: 20px;
+}
+.c-io-link--inline {
+  font-size: inherit;
+  text-decoration: underline;
+}
+
+.c-io-link:hover {
+  text-decoration: underline;
 }
 
 .c-main-section {
   padding: 64px var(--site-gutter);
   background-color: var(--main-section-background);
   color: var(--main-section-text);
+  min-height: calc(100vh - var(--site-header-height));
 }
+
+.c-meta-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .c-meta-list {
   color: var(--body-text-light);
   display: flex;
@@ -183,8 +239,12 @@ output {
 .c-pronounced {
   text-decoration: underline;
 }
+.c-pronounced:hover {
+  color: #fabd2f;
+}
 
 .c-section-grid {
+  align-content: start;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 32px;
@@ -209,7 +269,7 @@ output {
 .c-site-header {
   position: sticky;
   top: 0;
-  height: 60px;
+  height: var(--site-header-height);
 }
 .c-site-nav {
   height: 100%;
@@ -245,6 +305,14 @@ output {
 
 .c-terminal__prompt {
   color: var(--terminal-text-light);
+}
+
+.c-title-link {
+  color: var(--accent);
+}
+
+.c-title-link:hover {
+  text-decoration: underline;
 }
 
 /************
