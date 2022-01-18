@@ -70,6 +70,10 @@ summary {
   box-sizing: border-box;
 }
 
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /**************
  * 02 ELEMENT *
  **************/
