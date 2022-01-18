@@ -139,7 +139,7 @@ output {
   color: var(--entry-section-text);
   background-color: var(--entry-section-background);
   border: 2px solid var(--entry-section-border);
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 .c-entry-grid {
