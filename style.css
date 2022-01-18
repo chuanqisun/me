@@ -16,7 +16,7 @@
   --body-background: #3c3836;
   --entry-padding-inline: 12px;
   --site-header-height: 60px;
-  --nav-link-padding-inline: 4px;
+  --nav-link-padding-inline: 8px;
 }
 
 @media screen and (min-width: 25rem) {
