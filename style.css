@@ -159,11 +159,20 @@ output {
 
 .c-influence-item {
   display: flex;
-  gap: 16px;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 .c-influence-item > a {
-  width: 10rem;
+  width: 100%;
+}
+.c-influence-item > span {
+  margin-left: 1rem;
+}
+@media screen and (min-width: 25rem) {
+  .c-influence-item > a {
+    gap: 16px;
+    width: 10rem;
+  }
 }
 
 .c-inline-link {
@@ -184,7 +193,10 @@ output {
 }
 
 .c-io-link {
+  display: inline-block;
   font-size: 20px;
+  line-height: 1.2;
+  padding-block: 4px;
 }
 .c-io-link--inline {
   font-size: inherit;
