@@ -6,7 +6,7 @@
     "Helvetica Neue", Arial, sans-serif;
   --monospace-font: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-  --site-gutter: 24px;
+  --site-gutter: 20px;
   --header-background: black;
   --terminal-background: #282828;
   --terminal-text: #ebdbb2;
@@ -16,11 +16,20 @@
   --body-background: #3c3836;
   --entry-padding-inline: 12px;
   --site-header-height: 60px;
+  --nav-link-padding-inline: 4px;
+}
+
+@media screen and (min-width: 25rem) {
+  :root {
+    --nav-link-padding-inline: 12px;
+    --site-gutter: 24px;
+  }
 }
 
 @media screen and (min-width: 40rem) {
   :root {
     --site-gutter: 40px;
+    --nav-link-padding-inline: 16px;
   }
 }
 
@@ -224,14 +233,20 @@ output {
 }
 
 .c-nav-link {
-  font-size: 24px;
-  padding-inline: 16px;
+  font-size: 20px;
+  padding-inline: var(--nav-link-padding-inline);
   height: 100%;
   display: flex;
   color: var(--nav-link-text, inherit);
   font-family: var(--monospace-font);
   align-items: center;
 }
+@media screen and (min-width: 40rem) {
+  .c-nav-link {
+    font-size: 24px;
+  }
+}
+
 .c-nav-link:hover {
   background-color: var(--body-background);
 }
@@ -281,7 +296,7 @@ output {
   background-color: var(--header-background);
   display: flex;
   flex-wrap: wrap;
-  padding-inline: var(--site-gutter);
+  padding-inline: calc(var(--site-gutter) - var(--nav-link-padding-inline));
 }
 
 .c-tech-list {
@@ -302,9 +317,15 @@ output {
   padding-block: 48px;
   display: block;
   color: var(--terminal-text);
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   background-color: var(--terminal-background);
+}
+
+@media screen and (min-width: 40rem) {
+  .c-terminal {
+    font-size: 32px;
+  }
 }
 
 .c-terminal__prompt {
