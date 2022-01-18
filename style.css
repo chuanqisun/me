@@ -408,4 +408,5 @@ output {
     linear-gradient(var(--terminal-background), 15px, transparent 1%) center, var(--dot-color);
 
   background-size: 16px 16px;
+  background-position: top; /* prevent shifting when content grows */
 }
