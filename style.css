@@ -262,6 +262,12 @@ output {
   scroll-margin-block-start: var(--site-header-height);
 }
 
+.c-section-art {
+  /* color: var(--section-art-stroke, var(--main-section-text)); */
+  /* justify-self: center; */
+  margin-left: 4px;
+}
+
 .c-section-grid {
   align-content: start;
   display: grid;
@@ -382,9 +388,6 @@ output {
 }
 
 .u-dot-background {
-  /* background: linear-gradient(90deg, var(--dot-background) 21 px, transparent 1%) center,
-    linear-gradient(var(--dot-background) 21 px, transparent 1%) center, var(--dot-color); */
-
   background: linear-gradient(90deg, var(--terminal-background) 15px, transparent 1%) center,
     linear-gradient(var(--terminal-background), 15px, transparent 1%) center, var(--dot-color);
 
