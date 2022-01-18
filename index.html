@@ -302,12 +302,15 @@
                 <p>
                   This project is my HCI treasure trove. It was challenging to identify the most intuitive direct manipulation model. Based on experiments and
                   user feedback, I built dozens of prototypes with different sensitivity curves and activation thresholds, and evaluated their effectiveness on
-                  realistic tasks. The final solution respects the individual preference for manipulation target (canvas vs. camera) and offers customization
+                  realistic tasks. The final solution respects each individual's preference for manipulation target (canvas vs. camera) and offers customization
                   for the power user.
                 </p>
                 <p>
-                  The technical design prioritizes performance. The app was written with no dependency to reduce CPU and memory load. A "game loop" was
-                  implemented from scratch to achieve the bare-metal speed. Smooth interaction was achieved with the requestAnimationFrame API.
+                  Performance is at the center of this driver. The app was written with no dependency to reduce CPU and memory load. A "game loop" was
+                  implemented from scratch to achieve the bare-metal speed. Smooth interaction was ensured with the
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame" target="_blank" class="c-inline-link"
+                    >requestAnimationFrame API</a
+                  >.
                 </p>
                 <ul class="c-tech-list">
                   <li>HTML</li>
@@ -335,8 +338,8 @@
               <div class="c-accordion__body">
                 <p>
                   The project is constrained by engineering resource and requires high standards on accessibility. I emphasized on reducing complexity of the
-                  tech stack so volunteers from diverse backgrounds can feel at ease when contributing. I promoted plain CSS over CSS-in-JS, semantic HTML with
-                  BEM over off-the-shelf UI toolkits so the app will be accessible and will remain accessible despite the ever-changing landscape of frontend
+                  tech stack so volunteers from diverse backgrounds can feel comfortable when contributing. I promoted plain CSS over CSS-in-JS, semantic HTML
+                  with BEM over third party UI toolkits so the app will be, and will remain, accessible despite the ever-changing landscape of frontend
                   frameworks. To facilitate asynchronous collaboration, I improvised a preview system based on GitHub actions so each PR has an immutable URL
                   for sharing.
                 </p>
@@ -365,13 +368,13 @@
             <summary class="c-accordion__trigger">Details</summary>
             <div class="c-accordion__body">
               <p>
-                It's difficult to become a market analyst without real data. It's difficult to get real data without becoming a market analyst. The product
-                solves the problem by creating a self-sustained sandbox that allows user to generate data while learning analytics.
+                It's difficult to become a market analyst without real data. It's difficult to get real data without becoming a market analyst. Clicademy solves
+                this chicken-and-egg problem by creating a self-sustained ecosystem that allows user to generate data while learning analytics.
               </p>
               <p>
                 I produced branding assets and lead frontend engineering for this project. The constraints posed by the WordPress platform required careful
-                tradeoff between cost of maintenance and brand expression. My rapid prototyping helped the product owner validate the market against real
-                customers by.
+                tradeoff between cost of maintenance and brand expression. My rapid prototyping process allowed us to validate the solution against real
+                customers on very step we took.
               </p>
               <ul class="c-tech-list">
                 <li>WordPress</li>
@@ -392,7 +395,7 @@
             <div class="c-accordion__body">
               <p>
                 A spin-off project from the HITS product. I enjoyed the challenge in the nitty-gritty of compiler design. The project allowed me to practice
-                test-driven development and architect the system with Object-oriented design. It was rewarding to see multiple layers of abstraction working in
+                test-driven development and architect the system with Object-Oriented design. It was rewarding to see multiple layers of abstraction working in
                 unison to serialize the syntax tree into the correct expression. The library currently powers the search experience in the HITS product.
               </p>
               <ul class="c-tech-list">
