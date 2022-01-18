@@ -243,6 +243,10 @@ output {
   color: #fabd2f;
 }
 
+.c-scroll-anchor {
+  scroll-margin-block-start: var(--site-header-height);
+}
+
 .c-section-grid {
   align-content: start;
   display: grid;
