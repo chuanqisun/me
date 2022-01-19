@@ -23,16 +23,16 @@
           <li class="c-nav-list__item">
             <a class="c-nav-link" href="#main"><h1>~$</h1></a>
           </li>
-          <li class="c-nav-list__item u-palette-yellow">
+          <li class="c-nav-list__item c-nav-list__item--work">
             <a class="c-nav-link" href="#work">WORK</a>
           </li>
-          <li class="c-nav-list__item u-palette-purple">
+          <li class="c-nav-list__item c-nav-list__item--projects">
             <a class="c-nav-link" href="#projects">PROJ</a>
           </li>
-          <li class="c-nav-list__item u-palette-aqua">
+          <li class="c-nav-list__item c-nav-list__item--io">
             <a class="c-nav-link" href="#io">I/O</a>
           </li>
-          <li class="c-nav-list__item u-palette-orange">
+          <li class="c-nav-list__item c-nav-list__item--etc">
             <a class="c-nav-link" href="#etc">ETC</a>
           </li>
         </ul>
@@ -54,7 +54,7 @@
         WORK SECTION
       ---------------------->
 
-      <section id="work" class="c-scroll-anchor c-main-section c-section-grid u-palette-yellow">
+      <section id="work" class="c-scroll-anchor c-main-section c-section-grid c-main-section--work">
         <h2 class="c-section-grid__item--fill">WORK</h2>
 
         <svg class="c-section-art c-section-grid__item--fill" width="64" height="58" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,170 +69,172 @@
           balance. Currently, I lead UX design and frontend development at Microsoft.
         </p>
 
-        <section class="c-entry-grid c-entry-section c-section-grid__item--fill">
-          <h3>HITS</h3>
-          <p>Microsoft’s knowledge base for product decision makers.</p>
-          <div>
-            <details class="c-accordion" open>
-              <summary class="c-accordion__trigger">Details</summary>
-              <div class="c-accordion__body">
-                <p>
-                  HITS is a two-sided network for creators and consumers. I draw inspiration from behavioral economics to design mechanisms that bootstrap the
-                  ecosystem. The project also honed my skills on creating and maintaining an enterprise-scale design system that balances internal vs. external
-                  consistencies and reconciles historical conventions vs. newly formed interaction patterns.
-                </p>
-                <p>
-                  HITS taught me invaluable lessons in working with legacy systems: how to prevent the dev team from drowning in technical debt and how to
-                  re-platform without disrupting the business. Thanks to the project, I implemented a query expression builder from scratch using abstract
-                  syntax tree, and hacked Stroybook for rendering emails.
-                </p>
-                <a
-                  class="c-inline-link"
-                  target="_blank"
-                  href="https://www.microsoft.com/en-us/research/group/customer-insights-research/articles/how-microsofts-human-insights-library-creates-a-living-body-of-knowledge/"
-                  >Read the story about HITS</a
-                >
-                <ul class="c-tech-list">
-                  <li>Docker</li>
-                  <li>GraphQL</li>
-                  <li>JAMStack</li>
-                  <li>Knockout</li>
-                  <li>React</li>
-                  <li>Serverless</li>
-                  <li>TypeScript</li>
-                  <li>.NET</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-          <ul class="c-meta-list">
-            <li>Design lead</li>
-            <li>Frontend lead</li>
-            <li>2020+</li>
-          </ul>
-        </section>
+        <div class="c-section-grid__item--fill c-work-grid c-section-grid c-section-grid--no-gap">
+          <section class="c-entry-grid c-entry--work c-section-grid__item--fill">
+            <h3 class="c-h3--hero">HITS</h3>
+            <p>Microsoft’s knowledge base for product decision makers.</p>
+            <div>
+              <details class="c-accordion" open>
+                <summary class="c-accordion__trigger">Details</summary>
+                <div class="c-accordion__body">
+                  <p>
+                    HITS is a two-sided network for creators and consumers. I draw inspiration from behavioral economics to design mechanisms that bootstrap the
+                    ecosystem. The project also honed my skills on creating and maintaining an enterprise-scale design system that balances internal vs.
+                    external consistencies and reconciles historical conventions vs. newly formed interaction patterns.
+                  </p>
+                  <p>
+                    HITS taught me invaluable lessons in working with legacy systems: how to prevent the dev team from drowning in technical debt and how to
+                    re-platform without disrupting the business. Thanks to the project, I implemented a query expression builder from scratch using abstract
+                    syntax tree, and hacked Stroybook for rendering emails.
+                  </p>
+                  <a
+                    class="c-inline-link"
+                    target="_blank"
+                    href="https://www.microsoft.com/en-us/research/group/customer-insights-research/articles/how-microsofts-human-insights-library-creates-a-living-body-of-knowledge/"
+                    >Read the story about HITS</a
+                  >
+                  <ul class="c-tech-list">
+                    <li>Docker</li>
+                    <li>GraphQL</li>
+                    <li>JAMStack</li>
+                    <li>Knockout</li>
+                    <li>React</li>
+                    <li>Serverless</li>
+                    <li>TypeScript</li>
+                    <li>.NET</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <ul class="c-meta-list">
+              <li>Design lead</li>
+              <li>Frontend lead</li>
+              <li>2020+</li>
+            </ul>
+          </section>
 
-        <section class="c-entry-grid c-entry-section">
-          <h3>Dynamics 365</h3>
-          <p>Microsoft’s business application platform.</p>
-          <div>
-            <details class="c-accordion">
-              <summary class="c-accordion__trigger">Details</summary>
-              <div class="c-accordion__body">
-                <p>
-                  Dynamics 365 introduced me to system thinking. Every problem must be solved at the interconnect between the platform team, internal solution
-                  teams, partner solution teams, business organization, and business’ customers. I learned valuable lessons in balancing the interests from all
-                  of the stakeholders above and designing systems that outlasts the change of people and processes.
-                </p>
-                <p>
-                  I used in-browser rapid prototying to communicate and inform design decisions. I co-authored three design systems that empowered an entire
-                  team of frontend engineers. I pioneered an algorithmic color contrasting system and invented an iframe based technique for documenting React
-                  components.
-                </p>
-                <ul class="c-tech-list">
-                  <li>Angular</li>
-                  <li>React</li>
-                  <li>RxJS</li>
-                  <li>TypeScript</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-          <ul class="c-meta-list">
-            <li>Designer</li>
-            <li>Prototyper</li>
-            <li>Frontend engineer</li>
-            <li>2017-2020</li>
-          </ul>
-        </section>
+          <section class="c-entry-grid c-entry--work">
+            <h3>Dynamics 365</h3>
+            <p>Microsoft’s business application platform.</p>
+            <div>
+              <details class="c-accordion">
+                <summary class="c-accordion__trigger">Details</summary>
+                <div class="c-accordion__body">
+                  <p>
+                    Dynamics 365 introduced me to system thinking. Every problem must be solved at the interconnect between the platform team, internal solution
+                    teams, partner solution teams, business organization, and business’ customers. I learned valuable lessons in balancing the interests from
+                    all of the stakeholders above and designing systems that outlasts the change of people and processes.
+                  </p>
+                  <p>
+                    I used in-browser rapid prototying to communicate and inform design decisions. I co-authored three design systems that empowered an entire
+                    team of frontend engineers. I pioneered an algorithmic color contrasting system and invented an iframe based technique for documenting React
+                    components.
+                  </p>
+                  <ul class="c-tech-list">
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>RxJS</li>
+                    <li>TypeScript</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <ul class="c-meta-list">
+              <li>Designer</li>
+              <li>Prototyper</li>
+              <li>Frontend engineer</li>
+              <li>2017-2020</li>
+            </ul>
+          </section>
 
-        <section class="c-entry-grid c-entry-section">
-          <h3>Power BI</h3>
-          <p>Microsoft’s Business intelligence solution.</p>
-          <div>
-            <details class="c-accordion">
-              <summary class="c-accordion__trigger">Details</summary>
-              <div class="c-accordion__body">
-                <p>
-                  I was not on the Power BI design team, but through collaboration and mentorship I was introduced to data visualization and info graphics
-                  design. I devoured the classic designer books from Edward Tufte, Don Normon, Steve Krug, and Alan Cooprer, and took online courses on
-                  typography, color theory, information architecture, and interaction design. This period of learning paved the foundation for my later work as
-                  a designer.
-                </p>
-                <p>
-                  I learned my first lessons in MV* framework. Many great developers selflessly coached me on design patterns, unit and e2e testing, and the
-                  cryptic art of debug CSS when IE support was still a must. I picked up D3.js as my go-to tool for data visualization and pushed the adoption
-                  for design systems before <a class="c-inline-link" href="https://bradfrost.com/" target="_blank">Brad Frost</a> popularized the practice.
-                </p>
-                <ul class="c-tech-list">
-                  <li>.NET</li>
-                  <li>AngularJS</li>
-                  <li>D3.js</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-          <ul class="c-meta-list">
-            <li>Full-stack engineer</li>
-            <li>2014-2017</li>
-          </ul>
-        </section>
+          <section class="c-entry-grid c-entry--work">
+            <h3>Power BI</h3>
+            <p>Microsoft’s Business intelligence solution.</p>
+            <div>
+              <details class="c-accordion">
+                <summary class="c-accordion__trigger">Details</summary>
+                <div class="c-accordion__body">
+                  <p>
+                    I was not on the Power BI design team, but through collaboration and mentorship I was introduced to data visualization and info graphics
+                    design. I devoured the classic designer books from Edward Tufte, Don Normon, Steve Krug, and Alan Cooprer, and took online courses on
+                    typography, color theory, information architecture, and interaction design. This period of learning paved the foundation for my later work
+                    as a designer.
+                  </p>
+                  <p>
+                    I learned my first lessons in MV* framework. Many great developers selflessly coached me on design patterns, unit and e2e testing, and the
+                    cryptic art of debug CSS when IE support was still a must. I picked up D3.js as my go-to tool for data visualization and pushed the adoption
+                    for design systems before <a class="c-inline-link" href="https://bradfrost.com/" target="_blank">Brad Frost</a> popularized the practice.
+                  </p>
+                  <ul class="c-tech-list">
+                    <li>.NET</li>
+                    <li>AngularJS</li>
+                    <li>D3.js</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <ul class="c-meta-list">
+              <li>Full-stack engineer</li>
+              <li>2014-2017</li>
+            </ul>
+          </section>
 
-        <section class="c-entry-grid c-entry-section">
-          <h3>Commvault</h3>
-          <p>Enable file backup and restore in macOS Finder.</p>
-          <div>
-            <details class="c-accordion">
-              <summary class="c-accordion__trigger">Details</summary>
-              <div class="c-accordion__body">
-                <p>
-                  Commvault is an enterprise-facing data storage service. My internship project aims allow file-related operations directly from the OS native
-                  menus, similar to what Dropbox offers. Since macOS is known to be strictly locked down, I had to come up with creative ways to “hack” up a
-                  solution.
-                </p>
-                <ul class="c-tech-list">
-                  <li>Objective C</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-          <ul class="c-meta-list">
-            <li>Intern engineer</li>
-            <li>2014</li>
-          </ul>
-        </section>
+          <section class="c-entry-grid c-entry--work">
+            <h3>Commvault</h3>
+            <p>Enable file backup and restore in macOS Finder.</p>
+            <div>
+              <details class="c-accordion">
+                <summary class="c-accordion__trigger">Details</summary>
+                <div class="c-accordion__body">
+                  <p>
+                    Commvault is an enterprise-facing data storage service. My internship project aims allow file-related operations directly from the OS native
+                    menus, similar to what Dropbox offers. Since macOS is known to be strictly locked down, I had to come up with creative ways to “hack” up a
+                    solution.
+                  </p>
+                  <ul class="c-tech-list">
+                    <li>Objective C</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <ul class="c-meta-list">
+              <li>Intern engineer</li>
+              <li>2014</li>
+            </ul>
+          </section>
 
-        <section class="c-entry-grid c-entry-section">
-          <h3>Lenovo</h3>
-          <p>Stress testing the original ThinkPad X1.</p>
-          <div>
-            <details class="c-accordion">
-              <summary class="c-accordion__trigger">Details</summary>
-              <div class="c-accordion__body">
-                <p>
-                  As a huge fan of the ThinkPad product line, I joined Lenovo when it was preparing to integrate its latest ThinkPad with the upcoming Windows
-                  8. I learned about UEFI, SMBus, and Windows Management Instrumentation. I stress tested the BIOS module and learned about the error margin the
-                  hardware must operate on.
-                </p>
-                <ul class="c-tech-list">
-                  <li>C Language</li>
-                  <li>Windows 8 ADK</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-          <ul class="c-meta-list">
-            <li>Intern engineer</li>
-            <li>2013</li>
-          </ul>
-        </section>
+          <section class="c-entry-grid c-entry--work">
+            <h3>Lenovo</h3>
+            <p>Stress testing the original ThinkPad X1.</p>
+            <div>
+              <details class="c-accordion">
+                <summary class="c-accordion__trigger">Details</summary>
+                <div class="c-accordion__body">
+                  <p>
+                    As a huge fan of the ThinkPad product line, I joined Lenovo when it was preparing to integrate its latest ThinkPad with the upcoming Windows
+                    8. I learned about UEFI, SMBus, and Windows Management Instrumentation. I stress tested the BIOS module and learned about the error margin
+                    the hardware must operate on.
+                  </p>
+                  <ul class="c-tech-list">
+                    <li>C Language</li>
+                    <li>Windows 8 ADK</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <ul class="c-meta-list">
+              <li>Intern engineer</li>
+              <li>2013</li>
+            </ul>
+          </section>
+        </div>
       </section>
 
       <!-------------------- 
         PROJECTS SECTION
       ---------------------->
 
-      <section id="projects" class="c-scroll-anchor c-main-section c-section-grid c-section-grid--third u-palette-purple u-dot-background">
+      <section id="projects" class="c-scroll-anchor c-main-section c-main-section--projects c-section-grid c-section-grid--third">
         <h2 class="c-section-grid__item--fill">PROJECTS</h2>
 
         <svg
@@ -254,7 +256,7 @@
           delightful. For these projects I would happily trade in my sleep.
         </p>
         <section class="c-entry-grid c-entry-section c-section-grid__item--fill">
-          <h3><a class="c-title-link" target="_blank" href="https://osmoscraft.org">osmoscraft</a></h3>
+          <h3><a class="c-title-link c-h3--hero" target="_blank" href="https://osmoscraft.org">osmos::craft</a></h3>
           <p>Push people to discover, ingest, organize, connect, generate, and share knowledge.</p>
           <div>
             <details class="c-accordion" open>
@@ -838,7 +840,7 @@
         IO SECTION
       ---------------------->
 
-      <section id="io" class="c-scroll-anchor c-main-section c-section-grid u-palette-aqua">
+      <section id="io" class="c-scroll-anchor c-main-section c-main-section--io c-section-grid">
         <h2 class="c-section-grid__item--fill">I/O</h2>
 
         <svg class="c-section-art c-section-grid__item--fill" width="64" height="64" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -930,7 +932,7 @@
         ETC SECTION
       ---------------------->
 
-      <footer id="etc" class="c-scroll-anchor c-main-section u-palette-orange c-section-grid">
+      <footer id="etc" class="c-scroll-anchor c-main-section c-main-section--etc c-section-grid">
         <h2 class="c-section-grid__item--fill">ETC</h2>
 
         <svg
