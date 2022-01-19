@@ -409,7 +409,7 @@ summary {
 
 .c-terminal {
   padding-inline: var(--site-gutter);
-  padding-block: 120px;
+  padding-block: 80px;
   color: var(--terminal-text);
   font-family: var(--monospace-font);
   font-size: 24px;
@@ -418,7 +418,7 @@ summary {
   min-height: calc(100vh - var(--site-header-height));
 
   display: grid;
-  align-content: center;
+  align-content: start;
   grid-template-columns: auto 1fr;
   column-gap: 1ch;
   position: relative;
