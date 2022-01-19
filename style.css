@@ -84,10 +84,16 @@ summary {
  **************/
 body {
   font-family: var(--proportional-font);
-  font-size: 18px;
+  font-size: 16px;
   color: var(--body-text);
   background-color: var(--body-background);
   line-height: 1.4;
+}
+
+@media screen and (min-width: 25rem) {
+  body {
+    font-size: 18px;
+  }
 }
 
 a {
@@ -343,13 +349,6 @@ output {
   --nav-link-text: var(--orange);
 }
 
-.c-pronounced {
-  text-decoration: underline;
-}
-.c-pronounced:hover {
-  color: var(--yellow);
-}
-
 .c-scroll-anchor {
   scroll-margin-block-start: var(--site-header-height);
 }
@@ -391,6 +390,7 @@ output {
   position: sticky;
   top: 0;
   height: var(--site-header-height);
+  z-index: 100;
 }
 .c-site-nav {
   height: 100%;
@@ -416,12 +416,37 @@ output {
 
 .c-terminal {
   padding-inline: var(--site-gutter);
-  padding-block: 48px;
-  display: block;
+  padding-block: 120px;
   color: var(--terminal-text);
+  font-family: var(--monospace-font);
   font-size: 24px;
   font-weight: bold;
   background-color: var(--terminal-background);
+  min-height: calc(100vh - var(--site-header-height));
+
+  display: grid;
+  align-content: center;
+  grid-template-columns: auto 1fr;
+  column-gap: 1ch;
+  position: relative;
+}
+
+.c-terminal__link {
+  text-decoration: underline;
+}
+.c-terminal__link:hover {
+  color: var(--yellow);
+}
+.c-terminal__link--ghost {
+  color: var(--terminal-text-light);
+  text-decoration: none;
+}
+.c-terminal__scroll-prompt {
+  font-size: 12px;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .c-work-grid {
@@ -433,6 +458,27 @@ output {
 
 @media screen and (min-width: 40rem) {
   .c-terminal {
+    font-size: 32px;
+  }
+  .c-terminal__scroll-prompt {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .c-terminal {
+    font-size: 48px;
+  }
+  .c-terminal__scroll-prompt {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .c-terminal {
+    font-size: 64px;
+  }
+  .c-terminal__scroll-prompt {
     font-size: 32px;
   }
 }

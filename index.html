@@ -21,7 +21,7 @@
       <nav class="c-site-nav">
         <ul class="c-nav-list">
           <li class="c-nav-list__item">
-            <a class="c-nav-link" href="#main"><h1>~$</h1></a>
+            <a class="c-nav-link" href="#main">~$</a>
           </li>
           <li class="c-nav-list__item c-nav-list__item--work">
             <a class="c-nav-link" href="#work">WORK</a>
@@ -38,17 +38,19 @@
         </ul>
       </nav>
     </header>
-    <main id="main" class="c-scroll-anchor">
+    <main>
       <!-------------------- 
         TERMINAL EMULATOR
       ---------------------->
 
-      <output class="c-terminal">
-        <span class="c-terminal__prompt">&gt;</span> Hello world!<br />
-        <span class="c-terminal__prompt">&gt;</span> My name is
-        <a class="c-pronounced" href="pronunciation/chuanqi.mp3" target="_blank" title="Click to pronounce">Chuánqí</a>.<br />
-        <span class="c-terminal__prompt">&gt;</span> I create tools for the curious mind.
-      </output>
+      <section id="main" class="c-scroll-anchor c-terminal">
+        <span class="c-terminal__prompt">&gt;</span>
+        <h1>Hello world!</h1>
+        <span class="c-terminal__prompt">&gt;</span
+        ><span>My name is <a class="c-terminal__link" href="pronunciation/chuanqi.mp3" title="Click to pronounce Chuánqí">Chuánqí</a>.</span>
+        <span class="c-terminal__prompt">&gt;</span><span>I create <a class="c-terminal__link" href="#projects">tools</a> for the curious mind.</span>
+        <div class="c-terminal__scroll-prompt"><a class="c-terminal__link c-terminal__link--ghost" href="#work">↓ SCROLL ↓</a></div>
+      </section>
 
       <!-------------------- 
         WORK SECTION
@@ -68,6 +70,8 @@
           the product team towards the Goldilocks zone of collaboration, where the needs and constraints from business, users, and technology are in perfect
           balance. Currently, I lead UX design and frontend development at Microsoft.
         </p>
+
+        <div class="spacer"></div>
 
         <div class="c-section-grid__item--fill c-work-grid c-section-grid c-section-grid--no-gap">
           <section class="c-entry-grid c-entry--work c-section-grid__item--fill">
@@ -89,7 +93,6 @@
                   </p>
                   <a
                     class="c-inline-link"
-                    target="_blank"
                     href="https://www.microsoft.com/en-us/research/group/customer-insights-research/articles/how-microsofts-human-insights-library-creates-a-living-body-of-knowledge/"
                     >Read the story about HITS</a
                   >
@@ -163,7 +166,7 @@
                   <p>
                     I learned my first lessons in MV* framework. Many great developers selflessly coached me on design patterns, unit and e2e testing, and the
                     cryptic art of debug CSS when IE support was still a must. I picked up D3.js as my go-to tool for data visualization and pushed the adoption
-                    for design systems before <a class="c-inline-link" href="https://bradfrost.com/" target="_blank">Brad Frost</a> popularized the practice.
+                    for design systems before <a class="c-inline-link" href="https://bradfrost.com/">Brad Frost</a> popularized the practice.
                   </p>
                   <ul class="c-tech-list">
                     <li>.NET</li>
@@ -255,8 +258,11 @@
           I’m a Human-Computer Interaction nerd. I go to great lengths to create systems, tools, and experiences that are functionally powerful and visually
           delightful. For these projects I would happily trade in my sleep.
         </p>
+
+        <div class="spacer"></div>
+
         <section class="c-entry-grid c-entry-section c-section-grid__item--fill">
-          <h3><a class="c-title-link c-h3--hero" target="_blank" href="https://osmoscraft.org">osmos::craft</a></h3>
+          <h3><a class="c-title-link c-h3--hero" href="https://osmoscraft.org">osmos::craft</a></h3>
           <p>Push people to discover, ingest, organize, connect, generate, and share knowledge.</p>
           <div>
             <details class="c-accordion" open>
@@ -286,15 +292,13 @@
           <ul class="c-meta-list">
             <li>Author</li>
             <li>2018+</li>
-            <li><a href="https://github.com/osmoscraft" target="_blank" class="c-meta-link">View source</a></li>
+            <li><a href="https://github.com/osmoscraft" class="c-meta-link">View source</a></li>
           </ul>
         </section>
 
         <section class="c-entry-grid c-entry-section">
-          <h3></h3>
-
           <h3>
-            <a class="c-title-link" target="_blank" href="https://www.figma.com/community/plugin/773058554383274587">3Dconnexion SpaceMouse Driver</a>
+            <a class="c-title-link" href="https://www.figma.com/community/plugin/773058554383274587">3Dconnexion SpaceMouse Driver</a>
           </h3>
           <p>Turn your 3Dconnexion SpaceMouse into a panning and zooming tool for Figma.</p>
           <div>
@@ -310,9 +314,7 @@
                 <p>
                   Performance is at the center of this driver. The app was written with no dependency to reduce CPU and memory load. A “game loop” was
                   implemented from scratch to achieve the bare-metal speed. Smooth interaction was ensured with the
-                  <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame" target="_blank" class="c-inline-link"
-                    >requestAnimationFrame API</a
-                  >.
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame" class="c-inline-link">requestAnimationFrame API</a>.
                 </p>
                 <ul class="c-tech-list">
                   <li>HTML</li>
@@ -325,7 +327,7 @@
               <li>Author</li>
               <li>2019+</li>
               <li>
-                <a href="https://github.com/chuanqisun/figma-plugin-spacemouse" target="_blank" class="c-meta-link">View source</a>
+                <a href="https://github.com/chuanqisun/figma-plugin-spacemouse" class="c-meta-link">View source</a>
               </li>
             </ul>
           </div>
@@ -363,7 +365,7 @@
 
         <section class="c-entry-grid c-entry-section">
           <h3>
-            <a class="c-title-link" target="_blank" href="https://www.figma.com/community/plugin/773058554383274587">Clicademy</a>
+            <a class="c-title-link" href="https://www.figma.com/community/plugin/773058554383274587">Clicademy</a>
           </h3>
           <p>A sandbox for digital marketing students.</p>
           <details class="c-accordion">
@@ -452,7 +454,7 @@
 
         <section class="c-entry-grid c-entry-section">
           <h3>
-            <a class="c-title-link" target="_blank" href="https://aka.ms/cursors">cursors</a>
+            <a class="c-title-link" href="https://aka.ms/cursors">cursors</a>
           </h3>
           <p>A podcast for designers at Microsoft.</p>
           <details class="c-accordion">
@@ -461,8 +463,8 @@
               <p>
                 The project considers the producers’ experience as important as the listeners’. I adopted WordPress as a headless CMS for its simple admin
                 experience. The frontend was intentionally decoupled from WordPress to realize a highly custom brutalist design by
-                <a href="https://jeremybarnesdesign.com/" target="_blank" class="c-inline-link">Jeremy Barnes</a>. I also learned a great deal building an audio
-                player from scratch, and publishing the podcast on iTunes.
+                <a href="https://jeremybarnesdesign.com/" class="c-inline-link">Jeremy Barnes</a>. I also learned a great deal building an audio player from
+                scratch, and publishing the podcast on iTunes.
               </p>
               <ul class="c-tech-list">
                 <li>Headless WordPress</li>
@@ -481,7 +483,7 @@
 
         <section class="c-entry-grid c-entry-section">
           <h3>
-            <a class="c-title-link" target="_blank" href="https://529legion.com">529 Legion</a>
+            <a class="c-title-link" href="https://529legion.com">529 Legion</a>
           </h3>
           <p>Web and print resume for a bike racing team.</p>
           <details class="c-accordion">
@@ -492,7 +494,7 @@
                 support as it renews its sponsorship. I worked with the team manager to design and produce the print resume and the team website for three years
                 in a row.
               </p>
-              <a href="assets/529_legion_2019.pdf" target="_blank" class="c-inline-link">Read the resume (2019)</a>
+              <a href="assets/529_legion_2019.pdf" class="c-inline-link">Read the resume (2019)</a>
               <ul class="c-tech-list">
                 <li>Adobe Illustrator</li>
                 <li>Figma</li>
@@ -521,9 +523,7 @@
               </p>
               <p>
                 The project was successfully productionized into the
-                <a href="https://docs.microsoft.com/en-us/powerapps/developer/data-platform/powerapps-cli" target="_blank" class="c-inline-link"
-                  >Power Platform CLI</a
-                >.
+                <a href="https://docs.microsoft.com/en-us/powerapps/developer/data-platform/powerapps-cli" class="c-inline-link">Power Platform CLI</a>.
               </p>
               <ul class="c-tech-list">
                 <li>Node.js</li>
@@ -540,7 +540,7 @@
 
         <section class="c-entry-grid c-entry-section">
           <h3>
-            <a class="c-title-link" target="_blank" href="https://chuanqisun.github.io/contrast-matrix">Contrast Matrix</a>
+            <a class="c-title-link" href="https://chuanqisun.github.io/contrast-matrix">Contrast Matrix</a>
           </h3>
           <p>Ensure accessibility for an entire palette.</p>
           <details class="c-accordion">
@@ -563,14 +563,14 @@
             <li>Engineer</li>
             <li>2016</li>
             <li>
-              <a href="https://github.com/chuanqisun/contrast-matrix" target="_blank" class="c-meta-link">View source</a>
+              <a href="https://github.com/chuanqisun/contrast-matrix" class="c-meta-link">View source</a>
             </li>
           </ul>
         </section>
 
         <section class="c-entry-grid c-entry-section">
           <h3>
-            <a class="c-title-link" target="_blank" href="https://www.npmjs.com/package/jasmine-mock-factory">Jasmine Mock Factory</a>
+            <a class="c-title-link" href="https://www.npmjs.com/package/jasmine-mock-factory">Jasmine Mock Factory</a>
           </h3>
           <p>A unit test utility that creates a mock of anything.</p>
           <details class="c-accordion">
@@ -582,9 +582,8 @@
               </p>
               <p>
                 I practiced TDD for the project itself and leveled up my TypeScript game as I worked with self-referential types from the
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" target="_blank" class="c-inline-link"
-                  >ES6 proxy API</a
-                >. To enable open-source contributions, I implemented a CI/CD pipeline with automated testing and coverage report.
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" class="c-inline-link">ES6 proxy API</a>. To
+                enable open-source contributions, I implemented a CI/CD pipeline with automated testing and coverage report.
               </p>
               <ul class="c-tech-list">
                 <li>TypeScript</li>
@@ -599,14 +598,14 @@
             <li>Author</li>
             <li>2016-2019</li>
             <li>
-              <a href="https://github.com/chuanqisun/jasmine-mock-factory" target="_blank" class="c-meta-link">View source</a>
+              <a href="https://github.com/chuanqisun/jasmine-mock-factory" class="c-meta-link">View source</a>
             </li>
           </ul>
         </section>
 
         <section class="c-entry-grid c-entry-section">
           <h3>
-            <a class="c-title-link" target="_blank" href="https://chuanqisun.github.io/oblique">Oblique</a>
+            <a class="c-title-link" href="https://chuanqisun.github.io/oblique">Oblique</a>
           </h3>
           <p>Source of inspiration for creative professionals.</p>
           <details class="c-accordion">
@@ -629,14 +628,14 @@
             <li>Author</li>
             <li>2017</li>
             <li>
-              <a href="https://github.com/chuanqisun/oblique" target="_blank" class="c-meta-link">View source</a>
+              <a href="https://github.com/chuanqisun/oblique" class="c-meta-link">View source</a>
             </li>
           </ul>
         </section>
 
         <section class="c-entry-grid c-entry-section">
           <h3>
-            <a class="c-title-link" target="_blank" href="assets/cousre_insight.pdf">Course inSight</a>
+            <a class="c-title-link" href="assets/cousre_insight.pdf">Course inSight</a>
           </h3>
           <p>Interactive course browser that uses machine learning and data visualization to help students design their academic path.</p>
           <details class="c-accordion">
@@ -669,14 +668,14 @@
             <li>Author</li>
             <li>2015</li>
             <li>
-              <a href="https://github.com/chuanqisun/cs98-cloud-nlp" target="_blank" class="c-meta-link">View source</a>
+              <a href="https://github.com/chuanqisun/cs98-cloud-nlp" class="c-meta-link">View source</a>
             </li>
           </ul>
         </section>
 
         <section class="c-entry-grid c-entry-section">
           <h3>
-            <a class="c-title-link" target="_blank" href="https://www.youtube.com/watch?v=5P4_eVL8ZzU">Hanover Weather Audiovisual Experience</a>
+            <a class="c-title-link" href="https://www.youtube.com/watch?v=5P4_eVL8ZzU">Hanover Weather Audiovisual Experience</a>
           </h3>
           <p>Transform weather data into an audiovisual rollercoaster ride.</p>
           <details class="c-accordion">
@@ -701,7 +700,7 @@
 
         <section class="c-entry-grid c-entry-section">
           <h3>
-            <a class="c-title-link" target="_blank" href="https://github.com/chuanqisun/midi-evo/blob/master/User_Manual.pdf">MidiEvo</a>
+            <a class="c-title-link" href="https://github.com/chuanqisun/midi-evo/blob/master/User_Manual.pdf">MidiEvo</a>
           </h3>
           <p>A sequencer and looper for any MIDI input device.</p>
           <details class="c-accordion">
@@ -722,7 +721,7 @@
             <li>Author</li>
             <li>2015</li>
             <li>
-              <a href="https://github.com/chuanqisun/midi-evo" target="_blank" class="c-meta-link">View source</a>
+              <a href="https://github.com/chuanqisun/midi-evo" class="c-meta-link">View source</a>
             </li>
           </ul>
         </section>
@@ -736,9 +735,8 @@
               <p>
                 The smart lights installed in the field house at Dartmouth was not conversing energy as much as it should due an out-dated centralized
                 scheduling system. To improve lighting efficiency, I worked with
-                <a href="https://dali.dartmouth.edu/" target="_blank" class="c-inline-link">DALI lab</a> to allow field house users adjust lighting on-demand.
-                The project taught me lessons in collaboration with stakeholders and designers. I also had fun learning a NoSQL cloud database and the Backbone
-                framework.
+                <a href="https://dali.dartmouth.edu/" class="c-inline-link">DALI lab</a> to allow field house users adjust lighting on-demand. The project
+                taught me lessons in collaboration with stakeholders and designers. I also had fun learning a NoSQL cloud database and the Backbone framework.
               </p>
               <ul class="c-tech-list">
                 <li>IoT</li>
@@ -758,7 +756,7 @@
 
         <section class="c-entry-grid c-entry-section">
           <h3>
-            <a class="c-title-link" target="_blank" href="https://www.youtube.com/watch?v=N_xgy5yofBw">Gesture-controlled Learning Game</a>
+            <a class="c-title-link" href="https://www.youtube.com/watch?v=N_xgy5yofBw">Gesture-controlled Learning Game</a>
           </h3>
           <p>Help user achieve learning goals while winning $1000 from Intel.</p>
           <details class="c-accordion">
@@ -770,8 +768,8 @@
                 based navigation pattern had become commonplace in today’s AR/VR applications.
               </p>
               <p>
-                My team, lead by <a href="https://www.linkedin.com/in/fei-yu-68a8923/" target="_blank" class="c-inline-link">Fei Yu</a>, had won the $1000 early
-                submission prize from the Intel Perceptual Computing Challenge.
+                My team, lead by <a href="https://www.linkedin.com/in/fei-yu-68a8923/" class="c-inline-link">Fei Yu</a>, had won the $1000 early submission
+                prize from the Intel Perceptual Computing Challenge.
               </p>
               <ul class="c-tech-list">
                 <li>Intel Perceptual SDK</li>
@@ -794,10 +792,10 @@
             <div class="c-accordion__body">
               <p>
                 A research project lead by
-                <a href="https://scholar.google.com/citations?user=iV8mtiwAAAAJ&hl=en" target="_blank" class="c-inline-link">Alireza Soltani</a>. I used machine
-                learning techniques to identify correlations between brain activities and eye saccades. The research project taught me the rigor and patience in
-                the scientific endeavour, and also showed me the practical side of machine learning just as I finished CS74 (Machine Learning and Statistical
-                Data Analysis).
+                <a href="https://scholar.google.com/citations?user=iV8mtiwAAAAJ&hl=en" class="c-inline-link">Alireza Soltani</a>. I used machine learning
+                techniques to identify correlations between brain activities and eye saccades. The research project taught me the rigor and patience in the
+                scientific endeavour, and also showed me the practical side of machine learning just as I finished CS74 (Machine Learning and Statistical Data
+                Analysis).
               </p>
               <ul class="c-tech-list">
                 <li>MATLAB</li>
@@ -819,8 +817,8 @@
             <div class="c-accordion__body">
               <p>
                 A research project in collaboration with
-                <a href="https://www.linkedin.com/in/jing-wei-pan/" target="_blank" class="c-inline-link">Jingwei Pan</a>, for CS74 (Machine Learning and
-                Statistical Data analysis). I experimented with Support Vector Machine and Neural Network to differentiate Chinese, French, and English.
+                <a href="https://www.linkedin.com/in/jing-wei-pan/" class="c-inline-link">Jingwei Pan</a>, for CS74 (Machine Learning and Statistical Data
+                analysis). I experimented with Support Vector Machine and Neural Network to differentiate Chinese, French, and English.
               </p>
               <ul class="c-tech-list">
                 <li>MATLAB</li>
@@ -852,41 +850,39 @@
         <p class="c-section-grid__item--fill">
           I collect gems from other beautiful minds, and occasionally throw a few pebbles back into the pond, watching the ripples spread.
         </p>
+
+        <div class="spacer"></div>
+
         <section class="c-section-grid__item--fill c-io-section">
           <h3 class="c-section-grid__item--fill">Essays</h3>
           <ul class="c-section-grid__item--fill">
             <li>
-              <a class="c-io-link" target="_blank" href="https://uxdesign.cc/the-vanishing-designer-6d3d999f9540">The Vanishing Designer</a>
+              <a class="c-io-link" href="https://uxdesign.cc/the-vanishing-designer-6d3d999f9540">The Vanishing Designer</a>
             </li>
             <li>
-              <a class="c-io-link" target="_blank" href="https://uxdesign.cc/a-case-against-pixel-perfect-design-ce00cd3eabc9"
-                >A Case Against “Pixel Perfect” Design</a
-              >
+              <a class="c-io-link" href="https://uxdesign.cc/a-case-against-pixel-perfect-design-ce00cd3eabc9">A Case Against “Pixel Perfect” Design</a>
             </li>
             <li>
-              <a class="c-io-link" target="_blank" href="https://uxdesign.cc/are-you-experiencing-the-kessler-syndrome-23bab3cdd446"
+              <a class="c-io-link" href="https://uxdesign.cc/are-you-experiencing-the-kessler-syndrome-23bab3cdd446"
                 >Are You Experiencing The Kessler Syndrome?</a
               >
             </li>
             <li>
-              <a class="c-io-link" target="_blank" href="https://medium.com/@chuanqisun/post-occupancy-evaluation-466d86d0c136">Don’t Be an Ostrich</a>
+              <a class="c-io-link" href="https://medium.com/@chuanqisun/post-occupancy-evaluation-466d86d0c136">Don’t Be an Ostrich</a>
             </li>
             <li>
-              <a class="c-io-link" target="_blank" href="https://medium.com/@chuanqisun/functional-prototyping-e1bc243b0707">Functional Prototyping</a>
+              <a class="c-io-link" href="https://medium.com/@chuanqisun/functional-prototyping-e1bc243b0707">Functional Prototyping</a>
             </li>
             <li>
-              <a
-                class="c-io-link"
-                target="_blank"
-                href="https://medium.com/@chuanqisun/beyond-artboards-the-pursuit-of-lossless-design-development-handoffs-9abb698b7ee8"
+              <a class="c-io-link" href="https://medium.com/@chuanqisun/beyond-artboards-the-pursuit-of-lossless-design-development-handoffs-9abb698b7ee8"
                 >Beyond Artboards</a
               >
             </li>
             <li>
-              <a class="c-io-link" target="_blank" href="assets/a_ride_that_was_never_told.pdf">A Ride That Was Never Told</a>
+              <a class="c-io-link" href="assets/a_ride_that_was_never_told.pdf">A Ride That Was Never Told</a>
             </li>
             <li>
-              <a class="c-io-link" target="_blank" href="assets/second_life.pdf">Virtual Religion in Second Life</a>
+              <a class="c-io-link" href="assets/second_life.pdf">Virtual Religion in Second Life</a>
             </li>
           </ul>
         </section>
@@ -894,36 +890,34 @@
           <h3>Digests</h3>
           <ul>
             <li>
-              <a class="c-io-link" target="_blank" href="https://dailyread.netlify.app/">Daily Read for Web Developers</a>
+              <a class="c-io-link" href="https://dailyread.netlify.app/">Daily Read for Web Developers</a>
             </li>
             <li>
-              <a class="c-io-link" target="_blank" href="https://github.com/chuanqisun/memo/blob/master/README.md">Web Developer Bookmarks</a>
+              <a class="c-io-link" href="https://github.com/chuanqisun/memo/blob/master/README.md">Web Developer Bookmarks</a>
             </li>
           </ul>
         </section>
         <section class="c-section-grid__item--fill c-io-section">
           <h3>Influenced by</h3>
           <ul>
-            <li class="c-influence-item"><a class="c-io-link" target="_blank" href="http://worrydream.com/">Bret Victor</a><span>on Principles</span></li>
-            <li class="c-influence-item"><a class="c-io-link" target="_blank" href="https://adactio.com/">Jeremy Keith</a><span>on Resilience</span></li>
+            <li class="c-influence-item"><a class="c-io-link" href="http://worrydream.com/">Bret Victor</a><span>on Principles</span></li>
+            <li class="c-influence-item"><a class="c-io-link" href="https://adactio.com/">Jeremy Keith</a><span>on Resilience</span></li>
+            <li class="c-influence-item"><a class="c-io-link" href="https://en.wikipedia.org/wiki/Elon_Musk">Elon Musk</a><span>on Grit</span></li>
             <li class="c-influence-item">
-              <a class="c-io-link" target="_blank" href="https://en.wikipedia.org/wiki/Elon_Musk">Elon Musk</a><span>on Grit</span>
+              <a class="c-io-link" href="https://en.wikipedia.org/wiki/Robert_M._Pirsig">Robert M. Pirsig</a><span>on Quality</span>
             </li>
-            <li class="c-influence-item">
-              <a class="c-io-link" target="_blank" href="https://en.wikipedia.org/wiki/Robert_M._Pirsig">Robert M. Pirsig</a><span>on Quality</span>
-            </li>
-            <li class="c-influence-item"><a class="c-io-link" target="_blank" href="https://aynrand.org/">Ayn Rand</a><span>on Individualism</span></li>
+            <li class="c-influence-item"><a class="c-io-link" href="https://aynrand.org/">Ayn Rand</a><span>on Individualism</span></li>
           </ul>
         </section>
         <section class="c-section-grid__item--fill c-io-section">
           <h3>Education</h3>
           <p>
             I’m forever grateful for my liberal arts education at
-            <a href="https://home.dartmouth.edu/" target="_blank" class="c-io-link--inline">Dartmouth College</a>. In addition to all the courses you would
-            expect from a Computer Science degree, I have also received rigorous training in drawing, photography, film studies, audio-visual programming, and
-            3D animation. The most unforgettable lecture? Having Alison Ouellette-Kirby and Noah Kirby teach us melting and
-            <a href="images/iron-casting.jpg" target="_blank" class="c-io-link--inline">pouring 2,220 °F liquid iron</a> into our hand-prepared clay molds! I
-            graduated in 2015 with highest honors.
+            <a href="https://home.dartmouth.edu/" class="c-io-link--inline">Dartmouth College</a>. In addition to all the courses you would expect from a
+            Computer Science degree, I have also received rigorous training in drawing, photography, film studies, audio-visual programming, and 3D animation.
+            The most unforgettable lecture? Having Alison Ouellette-Kirby and Noah Kirby teach us melting and
+            <a href="images/iron-casting.jpg" class="c-io-link--inline">pouring 2,220 °F liquid iron</a> into our hand-prepared clay molds! I graduated in 2015
+            with highest honors.
           </p>
         </section>
       </section>
@@ -955,21 +949,22 @@
           />
         </svg>
 
+        <div class="spacer"></div>
+
         <h3 class="c-section-grid__item--fill">Links</h3>
         <ul class="c-section-grid__item--fill">
-          <li><a href="https://github.com/chuanqisun" class="c-footer-link" target="_blank">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/chuanqi-sun/" class="c-footer-link" target="_blank">LinkedIn</a></li>
-          <li><a href="resume/resume.html" class="c-footer-link" target="_blank">Resume</a></li>
+          <li><a href="https://github.com/chuanqisun" class="c-footer-link">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/chuanqi-sun/" class="c-footer-link">LinkedIn</a></li>
+          <li><a href="resume/resume.html" class="c-footer-link">Resume</a></li>
         </ul>
 
         <h3 class="c-section-grid__item--fill">Meta</h3>
         <p class="c-section-grid__item--fill">
-          The display font is <a href="https://fonts.google.com/specimen/Fira+Mono" target="_blank" class="c-inline-link">Fira Mono</a>. The body font is
-          <a href="https://css-tricks.com/snippets/css/system-font-stack/" target="_blank" class="c-inline-link">system font</a>. The color theme is based on
-          <a href="https://github.com/morhetz/gruvbox" target="_blank" class="c-inline-link">gruvbox</a>. Vector arts are made with
-          <a href="https://www.figma.com/" target="_blank" class="c-inline-link">Figma</a>. The site is fully static with hand-crafted, plain, old, but
-          resilient HTML. You can <a href="https://github.com/chuanqisun/me" target="_blank" class="c-inline-link">view source on GitHub</a> or equivalently,
-          right click and inspect.
+          The display font is <a href="https://fonts.google.com/specimen/Fira+Mono" class="c-inline-link">Fira Mono</a>. The body font is
+          <a href="https://css-tricks.com/snippets/css/system-font-stack/" class="c-inline-link">system font</a>. The color theme is based on
+          <a href="https://github.com/morhetz/gruvbox" class="c-inline-link">gruvbox</a>. Vector arts are made with
+          <a href="https://www.figma.com/" class="c-inline-link">Figma</a>. The site is fully static with hand-crafted, plain, old, but resilient HTML. You can
+          <a href="https://github.com/chuanqisun/me" class="c-inline-link">view source on GitHub</a> or equivalently, right click and inspect.
         </p>
 
         <h3 class="c-section-grid__item--fill">Disclaimers</h3>
@@ -978,7 +973,7 @@
           <li>I don’t collect any data from you.</li>
           <li>
             If you believe a third party is collecting data via this website, please
-            <a href="https://github.com/chuanqisun/me/issues/new" target="_blank" class="c-inline-link">file an issue on GitHub</a>.
+            <a href="https://github.com/chuanqisun/me/issues/new" class="c-inline-link">file an issue on GitHub</a>.
           </li>
         </ul>
         <p class="c-copyright">© <time datetime="2022-01-01" id="js-copyright-year">2022</time> Chuánqí Sun</p>
