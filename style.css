@@ -152,6 +152,11 @@ summary {
   gap: 4px;
 }
 
+.c-dot-grid-blend {
+  text-shadow: 2px 2px 2px var(--terminal-background), 2px -2px 2px var(--terminal-background), -2px -2px 2px var(--terminal-background),
+    -2px 2px 2px var(--terminal-background);
+}
+
 .c-entry {
   display: grid;
   gap: 8px;
@@ -234,7 +239,8 @@ summary {
 }
 
 .c-main-section {
-  padding: 64px var(--site-gutter);
+  padding-inline: var(--site-gutter);
+  padding-block: 64px 128px;
   background-color: var(--main-section-background);
   color: var(--main-section-text);
   min-height: calc(100vh - var(--site-header-height));
@@ -436,7 +442,7 @@ summary {
 .c-terminal__scroll-prompt {
   font-size: 12px;
   position: absolute;
-  bottom: 24px;
+  bottom: 4rem;
   left: 50%;
   transform: translateX(-50%);
 }
