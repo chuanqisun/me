@@ -152,11 +152,6 @@ summary {
   gap: 4px;
 }
 
-.c-dot-grid-blend {
-  text-shadow: 2px 2px 2px var(--terminal-background), 2px -2px 2px var(--terminal-background), -2px -2px 2px var(--terminal-background),
-    -2px 2px 2px var(--terminal-background);
-}
-
 .c-entry {
   display: grid;
   gap: 8px;
