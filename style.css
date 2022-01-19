@@ -126,12 +126,8 @@ summary {
   font-family: var(--monospace-font);
 }
 
-output {
-  font-family: var(--monospace-font);
-}
-
 /****************
- * 03 COMPOENNT *
+ * 03 COMPONENT *
  ****************/
 
 .c-accordion__trigger {
@@ -156,22 +152,22 @@ output {
   gap: 4px;
 }
 
-.c-entry--work {
-  background-color: var(--accent);
-}
-
-.c-entry-section {
-  color: var(--entry-section-text);
-  background-color: var(--entry-section-background);
-  border: 2px solid var(--entry-section-border);
-  border-radius: 16px;
-}
-
-.c-entry-grid {
+.c-entry {
   display: grid;
   gap: 8px;
   align-content: start;
   padding: var(--entry-padding-inline) 24px;
+}
+
+.c-entry--project {
+  color: var(--entry-text);
+  background-color: var(--entry-background);
+  border: 2px solid var(--entry-border);
+  border-radius: 16px;
+}
+
+.c-entry--work {
+  background-color: var(--accent);
 }
 
 .c-footer-link {
@@ -191,14 +187,14 @@ output {
   align-items: baseline;
   flex-wrap: wrap;
 }
-.c-influence-item > a {
+.c-influence-item__link {
   width: 100%;
 }
-.c-influence-item > span {
+.c-influence-item__details {
   margin-left: 1rem;
 }
 @media screen and (min-width: 25rem) {
-  .c-influence-item > a {
+  .c-influence-item__link {
     gap: 16px;
     width: 10rem;
   }
@@ -227,6 +223,7 @@ output {
   line-height: 1.2;
   padding-block: 4px;
 }
+
 .c-io-link--inline {
   font-size: inherit;
   text-decoration: underline;
@@ -245,9 +242,6 @@ output {
 
 .c-main-section--work {
   --accent: var(--yellow);
-  --entry-section-background: var(--body-background);
-  --entry-section-border: var(--body-background);
-  --entry-section-text: var(--terminal-text);
   --main-section-background: var(--accent);
   --main-section-text: black;
   --meta-list-item-text: var(--terminal-background);
@@ -258,14 +252,15 @@ output {
 .c-main-section--projects {
   --accent: var(--purple);
   --accordion-text-hover: var(--accent);
-  --entry-section-background: var(--body-background);
-  --entry-section-border: var(--body-background);
-  --entry-section-text: var(--terminal-text);
+  --entry-background: var(--body-background);
+  --entry-border: var(--body-background);
+  --entry-text: var(--terminal-text);
   --h2-color: var(--accent);
   --inline-link-text-hover: var(--accent);
   --main-section-background: var(--terminal-background);
   --nav-link-text: var(--accent);
   --tech-list-item-border: var(--body-text-light);
+  --tech-list-item-border-radius: 4px;
 
   background: linear-gradient(90deg, var(--terminal-background) 15px, transparent 1%) center,
     linear-gradient(var(--terminal-background), 15px, transparent 1%) center, var(--accent);
@@ -314,10 +309,6 @@ output {
   display: flex;
 }
 
-.c-nav-list__item--end {
-  margin-left: auto;
-}
-
 .c-nav-link {
   font-size: 20px;
   padding-inline: var(--nav-link-padding-inline);
@@ -354,8 +345,6 @@ output {
 }
 
 .c-section-art {
-  /* color: var(--section-art-stroke, var(--main-section-text)); */
-  /* justify-self: center; */
   margin-left: 4px;
 }
 
@@ -366,8 +355,10 @@ output {
   grid-gap: 32px;
 }
 
-.c-section-grid--no-gap {
-  grid-gap: 0;
+.c-section-grid--work {
+  gap: 2px;
+  background-color: var(--body-background);
+  border: 2px solid var(--body-background);
 }
 
 .c-section-grid__item--fill {
@@ -392,6 +383,7 @@ output {
   height: var(--site-header-height);
   z-index: 100;
 }
+
 .c-site-nav {
   height: 100%;
   font-weight: bold;
@@ -408,7 +400,7 @@ output {
 }
 .c-tech-list > * {
   border: 1px solid var(--tech-list-item-border, --body-text-light);
-  border-radius: 4px;
+  border-radius: var(--tech-list-item-border-radius, 0);
   padding-inline: 12px;
   padding-block: 2px;
   padding-inline: 8px;
@@ -447,13 +439,6 @@ output {
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.c-work-grid {
-  display: grid;
-  gap: 2px;
-  background-color: var(--body-background);
-  border: 2px solid var(--body-background);
 }
 
 @media screen and (min-width: 40rem) {
