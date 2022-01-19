@@ -418,10 +418,9 @@ summary {
   min-height: calc(100vh - var(--site-header-height));
 
   display: grid;
-  align-content: start;
+  align-content: center;
   grid-template-columns: auto 1fr;
   column-gap: 1ch;
-  position: relative;
 }
 
 .c-terminal__link {
@@ -433,13 +432,6 @@ summary {
 .c-terminal__link--ghost {
   color: var(--terminal-text-light);
   text-decoration: none;
-}
-.c-terminal__scroll-prompt {
-  font-size: 12px;
-  position: absolute;
-  bottom: 4rem;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 @media screen and (min-width: 40rem) {
