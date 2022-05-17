@@ -273,8 +273,7 @@
                   <li>A web-based RSS reader running entirely from a GitHub repo.</li>
                   <li>A browser bookmark manager optimized for capture and retrieval speed.</li>
                   <li>A web-based text editor for networked note-taking, self-hostable on any Git repository.</li>
-                  <li>(In progress) An offline-first distributed TODO manager, with backup and sync from the cloud.</li>
-                  <li>(Planned) An all-in-one learning environment that brings together all of the above.</li>
+                  <li>(In progress) An all-in-one learning environment that brings together all of the above.</li>
                 </ul>
                 <p>
                   The project helped me grow from a consumer of libraries to a creator of them. For this project, I’ve designed a concurrent task schedular, a
@@ -298,6 +297,45 @@
             <li>2018+</li>
             <li><a href="https://github.com/osmoscraft" class="c-meta-link">View source</a></li>
           </ul>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://chrome.google.com/webstore/detail/turbo-query-for-azure-dev/oacdbpdkkcfihlppfjefkmaeabllfibi"
+              >Turbo Query for Azure DevOps</a
+            >
+          </h3>
+          <p>Instantly search and filter up to 20,000 work items from Azure DevOps.</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  My work project, hosted on Azure DevOps, suffered performance issues as it got too large. So I built this browser extension to help my team
+                  stay productive at work. The extension stores the entire project into the browser Indexed DB using
+                  <a href="https://dexie.org/" class="c-inline-link">Dexie.js</a> and provides an instant search experience using an in-memory full-text search
+                  engine powered by <a href="https://github.com/nextapps-de/flexsearch" class="c-inline-link">flexsearch</a>.
+                </p>
+                <p>
+                  The biggest technical challange is to ensure data consistency and refreshness. I have implemented a customized sync logic that balances
+                  performance with download size, complexity, error recovery, and offline usage. I have also leveraged web workers and built a custom IPC
+                  protocol to keep the UI thread at 60FPS.
+                </p>
+                <ul class="c-tech-list">
+                  <li>Web Worker</li>
+                  <li>React</li>
+                  <li>Indexed DB</li>
+                </ul>
+              </div>
+            </details>
+            <ul class="c-meta-list">
+              <li>Author</li>
+              <li>2022+</li>
+              <li>
+                <a href="https://github.com/chuanqisun/turbo-query" class="c-meta-link">View source</a>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="c-entry c-entry--project">
