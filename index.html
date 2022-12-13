@@ -390,15 +390,18 @@
                   for the power user.
                 </p>
                 <p>
-                  Performance is at the center of this driver. The app was written with no dependency to reduce CPU and memory load. A “game loop” was
+                  Performance is at the center of this driver. The app was written with no dependency to reduce CPU and memory load. The Figma plugin a “game loop” was
                   implemented from scratch to achieve the bare-metal speed. Smooth interaction was ensured with the
                   <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame" class="c-inline-link">requestAnimationFrame API</a>.
-                  I solved a input/output rate mismatch problem with a custom buffer algorithm.
+                </p>
+                <p>
+                  The SketchUp web extension leveraged a reversed-engineered wasm API to simulate mouse and keyboard events. I used a multi-threaded buffer algorithm
+                  to get the best performance despite mismatching input/output rate.
                 </p>
                 <ul class="c-tech-list">
                   <li>HTML</li>
                   <li>CSS</li>
-                  <li>JavaScript</li>
+                  <li>TypeScript</li>
                 </ul>
               </div>
             </details>
