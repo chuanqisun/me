@@ -386,19 +386,23 @@
                 <p>
                   This project is my HCI treasure trove. It was challenging to identify the most intuitive direct manipulation model. Based on experiments and
                   user feedback, I built dozens of prototypes with different sensitivity curves and activation thresholds, and evaluated their effectiveness on
-                  realistic tasks. The final solution respects each individual’s preference for manipulation target (canvas vs. camera) and offers customization
-                  for the power user.
+                  realistic tasks. The final solution allows simple preference for manipulation target (canvas vs. camera) and offers customization for the
+                  power user.
                 </p>
                 <p>
-                  Performance is at the center of this driver. The <a href="https://www.figma.com/community/plugin/773058554383274587" class="c-inline-link">Figma plugin</a>
-                  was written with no dependency to reduce CPU and memory load. A “game loop” wasimplemented from scratch to achieve the bare-metal speed. Smooth interaction
-                  was ensured with the <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame" class="c-inline-link">requestAnimationFrame
-                  API</a>.
+                  Performance is at the center of this driver. The
+                  <a href="https://www.figma.com/community/plugin/773058554383274587" class="c-inline-link">Figma plugin</a> was written with no dependency to
+                  reduce CPU and memory load. A “game loop” was implemented from scratch to achieve the bare-metal speed. Smooth interaction was ensured with
+                  the
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame" class="c-inline-link">requestAnimationFrame API</a>.
                 </p>
                 <p>
-                  The <a href="https://chrome.google.com/webstore/detail/spacemouse-driver-for-ske/ggjjgcdhnigahiokgcknccnkcddgjknf" class="c-inline-link">SketchUp
-                  web extension</a> reversed-engineered wasm API to simulate mouse and keyboard events, and used a multi-threaded buffer algorithm to get the best
-                  performance despite mismatching input/output rate.
+                  The
+                  <a href="https://chrome.google.com/webstore/detail/spacemouse-driver-for-ske/ggjjgcdhnigahiokgcknccnkcddgjknf" class="c-inline-link"
+                    >SketchUp web extension</a
+                  >
+                  reversed-engineered an wasm API to simulate mouse and keyboard events. A concurrent buffer algorithm was used to allow mismatched input/output
+                  rate.
                 </p>
                 <ul class="c-tech-list">
                   <li>HTML</li>
