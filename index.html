@@ -295,6 +295,48 @@
 
         <section class="c-entry c-entry--project">
           <h3>
+            <a class="c-title-link" href="https://chuanqisun.github.io/iter/">Iter</a>
+          </h3>
+          <p>A frontend for Azure OpenAI Chat models.</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  I built Iter because Azure's official OpenAI playground app had several usabilities issues that hindered my prompt engineering work.
+                  Specificially, I wanted an editable and branchable chat history tree and hot-swappable models. I was able to hack it together in just two
+                  days.
+                </p>
+                <p>
+                  During this project, the redux-like statement management concept finally clicked for me. I also learned about the
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API" class="c-inline-link">Streams API</a> and successfully coupled it with
+                  the JavaScript
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator" class="c-inline-link"
+                    >Async Generator</a
+                  >
+                  to decode and render the chat messages as the server streams them to the client. The scope of the project is intentionally tight, though a
+                  little extra work in the future could turn this into a ChatGPT alternative that I would personally use all the time.
+                </p>
+                <ul class="c-tech-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                </ul>
+              </div>
+            </details>
+            <ul class="c-meta-list">
+              <li>Author</li>
+              <li>2023+</li>
+              <li>
+                <a href="https://github.com/chuanqisun/iter" class="c-meta-link">View source</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
             <a class="c-title-link" href="https://www.figma.com/community/widget/1142531655223087736">Pixel Pusher Online</a>
           </h3>
           <p>An MMORPG running inside Figma</p>
