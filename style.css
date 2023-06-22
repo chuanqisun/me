@@ -48,7 +48,7 @@
  * 01 RESET *
  ************/
 :root {
-  color-scheme: dark light;
+  color-scheme: dark;
 }
 
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
