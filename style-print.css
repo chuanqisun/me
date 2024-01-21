@@ -25,7 +25,8 @@
     page-break-after: always;
   }
 
-  .c-entry {
+  .c-entry,
+  .c-io-section {
     page-break-inside: avoid;
   }
 
