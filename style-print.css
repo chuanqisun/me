@@ -1,0 +1,102 @@
+@media print {
+  .u-no-print {
+    display: none;
+  }
+
+  .u-print-only {
+    display: unset;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  .c-main-section {
+    page-break-after: always;
+  }
+
+  .c-entry {
+    page-break-inside: avoid;
+  }
+
+  .c-section-grid {
+    border: none;
+    gap: 24px;
+  }
+
+  .c-entry--work,
+  .c-entry--project {
+    border: 1px solid #aaa;
+    border-radius: 0;
+  }
+
+  * {
+    color: black !important;
+    background: none !important;
+  }
+
+  .c-accordion__body {
+    padding: 8px 16px 8px 8px;
+    text-align: justify;
+    text-align-last: left;
+    background-color: #eee !important;
+  }
+
+  summary {
+    display: none;
+  }
+
+  a {
+    text-decoration: none !important;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  a::after {
+    content: " (" attr(href) ")";
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  .c-terminal a::after {
+    display: none;
+  }
+
+  a:where(.c-title-link, .c-io-link)::after {
+    display: block;
+  }
+
+  .c-tech-list {
+    gap: 4px 6px;
+  }
+  .c-tech-list li {
+    border: none;
+    border-radius: 0px;
+    background: white !important;
+    padding: 2px 4px;
+  }
+
+  .c-print-note {
+    background-color: #eee !important;
+    padding: 16px;
+    position: relative;
+    top: 24px;
+
+    a {
+      text-decoration: underline !important;
+    }
+
+    a::after {
+      display: none;
+    }
+  }
+}

@@ -479,3 +479,7 @@ summary {
 /************
  * 04 UTILS *
  ************/
+
+.u-print-only {
+  display: none;
+}
