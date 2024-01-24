@@ -44,6 +44,12 @@
   }
 }
 
+@media screen and (min-width: 90rem) {
+  :root {
+    --site-gutter: calc(120px + (100vw - 90rem) / 2);
+  }
+}
+
 /************
  * 01 RESET *
  ************/
