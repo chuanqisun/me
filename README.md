@@ -1,1 +1,1 @@
-# The personal website for Chuánqí Sun
+Source code for my personal website
