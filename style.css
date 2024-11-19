@@ -351,6 +351,11 @@ summary {
   --nav-link-text: var(--orange);
 }
 
+.c-projects-floating-text {
+  text-shadow: 2px 2px 2px var(--terminal-background), -2px 2px 2px var(--terminal-background), -2px -2px 2px var(--terminal-background),
+    2px -2px 2px var(--terminal-background);
+}
+
 .c-scroll-anchor {
   scroll-margin-block-start: var(--site-header-height);
 }
