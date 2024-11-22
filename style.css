@@ -192,24 +192,6 @@ summary {
   font-size: 32px;
 }
 
-.c-influence-item {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-}
-.c-influence-item__link {
-  width: 100%;
-}
-.c-influence-item__details {
-  margin-left: 1rem;
-}
-@media screen and (min-width: 25rem) {
-  .c-influence-item__link {
-    gap: 16px;
-    width: 10rem;
-  }
-}
-
 .c-inline-link {
   text-decoration: underline;
 }
