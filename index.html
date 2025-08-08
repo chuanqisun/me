@@ -1,686 +1,897 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8" />
+    <title>Sun Chuánqí</title>
+    <meta name="description" content="Sun Chuánqí’s home page" />
+    <meta name="author" content="Sun Chuánqí" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Sun Chuánqí</title>
-  <meta name="description" content="Sun Chuánqí’s home page" />
-  <meta name="author" content="Sun Chuánqí" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css?v=2" />
+    <link rel="stylesheet" media="print" href="style-print.css?v=2" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
 
-  <link rel="stylesheet" href="style.css?v=2" />
-  <link rel="stylesheet" media="print" href="style-print.css?v=2" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <header class="c-site-header u-no-print">
+      <nav class="c-site-nav">
+        <ul class="c-nav-list">
+          <li class="c-nav-list__item">
+            <a class="c-nav-link" href="#main">~$</a>
+          </li>
+          <li class="c-nav-list__item c-nav-list__item--work">
+            <a class="c-nav-link" href="#work">WORK</a>
+          </li>
+          <li class="c-nav-list__item c-nav-list__item--projects">
+            <a class="c-nav-link" href="#projects">PROJ</a>
+          </li>
+          <li class="c-nav-list__item c-nav-list__item--io">
+            <a class="c-nav-link" href="#io">I/O</a>
+          </li>
+          <li class="c-nav-list__item c-nav-list__item--etc">
+            <a class="c-nav-link" href="#etc">ETC</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- TERMINAL EMULATOR -->
 
-<body>
-  <header class="c-site-header u-no-print">
-    <nav class="c-site-nav">
-      <ul class="c-nav-list">
-        <li class="c-nav-list__item">
-          <a class="c-nav-link" href="#main">~$</a>
-        </li>
-        <li class="c-nav-list__item c-nav-list__item--work">
-          <a class="c-nav-link" href="#work">WORK</a>
-        </li>
-        <li class="c-nav-list__item c-nav-list__item--projects">
-          <a class="c-nav-link" href="#projects">PROJ</a>
-        </li>
-        <li class="c-nav-list__item c-nav-list__item--io">
-          <a class="c-nav-link" href="#io">I/O</a>
-        </li>
-        <li class="c-nav-list__item c-nav-list__item--etc">
-          <a class="c-nav-link" href="#etc">ETC</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <!-- TERMINAL EMULATOR -->
-
-    <p class="u-print-only c-print-note">The most up-to-date information about me is available at
-      <a href="https://chuanqisun.com">https://chuanqisun.com</a>
-    </p>
-    <section id="main" class="c-scroll-anchor c-terminal">
-      <span class="c-terminal__prompt">&gt;</span>
-      <h1>Hello world!</h1>
-      <span class="c-terminal__prompt">&gt;</span><span>My name is Sun.</span>
-      <span class="c-terminal__prompt">&gt;</span><span>I create <a class="c-terminal__link" href="#projects">tools</a>
-        for the curious mind.</span>
-    </section>
-
-    <!-- WORK SECTION -->
-
-    <section id="work" class="c-scroll-anchor c-main-section c-section-grid c-main-section--work">
-      <h2 class="c-section-grid__item--fill">WORK</h2>
-
-      <svg class="c-section-art c-section-grid__item--fill" width="64" height="58" viewBox="0 0 32 29" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <circle cx="22" cy="19" r="9.5" stroke="currentColor" />
-        <circle cx="10" cy="19" r="9.5" stroke="currentColor" />
-        <circle cx="16" cy="10" r="9.5" stroke="currentColor" />
-      </svg>
-
-      <p class="c-section-grid__item--fill">
-        People know me by many roles: developer, designer, artist, and mad scientist. I attempt to bring my sense of
-        business, the pursuit of craftsmanship, and a healthy dose of contrarian thinking to all of my work projects.
-        I put user agency above user experience, advocate for system design over design systems, and thrive in
-        teams that defy boundaries.
-        I currently prototype AI-driven experiences and products at Microsoft.
+      <p class="u-print-only c-print-note">
+        The most up-to-date information about me is available at
+        <a href="https://chuanqisun.com">https://chuanqisun.com</a>
       </p>
+      <section id="main" class="c-scroll-anchor c-terminal">
+        <span class="c-terminal__prompt">&gt;</span>
+        <h1>Hello world!</h1>
+        <span class="c-terminal__prompt">&gt;</span><span>My name is Sun.</span> <span class="c-terminal__prompt">&gt;</span
+        ><span>I create <a class="c-terminal__link" href="#projects">tools</a> for the curious mind.</span>
+      </section>
 
-      <div class="spacer"></div>
+      <!-- WORK SECTION -->
 
-      <div class="c-section-grid__item--fill c-section-grid c-section-grid--work">
-        <section class="c-entry c-section-grid__item--fill c-entry--work">
-          <h3 class="c-h3--hero">AI Foundry</h3>
-          <p>Designing and building computational tools for Human and AI.</p>
+      <section id="work" class="c-scroll-anchor c-main-section c-section-grid c-main-section--work">
+        <h2 class="c-section-grid__item--fill">WORK</h2>
+
+        <svg class="c-section-art c-section-grid__item--fill" width="64" height="58" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="22" cy="19" r="9.5" stroke="currentColor" />
+          <circle cx="10" cy="19" r="9.5" stroke="currentColor" />
+          <circle cx="16" cy="10" r="9.5" stroke="currentColor" />
+        </svg>
+
+        <p class="c-section-grid__item--fill">
+          People know me by many roles: developer, designer, artist, and mad scientist. I attempt to bring my sense of business, the pursuit of craftsmanship,
+          and a healthy dose of contrarian thinking to all of my work projects. I put user agency above user experience, advocate for system design over design
+          systems, and thrive in teams that defy boundaries. I currently prototype AI-driven experiences and products at Microsoft.
+        </p>
+
+        <div class="spacer"></div>
+
+        <div class="c-section-grid__item--fill c-section-grid c-section-grid--work">
+          <section class="c-entry c-section-grid__item--fill c-entry--work">
+            <h3 class="c-h3--hero">AI Foundry</h3>
+            <p>Designing and building computational tools for Human and AI.</p>
+            <div>
+              <details class="c-accordion" open>
+                <summary class="c-accordion__trigger">Details</summary>
+                <div class="c-accordion__body">
+                  <p>
+                    I’ve joined hands with <a class="c-inline-link" href="https://en.wikipedia.org/wiki/John_Maeda">John Maeda</a> to explore, design,
+                    prototype, and realize the next generation AI tools. You can read about
+                    <a class="c-inline-link" href="https://stackdiver.com/posts/reinventing-on-principle/">why I am doing this.</a>
+                  </p>
+                  <ul class="c-tech-list">
+                    <li>LLM</li>
+                    <li>HCI</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <ul class="c-meta-list">
+              <li>Computational Designer</li>
+              <li>2024+</li>
+            </ul>
+          </section>
+
+          <section class="c-entry c-section-grid__item--fill c-entry--work">
+            <h3 class="c-h3--hero">HITS</h3>
+            <p>Microsoft’s knowledge base for product decision makers.</p>
+            <div>
+              <details class="c-accordion">
+                <summary class="c-accordion__trigger">Details</summary>
+                <div class="c-accordion__body">
+                  <p>
+                    HITS is a two-sided network for creators and consumers. I draw inspiration from behavioral economics to design mechanisms that bootstrap the
+                    ecosystem. The project also honed my skills on creating and maintaining an enterprise-scale design system that balances internal vs.
+                    external consistencies and reconciles historical conventions vs. newly formed interaction patterns.
+                  </p>
+                  <p>
+                    HITS taught me invaluable lessons in working with legacy systems: how to prevent the dev team from drowning in technical debt and how to
+                    re-platform without disrupting the business. HITS also gave birth to several successful spin-off projects, including a query expression
+                    builder, a React and Storybook based email REPL, and a visual programming tool inside FigJam!
+                  </p>
+                  <a
+                    class="c-inline-link"
+                    href="https://www.microsoft.com/en-us/research/group/customer-insights-research/articles/how-microsofts-human-insights-library-creates-a-living-body-of-knowledge/"
+                    >Read the story about HITS</a
+                  >
+                  <ul class="c-tech-list">
+                    <li>React</li>
+                    <li>GraphQL</li>
+                    <li>TypeScript</li>
+                    <li>JAMStack</li>
+                    <li>Knockout</li>
+                    <li>Serverless</li>
+                    <li>Docker</li>
+                    <li>.NET</li>
+                    <li>LLM</li>
+                    <li>Python</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <ul class="c-meta-list">
+              <li>Design lead</li>
+              <li>Frontend lead</li>
+              <li>2020-2024</li>
+            </ul>
+          </section>
+
+          <section class="c-entry c-entry--work">
+            <h3>Dynamics 365</h3>
+            <p>Microsoft’s business application platform.</p>
+            <div>
+              <details class="c-accordion">
+                <summary class="c-accordion__trigger">Details</summary>
+                <div class="c-accordion__body">
+                  <p>
+                    Dynamics 365 introduced me to system thinking. Every problem must be solved at the interconnect between the platform team, internal solution
+                    teams, partner solution teams, business organization, and business’ customers. I learned valuable lessons in balancing the interests from
+                    all of the stakeholders above and designing systems that outlasts the change of people and processes.
+                  </p>
+                  <p>
+                    I used in-browser rapid prototyping to communicate and inform design decisions. I co-authored three design systems that empowered an entire
+                    team of frontend engineers. I pioneered an algorithmic color contrasting system and invented an iframe based technique for documenting React
+                    components.
+                  </p>
+                  <ul class="c-tech-list">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Angular</li>
+                    <li>RxJS</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <ul class="c-meta-list">
+              <li>Designer</li>
+              <li>Prototyper</li>
+              <li>Frontend engineer</li>
+              <li>2017-2020</li>
+            </ul>
+          </section>
+
+          <section class="c-entry c-entry--work">
+            <h3>Power BI</h3>
+            <p>Microsoft’s Business intelligence solution.</p>
+            <div>
+              <details class="c-accordion">
+                <summary class="c-accordion__trigger">Details</summary>
+                <div class="c-accordion__body">
+                  <p>
+                    I was not on the Power BI design team, but through collaboration and mentorship I was introduced to data visualization and infographic
+                    design. I devoured the classic designer books by Edward Tufte, Don Norman, Steve Krug, Alan Cooper, and took online courses on typography,
+                    color theory, information architecture, and interaction design. This period of learning paved the foundation for my later work as a
+                    designer.
+                  </p>
+                  <p>
+                    I learned my first lesson in MV* frameworks. Many great developers selflessly coached me on design patterns, unit and e2e testing, and the
+                    cryptic art of debugging CSS when IE support was still a must. I picked up D3.js as my go-to tool for data visualization and pushed the
+                    adoption of design systems before <a class="c-inline-link" href="https://bradfrost.com/">Brad Frost</a> popularized the practice.
+                  </p>
+                  <ul class="c-tech-list">
+                    <li>AngularJS</li>
+                    <li>D3.js</li>
+                    <li>.NET</li>
+                    <li>C#</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <ul class="c-meta-list">
+              <li>Full-stack engineer</li>
+              <li>2014-2017</li>
+            </ul>
+          </section>
+
+          <section class="c-entry c-entry--work">
+            <h3>Commvault</h3>
+            <p>Enable file backup and restore in macOS Finder.</p>
+            <div>
+              <details class="c-accordion">
+                <summary class="c-accordion__trigger">Details</summary>
+                <div class="c-accordion__body">
+                  <p>
+                    Commvault is an enterprise-facing data storage service. My internship project aimed to allow file-related operations directly from the OS
+                    native menus, similar to what Dropbox offers. Since macOS is known to be strictly locked down, I had to come up with creative ways to “hack”
+                    together a solution.
+                  </p>
+                  <ul class="c-tech-list">
+                    <li>Objective-C</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <ul class="c-meta-list">
+              <li>Intern engineer</li>
+              <li>2014</li>
+            </ul>
+          </section>
+
+          <section class="c-entry c-entry--work">
+            <h3>Lenovo</h3>
+            <p>Stress testing the original ThinkPad X1.</p>
+            <div>
+              <details class="c-accordion">
+                <summary class="c-accordion__trigger">Details</summary>
+                <div class="c-accordion__body">
+                  <p>
+                    As a huge fan of the ThinkPad product line, I joined Lenovo when it was preparing to integrate its latest ThinkPad with the upcoming Windows
+                    8. I learned about UEFI, SMBus, and Windows Management Instrumentation. I stress-tested the BIOS module and learned about the error margin
+                    the hardware must operate within.
+                  </p>
+                  <ul class="c-tech-list">
+                    <li>C Language</li>
+                    <li>Windows 8 ADK</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <ul class="c-meta-list">
+              <li>Intern engineer</li>
+              <li>2013</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+
+      <section id="projects" class="c-scroll-anchor c-main-section c-main-section--projects c-section-grid c-section-grid--third">
+        <h2 class="c-section-grid__item--fill">PROJECTS</h2>
+
+        <svg
+          class="c-section-art c-section-grid__item--fill"
+          width="64"
+          height="58"
+          stroke-width="0.6"
+          viewBox="0 0 32 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="25" cy="22" r="6.5" stroke="currentColor" />
+          <circle cx="7" cy="22" r="6.5" stroke="currentColor" />
+          <circle cx="16" cy="7" r="6.5" stroke="currentColor" />
+        </svg>
+
+        <p class="c-section-grid__item--fill c-projects-floating-text">
+          I’m a Human-Computer Interaction nerd. I go to great lengths to create systems, tools, and experiences that are functionally powerful and visually
+          delightful. For these projects I would happily trade in my sleep.
+        </p>
+
+        <div class="spacer"></div>
+
+        <section class="c-entry c-entry--project c-section-grid__item--fill">
+          <h3><a class="c-title-link c-h3--hero" href="https://osmoscraft.org">osmos::craft</a></h3>
+          <p>Push people to discover, ingest, organize, connect, generate, and share knowledge.</p>
           <div>
             <details class="c-accordion" open>
               <summary class="c-accordion__trigger">Details</summary>
               <div class="c-accordion__body">
-                <p>I’ve joined hands with <a class="c-inline-link" href="https://en.wikipedia.org/wiki/John_Maeda">John
-                    Maeda</a> to explore, design, prototype, and realize
-                  the next generation AI tools. You can read about <a class="c-inline-link"
-                    href="https://stackdiver.com/posts/reinventing-on-principle/">why
-                    I am doing this.</a></p>
-                <ul class="c-tech-list">
-                  <li>LLM</li>
-                  <li>HCI</li>
+                <p>The project includes a set of apps that share similar goals.</p>
+                <ul class="c-inline-list">
+                  <li>A web-based RSS reader running entirely from a GitHub repo.</li>
+                  <li>A browser bookmark manager optimized for capture and retrieval speed.</li>
+                  <li>A web-based text editor for networked note-taking, self-hostable on any Git repository.</li>
+                  <li>(In progress) An all-in-one learning environment that brings together all of the above.</li>
                 </ul>
-              </div>
-            </details>
-          </div>
-          <ul class="c-meta-list">
-            <li>Computational Designer</li>
-            <li>2024+</li>
-          </ul>
-        </section>
-
-
-
-        <section class="c-entry c-section-grid__item--fill c-entry--work">
-          <h3 class="c-h3--hero">HITS</h3>
-          <p>Microsoft’s knowledge base for product decision makers.</p>
-          <div>
-            <details class="c-accordion">
-              <summary class="c-accordion__trigger">Details</summary>
-              <div class="c-accordion__body">
                 <p>
-                  HITS is a two-sided network for creators and consumers. I draw inspiration from behavioral economics
-                  to design mechanisms that bootstrap the
-                  ecosystem. The project also honed my skills on creating and maintaining an enterprise-scale design
-                  system that balances internal vs.
-                  external consistencies and reconciles historical conventions vs. newly formed interaction patterns.
+                  The project helped me grow from a consumer of libraries to a creator of them. For this project, I’ve designed a concurrent task scheduler, a
+                  <a href="https://github.com/osmoscraft/osmosnote/tree/master/packages/server/public/src/components/text-editor" class="c-inline-link"
+                    >WYSIWYG text editor</a
+                  >, an <a href="https://github.com/osmoscraft/web-rendering-library" class="c-inline-link">HTML templating engine</a>, a DOM diffing and
+                  rendering algorithm, an RSS/Atom feed parser, and a
+                  <a href="https://github.com/osmoscraft/node-testing-library" class="c-inline-link">unit test framework</a>, all from scratch. I’m currently
+                  designing an operation-based conflict-free replicated data type for the TODO app.
                 </p>
-                <p>
-                  HITS taught me invaluable lessons in working with legacy systems: how to prevent the dev team from
-                  drowning in technical debt and how to
-                  re-platform without disrupting the business. HITS also gave birth to several successful spin-off
-                  projects, including a query expression
-                  builder, a React and Storybook based email REPL, and a visual programming tool inside FigJam!
-                </p>
-                <a class="c-inline-link"
-                  href="https://www.microsoft.com/en-us/research/group/customer-insights-research/articles/how-microsofts-human-insights-library-creates-a-living-body-of-knowledge/">Read
-                  the story about HITS</a>
                 <ul class="c-tech-list">
-                  <li>React</li>
-                  <li>GraphQL</li>
                   <li>TypeScript</li>
-                  <li>JAMStack</li>
-                  <li>Knockout</li>
-                  <li>Serverless</li>
+                  <li>Node.js</li>
                   <li>Docker</li>
-                  <li>.NET</li>
-                  <li>LLM</li>
-                  <li>Python</li>
                 </ul>
               </div>
             </details>
           </div>
           <ul class="c-meta-list">
-            <li>Design lead</li>
-            <li>Frontend lead</li>
-            <li>2020-2024</li>
+            <li>Author</li>
+            <li>2018+</li>
+            <li><a href="https://github.com/osmoscraft" class="c-meta-link">View source</a></li>
           </ul>
         </section>
 
-        <section class="c-entry c-entry--work">
-          <h3>Dynamics 365</h3>
-          <p>Microsoft’s business application platform.</p>
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://chuanqisun.github.io/semidown/">Semidown</a>
+          </h3>
+          <p>Markdown renderer optimized for LLM</p>
           <div>
             <details class="c-accordion">
               <summary class="c-accordion__trigger">Details</summary>
               <div class="c-accordion__body">
                 <p>
-                  Dynamics 365 introduced me to system thinking. Every problem must be solved at the interconnect
-                  between the platform team, internal solution
-                  teams, partner solution teams, business organization, and business’ customers. I learned valuable
-                  lessons in balancing the interests from
-                  all of the stakeholders above and designing systems that outlasts the change of people and processes.
+                  I built Semidown to solve my personal need for stream rendering markdown in LLM-driven applications. Existing renderers were not suitable for
+                  the use case where content arrives in arbitrary chunks. The project embodies finding balance between performance and simplicity—it is fast
+                  enough and simple, but can't be simpler.
                 </p>
                 <p>
-                  I used in-browser rapid prototyping to communicate and inform design decisions. I co-authored three
-                  design systems that empowered an entire
-                  team of frontend engineers. I pioneered an algorithmic color contrasting system and invented an iframe
-                  based technique for documenting React
-                  components.
+                  The parser uses a semi-incremental approach: block-level incremental parsing for new content, with inline-level re-rendering within blocks.
+                  This design ensures robust and correct rendering without losing mouse selection state as partial input arrives from streaming sources.
+                </p>
+                <ul class="c-tech-list">
+                  <li>TypeScript</li>
+                  <li>RxJS</li>
+                  <li>Compiler</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+          <ul class="c-meta-list">
+            <li>Author</li>
+            <li>2025+</li>
+            <li>
+              <a href="https://github.com/chuanqisun/semidown" class="c-meta-link">View source</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://chuanqisun.github.io/poemoji/">Poemoji</a>
+          </h3>
+          <p>Poetry meets emoji</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  Deployed just in time for Halloween, this collaborative game uses QR code to help players build and relay a story in emojis and texts. In the
+                  end, LLM interprets the emojis into a spooky poem, and recites it in an eerie voice.
+                </p>
+                <p>
+                  I originally implemented the relay mechanism with p2p networking, powered by
+                  <a href="https://github.com/webtorrent/webtorrent" class="c-inline-link">WebTorrent</a>, but observed issues caused by firewall. The good old
+                  URL was after all the most resilient tool for state transfer.
+                </p>
+                <ul class="c-tech-list">
+                  <li>LLM</li>
+                  <li>Speech synthesis</li>
+                  <li>QR code</li>
+                  <li>P2P</li>
+                </ul>
+              </div>
+            </details>
+            <ul class="c-meta-list">
+              <li>Author</li>
+              <li>2024</li>
+              <li>
+                <a href="https://github.com/chuanqisun/poemoji" class="c-meta-link">View source</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://chromewebstore.google.com/detail/gnnpckgfkgfinokbcjoehpkmgmdgadgd">Tab Dance</a>
+          </h3>
+          <p>Delightful tab management</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  In my attempt to make browser tabs easier to manage, I added keyboard affordance to the browser’s built-in tab system, allowing users to
+                  select, move, and close tabs without touching the mouse.
+                </p>
+                <p>
+                  The design was inspired by my
+                  <a href="https://github.com/chuanqisun/keyboard-customization/blob/master/vscode/vim-keybindings.json" class="c-inline-link"
+                    >code editor keybindings</a
+                  >
+                  optimized for VIM.
+                </p>
+                <ul class="c-tech-list">
+                  <li>TypeScript</li>
+                </ul>
+              </div>
+            </details>
+            <ul class="c-meta-list">
+              <li>Author</li>
+              <li>2024+</li>
+              <li>
+                <a href="https://github.com/osmoscraft/tab-dance" class="c-meta-link">View source</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://www.npmjs.com/package/torex">Torex</a>
+          </h3>
+          <p>Generate types for JSON</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  Typed Object Reflection (Torex) is a mini compiler that generates a TypeScript interface for any JSON object. The functionality comes in handy
+                  when you need to manipulate arbitrarily large JSON data with LLM generated code. Instead of prompting LLM with the full data that often
+                  exceeds the model’s token limit, Torex compresses the data to its schema.
+                </p>
+                <p>I brushed up compiler design skills and practiced test-driven development for Torex.</p>
+                <ul class="c-tech-list">
+                  <li>TypeScript</li>
+                  <li>Compiler</li>
+                </ul>
+              </div>
+            </details>
+            <ul class="c-meta-list">
+              <li>Author</li>
+              <li>2023+</li>
+              <li>
+                <a href="https://github.com/chuanqisun/torex" class="c-meta-link">View source</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://www.npmjs.com/package/plexchat">Plexchat</a>
+          </h3>
+          <p>High throughput Azure OpenAI Chat Client</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  Azure OpenAI API poses complex rate limits for chat completion requests. I built Plexchat to handle bursts of request by saturating the
+                  network without exceeding the limits on context window, tokens per minute, and request frequency. It also handles errors and timeout in a
+                  sensible way.
+                </p>
+                <p>
+                  Plexchat allowed me to gain 10X productivity in prompt engineering where batch processing is often needed. It also equipped me with new
+                  knowledge for designing and implementing robust concurrent systems.
+                </p>
+                <ul class="c-tech-list">
+                  <li>TypeScript</li>
+                  <li>LLM</li>
+                </ul>
+              </div>
+            </details>
+            <ul class="c-meta-list">
+              <li>Author</li>
+              <li>2023+</li>
+              <li>
+                <a href="https://github.com/chuanqisun/plexchat" class="c-meta-link">View source</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://chuanqisun.github.io/iter/">Iter</a>
+          </h3>
+          <p>Prompt Engineer’s Playground</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  I built Iter because Azure’s OpenAI Playground was not conducive to experimentation. Specifically, I wanted an editable and branchable chat
+                  history tree and hot-swappable models so I can rapidly explore, iterate, and compare prompts. Since I knew exactly what I needed, I was able
+                  to hack the app together in just two days.
+                </p>
+                <p>
+                  During this project, the Redux state management concept finally clicked when I was working on the chat history tree. I also learned a great
+                  deal about the
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API" class="c-inline-link">Streams API</a> and successfully wrapped it in
+                  the JavaScript
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator" class="c-inline-link"
+                    >Async Generator</a
+                  >
+                  to decode and render the chat messages as the server streams them to the client. The scope of the project is quite small, though a little
+                  extra work in the future could turn this into a compelling alternative to ChatGPT for prompt engineers.
+                </p>
+                <ul class="c-tech-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>LLM</li>
+                </ul>
+              </div>
+            </details>
+            <ul class="c-meta-list">
+              <li>Author</li>
+              <li>2023+</li>
+              <li>
+                <a href="https://github.com/chuanqisun/iter" class="c-meta-link">View source</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://www.figma.com/community/widget/1142531655223087736">Pixel Pusher Online</a>
+          </h3>
+          <p>An MMORPG running inside Figma</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  The project exploited the multiplayer API and conflict-free data structure from the popular design tool
+                  <a href="https://figma.com/" class="c-inline-link">Figma</a>. The outcome is a pixel-art styled game, with real-time and multiplayer
+                  capabilities, running on the canvas inside any Figma file.
+                </p>
+                <p>
+                  Figma is not a real game engine. The avatar walk animation is built from scratch using a DIY spritesheets engine, optimized for framerate. The
+                  UI is rapidly prototyped as an
+                  <a href="https://chuanqisun.github.io/pixel-pusher-online/" class="c-inline-link">embedded web app</a>
+                  that communicates with the main thread using messages.
+                </p>
+                <p>
+                  The project helped me pick up some <a href="https://en.wikipedia.org/wiki/Affine_transformation" class="c-inline-link">linear algebra</a> and
+                  <a href="https://www.youtube.com/playlist?list=PLLdxW--S_0h4dlWUpl-TzBp-ulqK3NiM_" class="c-inline-link">pixel art design</a> skills.
+                </p>
+                <ul class="c-tech-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>TypeScript</li>
+                  <li>Preact</li>
+                </ul>
+              </div>
+            </details>
+            <ul class="c-meta-list">
+              <li>Author</li>
+              <li>2022+</li>
+              <li>
+                <a href="https://github.com/chuanqisun/pixel-pusher-online" class="c-meta-link">View source</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://chrome.google.com/webstore/detail/oacdbpdkkcfihlppfjefkmaeabllfibi">Turbo Query for Azure DevOps</a>
+          </h3>
+          <p>Instantly search and filter up to 20,000 work items from Azure DevOps.</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  My work project, hosted on Azure DevOps, suffered performance issues as it got too large. So I built this browser extension to help my team
+                  stay productive at work. The extension stores the entire project into the browser Indexed DB using
+                  <a href="https://dexie.org/" class="c-inline-link">Dexie.js</a> and provides an instant search experience using an in-memory full-text search
+                  engine powered by <a href="https://github.com/nextapps-de/flexsearch" class="c-inline-link">flexsearch</a>.
+                </p>
+                <p>
+                  The biggest technical challenge is to strike the balance between data freshness, search and index performance, network consumption, and
+                  offline capability. It took me a while to implement the client/service architecture using the Web Workers API and an IPC abstraction layer,
+                  but the 60 FPS search UX in the final product was worth the effort.
+                </p>
+                <ul class="c-tech-list">
+                  <li>Web Worker</li>
+                  <li>React</li>
+                  <li>Indexed DB</li>
+                </ul>
+              </div>
+            </details>
+            <ul class="c-meta-list">
+              <li>Author</li>
+              <li>2022+</li>
+              <li>
+                <a href="https://github.com/chuanqisun/turbo-query" class="c-meta-link">View source</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://github.com/chuanqisun/spacemouse-anywhere">SpaceMouse Anywhere</a>
+          </h3>
+          <p>Use 3Dconnexion SpaceMouse in your favorite design apps.</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  This project is my HCI treasure trove. It was challenging to identify the most intuitive direct manipulation model. Based on experiments and
+                  user feedback, I built dozens of prototypes with different sensitivity curves and activation thresholds, and evaluated their effectiveness on
+                  realistic tasks. The final solution allows simple preference for manipulation target (canvas vs. camera) and offers customization for the
+                  power user.
+                </p>
+                <p>
+                  Performance is at the center of this driver. The
+                  <a href="https://www.figma.com/community/plugin/773058554383274587" class="c-inline-link">Figma plugin</a> was written with no dependency to
+                  reduce CPU and memory load. A “game loop” was implemented from scratch to achieve the bare-metal speed. Smooth interaction was ensured with
+                  the
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame" class="c-inline-link">requestAnimationFrame API</a>.
+                </p>
+                <p>
+                  The
+                  <a href="https://chrome.google.com/webstore/detail/spacemouse-driver-for-ske/ggjjgcdhnigahiokgcknccnkcddgjknf" class="c-inline-link"
+                    >SketchUp web extension</a
+                  >
+                  reverse-engineered a wasm API to simulate mouse and keyboard events. A concurrent buffer algorithm was used to allow mismatched input/output
+                  rate.
+                </p>
+                <ul class="c-tech-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>TypeScript</li>
+                </ul>
+              </div>
+            </details>
+            <ul class="c-meta-list">
+              <li>Author</li>
+              <li>2019+</li>
+              <li>
+                <a href="https://github.com/chuanqisun/spacemouse-anywhere" class="c-meta-link">View source</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>Accessifiers</h3>
+          <p>A non-profit service to help people discover accessible apps.</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  The project is constrained by engineering resource and requires high standards on accessibility. I emphasized reducing complexity of the tech
+                  stack so volunteers from diverse backgrounds can feel comfortable when contributing. I promoted plain CSS over CSS-in-JS, semantic HTML with
+                  BEM over third party UI toolkits so the app will be, and will remain, accessible despite the ever-changing landscape of frontend frameworks.
+                  To facilitate asynchronous collaboration, I improvised a preview system based on GitHub actions so each PR has an immutable URL for sharing.
                 </p>
                 <ul class="c-tech-list">
                   <li>React</li>
-                  <li>TypeScript</li>
-                  <li>Angular</li>
-                  <li>RxJS</li>
+                  <li>Storybook</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
                 </ul>
               </div>
             </details>
+            <ul class="c-meta-list">
+              <li>Volunteer frontend lead</li>
+              <li>2021+</li>
+            </ul>
           </div>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://www.clicademy.com/">Clicademy</a>
+          </h3>
+          <p>A sandbox for digital marketing students.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                It’s difficult to become a market analyst without real data. It’s difficult to get real data without becoming a market analyst. Clicademy solves
+                this chicken-and-egg problem by creating a self-sustained ecosystem that allows user to generate data while learning analytics.
+              </p>
+              <p>
+                I produced branding assets and led frontend engineering for this project. The constraints posed by the WordPress platform required careful
+                tradeoff between cost of maintenance and brand expression. My rapid prototyping process allowed us to validate the solution against real
+                customers on every step we took.
+              </p>
+              <ul class="c-tech-list">
+                <li>WordPress</li>
+              </ul>
+            </div>
+          </details>
           <ul class="c-meta-list">
-            <li>Designer</li>
-            <li>Prototyper</li>
-            <li>Frontend engineer</li>
-            <li>2017-2020</li>
+            <li>CTO</li>
+            <li>2020-2022</li>
           </ul>
         </section>
 
-        <section class="c-entry c-entry--work">
-          <h3>Power BI</h3>
-          <p>Microsoft’s Business intelligence solution.</p>
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://www.npmjs.com/package/acs-expression-builder">OData Filter Builder</a>
+          </h3>
+          <p>A library that programmatically builds the OData filter expression for the Azure Cognitive Search API.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                A spin-off project from the HITS product. I enjoyed the challenge in the nitty-gritty of compiler design. The project allowed me to practice
+                test-driven development and architect the system with Object-Oriented design. It was rewarding to see multiple layers of abstraction working in
+                unison to serialize the syntax tree into the correct expression. The library currently powers the search experience in the HITS product.
+              </p>
+              <ul class="c-tech-list">
+                <li>TypeScript</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Author</li>
+            <li>2021</li>
+            <li>
+              <a href="https://github.com/chuanqisun/acs-expression-builder" class="c-meta-link">View source</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>Switchboard</h3>
+          <p>Instant access to Dynamics 365 demo environments.</p>
           <div>
             <details class="c-accordion">
               <summary class="c-accordion__trigger">Details</summary>
               <div class="c-accordion__body">
                 <p>
-                  I was not on the Power BI design team, but through collaboration and mentorship I was introduced to
-                  data visualization and infographic design. I devoured the classic designer books by Edward Tufte,
-                  Don Norman, Steve Krug, Alan Cooper, and took online courses on typography, color theory,
-                  information architecture, and interaction design. This period of learning paved the foundation for my
-                  later work as a designer.
+                  Dynamics 365 is a B2B platform that creates apps on-demand for each customer, causing difficulty when designers and PMs need to view their own
+                  work. The tool provides a one-click solution to allow instant access to demo environments.
                 </p>
                 <p>
-                  I learned my first lesson in MV* frameworks. Many great developers selflessly coached me on design
-                  patterns, unit and e2e testing, and the cryptic art of debugging CSS when IE support was still a must.
-                  I picked up D3.js as my go-to tool for data visualization and pushed the adoption of design systems
-                  before <a class="c-inline-link" href="https://bradfrost.com/">Brad Frost</a> popularized the practice.
+                  The app repurposed browser automation testing tool to co-pilot with human users, eliminating repetitive and error-prone steps. The tool was
+                  written from scratch three times, with each iteration learning from its predecessor while exploring new opportunities.
                 </p>
+                <ul class="c-inline-list">
+                  <li>Initial version was a CLI. It was fast and nerdy, but became difficult for non-technical users.</li>
+                  <li>The second version was a GUI app based on electron. It was intuitive to use but app installation became the bottleneck for adoption.</li>
+                  <li>
+                    The current version is a cloud service that requires no installation. It has the lowest barrier to entry at the cost of limited integration
+                    with the native OS.
+                  </li>
+                </ul>
                 <ul class="c-tech-list">
-                  <li>AngularJS</li>
-                  <li>D3.js</li>
-                  <li>.NET</li>
-                  <li>C#</li>
+                  <li>Node.js</li>
+                  <li>Electron</li>
+                  <li>Puppeteer</li>
+                  <li>Svelte</li>
+                  <li>Lit</li>
                 </ul>
               </div>
             </details>
+            <ul class="c-meta-list">
+              <li>Author</li>
+              <li>2019+</li>
+              <li>
+                <a href="https://github.com/switchboard-tool" class="c-meta-link">View source</a>
+              </li>
+            </ul>
           </div>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://aka.ms/cursors">cursors</a>
+          </h3>
+          <p>A podcast about culture, design, and business at Microsoft.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                The project considers the producers’ experience as important as the listeners’. I adopted WordPress as a headless CMS for its simple admin
+                experience. The frontend was intentionally decoupled from WordPress to realize a highly custom brutalist design by
+                <a href="https://jeremybarnesdesign.com/" class="c-inline-link">Jeremy Barnes</a>. I also learned a great deal building an audio player from
+                scratch, and publishing the podcast on iTunes.
+              </p>
+              <ul class="c-tech-list">
+                <li>Headless WordPress</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Web Audio</li>
+              </ul>
+            </div>
+          </details>
           <ul class="c-meta-list">
             <li>Full-stack engineer</li>
-            <li>2014-2017</li>
+            <li>2017-2018</li>
           </ul>
         </section>
 
-        <section class="c-entry c-entry--work">
-          <h3>Commvault</h3>
-          <p>Enable file backup and restore in macOS Finder.</p>
-          <div>
-            <details class="c-accordion">
-              <summary class="c-accordion__trigger">Details</summary>
-              <div class="c-accordion__body">
-                <p>
-                  Commvault is an enterprise-facing data storage service. My internship project aimed to allow
-                  file-related operations directly from the OS native menus, similar to what Dropbox offers. Since macOS
-                  is known to be strictly locked down, I had to come up with creative ways to “hack” together a
-                  solution.
-                </p>
-                <ul class="c-tech-list">
-                  <li>Objective-C</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-          <ul class="c-meta-list">
-            <li>Intern engineer</li>
-            <li>2014</li>
-          </ul>
-        </section>
-
-        <section class="c-entry c-entry--work">
-          <h3>Lenovo</h3>
-          <p>Stress testing the original ThinkPad X1.</p>
-          <div>
-            <details class="c-accordion">
-              <summary class="c-accordion__trigger">Details</summary>
-              <div class="c-accordion__body">
-                <p>
-                  As a huge fan of the ThinkPad product line, I joined Lenovo when it was preparing to integrate its
-                  latest ThinkPad with the upcoming Windows 8. I learned about UEFI, SMBus, and Windows Management
-                  Instrumentation. I stress-tested the BIOS module and learned about the error margin the hardware must
-                  operate within.
-                </p>
-                <ul class="c-tech-list">
-                  <li>C Language</li>
-                  <li>Windows 8 ADK</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-          <ul class="c-meta-list">
-            <li>Intern engineer</li>
-            <li>2013</li>
-          </ul>
-        </section>
-      </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-
-    <section id="projects"
-      class="c-scroll-anchor c-main-section c-main-section--projects c-section-grid c-section-grid--third">
-      <h2 class="c-section-grid__item--fill">PROJECTS</h2>
-
-      <svg class="c-section-art c-section-grid__item--fill" width="64" height="58" stroke-width="0.6"
-        viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="25" cy="22" r="6.5" stroke="currentColor" />
-        <circle cx="7" cy="22" r="6.5" stroke="currentColor" />
-        <circle cx="16" cy="7" r="6.5" stroke="currentColor" />
-      </svg>
-
-      <p class="c-section-grid__item--fill c-projects-floating-text">
-        I’m a Human-Computer Interaction nerd. I go to great lengths to create systems, tools, and experiences that are
-        functionally powerful and visually
-        delightful. For these projects I would happily trade in my sleep.
-      </p>
-
-      <div class="spacer"></div>
-
-      <section class="c-entry c-entry--project c-section-grid__item--fill">
-        <h3><a class="c-title-link c-h3--hero" href="https://osmoscraft.org">osmos::craft</a></h3>
-        <p>Push people to discover, ingest, organize, connect, generate, and share knowledge.</p>
-        <div>
-          <details class="c-accordion" open>
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://529legion.com">529 Legion</a>
+          </h3>
+          <p>Web and print resume for a bike racing team.</p>
+          <details class="c-accordion">
             <summary class="c-accordion__trigger">Details</summary>
             <div class="c-accordion__body">
-              <p>The project includes a set of apps that share similar goals.</p>
-              <ul class="c-inline-list">
-                <li>A web-based RSS reader running entirely from a GitHub repo.</li>
-                <li>A browser bookmark manager optimized for capture and retrieval speed.</li>
-                <li>A web-based text editor for networked note-taking, self-hostable on any Git repository.</li>
-                <li>(In progress) An all-in-one learning environment that brings together all of the above.</li>
-              </ul>
               <p>
-                The project helped me grow from a consumer of libraries to a creator of them. For this project, I’ve
-                designed a concurrent task scheduler, a
-                <a href="https://github.com/osmoscraft/osmosnote/tree/master/packages/server/public/src/components/text-editor"
-                  class="c-inline-link">WYSIWYG text editor</a>, an <a
-                  href="https://github.com/osmoscraft/web-rendering-library" class="c-inline-link">HTML templating
-                  engine</a>, a DOM diffing and
-                rendering algorithm, an RSS/Atom feed parser, and a
-                <a href="https://github.com/osmoscraft/node-testing-library" class="c-inline-link">unit test
-                  framework</a>, all from scratch. I’m currently
-                designing an operation-based conflict-free replicated data type for the TODO app.
+                529 Legion is a mountain bike racing team and community event organizer. Every year 529 Legion presents its achievements and calls for continued
+                support as it renews its sponsorship. I worked with the team manager to design and produce the print resume and the team website for three years
+                in a row.
+              </p>
+              <a href="assets/529_legion_2019.pdf" class="c-inline-link">Read the resume (2019)</a>
+              <ul class="c-tech-list">
+                <li>Adobe Illustrator</li>
+                <li>Figma</li>
+                <li>Squarespace</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Designer</li>
+            <li>2015-2019</li>
+          </ul>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>Power Loops</h3>
+          <p>The next gen dev experience for Microsoft Power Apps Control Framework.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                The project was a concept demo, inspired by the hot module reloading from webpack. Developer productivity was low because each change could only
+                be reviewed after a full deployment. The concept demo solves the problem by creating a mini container environment to satisfy all the I/O
+                requirements (similar to Docker), so developers can preview their changes locally, with instant reload.
+              </p>
+              <p>
+                The project was successfully productized into the
+                <a href="https://docs.microsoft.com/en-us/powerapps/developer/data-platform/powerapps-cli" class="c-inline-link">Power Platform CLI</a>.
               </p>
               <ul class="c-tech-list">
-                <li>TypeScript</li>
                 <li>Node.js</li>
-                <li>Docker</li>
-              </ul>
-            </div>
-          </details>
-        </div>
-        <ul class="c-meta-list">
-          <li>Author</li>
-          <li>2018+</li>
-          <li><a href="https://github.com/osmoscraft" class="c-meta-link">View source</a></li>
-        </ul>
-      </section>
-
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://chuanqisun.github.io/poemoji/">Poemoji</a>
-        </h3>
-        <p>Poetry meets emoji</p>
-        <div>
-          <details class="c-accordion">
-            <summary class="c-accordion__trigger">Details</summary>
-            <div class="c-accordion__body">
-              <p>Deployed just in time for Halloween, this collaborative game uses QR code to help players build and
-                relay a story in emojis and texts. In the end, LLM interprets the emojis into a spooky poem, and recites
-                it in an eerie voice.</p>
-              <p>I originally implemented the relay mechanism with p2p networking, powered by
-                <a href="https://github.com/webtorrent/webtorrent" class="c-inline-link">WebTorrent</a>, but observed
-                issues caused by firewall. The good old URL was after all the most resilient tool for state transfer.
-              </p>
-              <ul class="c-tech-list">
-                <li>LLM</li>
-                <li>Speech synthesis</li>
-                <li>QR code</li>
-                <li>P2P</li>
+                <li>Yeoman</li>
+                <li>Commander</li>
               </ul>
             </div>
           </details>
           <ul class="c-meta-list">
-            <li>Author</li>
-            <li>2024</li>
-            <li>
-              <a href="https://github.com/chuanqisun/poemoji" class="c-meta-link">View source</a>
-            </li>
+            <li>Co-author</li>
+            <li>2018</li>
           </ul>
-        </div>
-      </section>
+        </section>
 
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://chromewebstore.google.com/detail/gnnpckgfkgfinokbcjoehpkmgmdgadgd">Tab
-            Dance</a>
-        </h3>
-        <p>Delightful tab management</p>
-        <div>
-          <details class="c-accordion">
-            <summary class="c-accordion__trigger">Details</summary>
-            <div class="c-accordion__body">
-              <p>In my attempt to make browser tabs easier to manage, I added keyboard affordance to the browser’s
-                built-in tab system, allowing users to select, move, and close tabs without touching the mouse.</p>
-              <p>The design was inspired by my <a
-                  href="https://github.com/chuanqisun/keyboard-customization/blob/master/vscode/vim-keybindings.json"
-                  class="c-inline-link">code editor keybindings</a> optimized for VIM.</p>
-              <ul class="c-tech-list">
-                <li>TypeScript</li>
-              </ul>
-            </div>
-          </details>
-          <ul class="c-meta-list">
-            <li>Author</li>
-            <li>2024+</li>
-            <li>
-              <a href="https://github.com/osmoscraft/tab-dance" class="c-meta-link">View source</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://www.npmjs.com/package/torex">Torex</a>
-        </h3>
-        <p>Generate types for JSON</p>
-        <div>
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://chuanqisun.github.io/contrast-matrix">Contrast Matrix</a>
+          </h3>
+          <p>Ensure accessibility for an entire palette.</p>
           <details class="c-accordion">
             <summary class="c-accordion__trigger">Details</summary>
             <div class="c-accordion__body">
               <p>
-                Typed Object Reflection (Torex) is a mini compiler that generates a TypeScript interface for any JSON
-                object. The functionality comes in handy
-                when you need to manipulate arbitrarily large JSON data with LLM generated code. Instead of prompting
-                LLM with the full data that often
-                exceeds the model’s token limit, Torex compresses the data to its schema.
+                WCAG 2.0 requires minimum contrast ratio for UI elements. Existing tools only validate one foreground/background pair at a time, creating a
+                bottleneck in the designer’s workflow as the complexity of the UI grow. The tool solves the problem by generating a matrix of
+                foreground/background color pairs so all possible color pairs can be validated at once. The palette can then be exported and imported for reuse.
               </p>
-              <p>I brushed up compiler design skills and practiced test-driven development for Torex.</p>
+              <p>I collaborated with <a href="https://adamferch.com" class="c-inline-link">Adam Ferch</a> to realize his design in code.</p>
               <ul class="c-tech-list">
-                <li>TypeScript</li>
-                <li>Compiler</li>
-              </ul>
-            </div>
-          </details>
-          <ul class="c-meta-list">
-            <li>Author</li>
-            <li>2023+</li>
-            <li>
-              <a href="https://github.com/chuanqisun/torex" class="c-meta-link">View source</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://www.npmjs.com/package/plexchat">Plexchat</a>
-        </h3>
-        <p>High throughput Azure OpenAI Chat Client</p>
-        <div>
-          <details class="c-accordion">
-            <summary class="c-accordion__trigger">Details</summary>
-            <div class="c-accordion__body">
-              <p>
-                Azure OpenAI API poses complex rate limits for chat completion requests. I built Plexchat to handle
-                bursts of request by saturating the network without exceeding the limits on context window, tokens per
-                minute, and request frequency. It also handles errors and timeout in a sensible way.
-              </p>
-              <p>
-                Plexchat allowed me to gain 10X productivity in prompt engineering where batch processing is often
-                needed. It also equipped me with new
-                knowledge for designing and implementing robust concurrent systems.
-              </p>
-              <ul class="c-tech-list">
-                <li>TypeScript</li>
-                <li>LLM</li>
-              </ul>
-            </div>
-          </details>
-          <ul class="c-meta-list">
-            <li>Author</li>
-            <li>2023+</li>
-            <li>
-              <a href="https://github.com/chuanqisun/plexchat" class="c-meta-link">View source</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://chuanqisun.github.io/iter/">Iter</a>
-        </h3>
-        <p>Prompt Engineer’s Playground</p>
-        <div>
-          <details class="c-accordion">
-            <summary class="c-accordion__trigger">Details</summary>
-            <div class="c-accordion__body">
-              <p>
-                I built Iter because Azure’s OpenAI Playground was not conducive to experimentation. Specifically, I
-                wanted an editable and branchable chat
-                history tree and hot-swappable models so I can rapidly explore, iterate, and compare prompts. Since I
-                knew exactly what I needed, I was able
-                to hack the app together in just two days.
-              </p>
-              <p>
-                During this project, the Redux state management concept finally clicked when I was working on the chat
-                history tree. I also learned a great
-                deal about the
-                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API" class="c-inline-link">Streams
-                  API</a> and successfully wrapped it in
-                the JavaScript
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator"
-                  class="c-inline-link">Async Generator</a>
-                to decode and render the chat messages as the server streams them to the client. The scope of the
-                project is quite small, though a little
-                extra work in the future could turn this into a compelling alternative to ChatGPT for prompt engineers.
-              </p>
-              <ul class="c-tech-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>LLM</li>
-              </ul>
-            </div>
-          </details>
-          <ul class="c-meta-list">
-            <li>Author</li>
-            <li>2023+</li>
-            <li>
-              <a href="https://github.com/chuanqisun/iter" class="c-meta-link">View source</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://www.figma.com/community/widget/1142531655223087736">Pixel Pusher
-            Online</a>
-        </h3>
-        <p>An MMORPG running inside Figma</p>
-        <div>
-          <details class="c-accordion">
-            <summary class="c-accordion__trigger">Details</summary>
-            <div class="c-accordion__body">
-              <p>
-                The project exploited the multiplayer API and conflict-free data structure from the popular design tool
-                <a href="https://figma.com/" class="c-inline-link">Figma</a>. The outcome is a pixel-art styled game,
-                with real-time and multiplayer
-                capabilities, running on the canvas inside any Figma file.
-              </p>
-              <p>
-                Figma is not a real game engine. The avatar walk animation is built from scratch using a DIY
-                spritesheets engine, optimized for framerate. The
-                UI is rapidly prototyped as an
-                <a href="https://chuanqisun.github.io/pixel-pusher-online/" class="c-inline-link">embedded web app</a>
-                that communicates with the main thread
-                using messages.
-              </p>
-              <p>
-                The project helped me pick up some <a href="https://en.wikipedia.org/wiki/Affine_transformation"
-                  class="c-inline-link">linear algebra</a> and
-                <a href="https://www.youtube.com/playlist?list=PLLdxW--S_0h4dlWUpl-TzBp-ulqK3NiM_"
-                  class="c-inline-link">pixel art design</a> skills.
-              </p>
-              <ul class="c-tech-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>TypeScript</li>
-                <li>Preact</li>
-              </ul>
-            </div>
-          </details>
-          <ul class="c-meta-list">
-            <li>Author</li>
-            <li>2022+</li>
-            <li>
-              <a href="https://github.com/chuanqisun/pixel-pusher-online" class="c-meta-link">View source</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link"
-            href="https://chrome.google.com/webstore/detail/oacdbpdkkcfihlppfjefkmaeabllfibi">Turbo
-            Query for Azure DevOps</a>
-        </h3>
-        <p>Instantly search and filter up to 20,000 work items from Azure DevOps.</p>
-        <div>
-          <details class="c-accordion">
-            <summary class="c-accordion__trigger">Details</summary>
-            <div class="c-accordion__body">
-              <p>
-                My work project, hosted on Azure DevOps, suffered performance issues as it got too large. So I built
-                this browser extension to help my team
-                stay productive at work. The extension stores the entire project into the browser Indexed DB using
-                <a href="https://dexie.org/" class="c-inline-link">Dexie.js</a> and provides an instant search
-                experience using an in-memory full-text search
-                engine powered by <a href="https://github.com/nextapps-de/flexsearch"
-                  class="c-inline-link">flexsearch</a>.
-              </p>
-              <p>
-                The biggest technical challenge is to strike the balance between data freshness, search and index
-                performance, network consumption, and
-                offline capability. It took me a while to implement the client/service architecture using the Web
-                Workers API and an IPC abstraction layer,
-                but the 60 FPS search UX in the final product was worth the effort.
-              </p>
-              <ul class="c-tech-list">
-                <li>Web Worker</li>
-                <li>React</li>
-                <li>Indexed DB</li>
-              </ul>
-            </div>
-          </details>
-          <ul class="c-meta-list">
-            <li>Author</li>
-            <li>2022+</li>
-            <li>
-              <a href="https://github.com/chuanqisun/turbo-query" class="c-meta-link">View source</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://github.com/chuanqisun/spacemouse-anywhere">SpaceMouse Anywhere</a>
-        </h3>
-        <p>Use 3Dconnexion SpaceMouse in your favorite design apps.</p>
-        <div>
-          <details class="c-accordion">
-            <summary class="c-accordion__trigger">Details</summary>
-            <div class="c-accordion__body">
-              <p>
-                This project is my HCI treasure trove. It was challenging to identify the most intuitive direct
-                manipulation model. Based on experiments and
-                user feedback, I built dozens of prototypes with different sensitivity curves and activation thresholds,
-                and evaluated their effectiveness on
-                realistic tasks. The final solution allows simple preference for manipulation target (canvas vs. camera)
-                and offers customization for the
-                power user.
-              </p>
-              <p>
-                Performance is at the center of this driver. The
-                <a href="https://www.figma.com/community/plugin/773058554383274587" class="c-inline-link">Figma
-                  plugin</a> was written with no dependency to
-                reduce CPU and memory load. A “game loop” was implemented from scratch to achieve the bare-metal speed.
-                Smooth interaction was ensured with
-                the
-                <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame"
-                  class="c-inline-link">requestAnimationFrame API</a>.
-              </p>
-              <p>
-                The
-                <a href="https://chrome.google.com/webstore/detail/spacemouse-driver-for-ske/ggjjgcdhnigahiokgcknccnkcddgjknf"
-                  class="c-inline-link">SketchUp web extension</a>
-                reverse-engineered a wasm API to simulate mouse and keyboard events. A concurrent buffer algorithm was
-                used to allow mismatched input/output
-                rate.
-              </p>
-              <ul class="c-tech-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>TypeScript</li>
-              </ul>
-            </div>
-          </details>
-          <ul class="c-meta-list">
-            <li>Author</li>
-            <li>2019+</li>
-            <li>
-              <a href="https://github.com/chuanqisun/spacemouse-anywhere" class="c-meta-link">View source</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="c-entry c-entry--project">
-        <h3>Accessifiers</h3>
-        <p>A non-profit service to help people discover accessible apps.</p>
-        <div>
-          <details class="c-accordion">
-            <summary class="c-accordion__trigger">Details</summary>
-            <div class="c-accordion__body">
-              <p>
-                The project is constrained by engineering resource and requires high standards on accessibility. I
-                emphasized reducing complexity of the tech stack so volunteers from diverse backgrounds can feel
-                comfortable when contributing. I promoted plain CSS over CSS-in-JS, semantic HTML with BEM over third
-                party UI toolkits so the app will be, and will remain, accessible despite the ever-changing landscape of
-                frontend frameworks. To facilitate asynchronous collaboration, I improvised a preview system based on
-                GitHub actions so each PR has an immutable URL for sharing.
-              </p>
-              <ul class="c-tech-list">
-                <li>React</li>
-                <li>Storybook</li>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -688,698 +899,440 @@
             </div>
           </details>
           <ul class="c-meta-list">
-            <li>Volunteer frontend lead</li>
-            <li>2021+</li>
+            <li>Engineer</li>
+            <li>2016</li>
+            <li>
+              <a href="https://github.com/chuanqisun/contrast-matrix" class="c-meta-link">View source</a>
+            </li>
           </ul>
-        </div>
-      </section>
+        </section>
 
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://www.clicademy.com/">Clicademy</a>
-        </h3>
-        <p>A sandbox for digital marketing students.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              It’s difficult to become a market analyst without real data. It’s difficult to get real data without
-              becoming a market analyst. Clicademy solves this chicken-and-egg problem by creating a self-sustained
-              ecosystem that allows user to generate data while learning analytics.
-            </p>
-            <p>
-              I produced branding assets and led frontend engineering for this project. The constraints posed by the
-              WordPress platform required careful tradeoff between cost of maintenance and brand expression. My rapid
-              prototyping process allowed us to validate the solution against real customers on every step we took.
-            </p>
-            <ul class="c-tech-list">
-              <li>WordPress</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>CTO</li>
-          <li>2020-2022</li>
-        </ul>
-      </section>
-
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://www.npmjs.com/package/acs-expression-builder">OData Filter Builder</a>
-        </h3>
-        <p>A library that programmatically builds the OData filter expression for the Azure Cognitive Search API.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              A spin-off project from the HITS product. I enjoyed the challenge in the nitty-gritty of compiler design.
-              The project allowed me to practice
-              test-driven development and architect the system with Object-Oriented design. It was rewarding to see
-              multiple layers of abstraction working in
-              unison to serialize the syntax tree into the correct expression. The library currently powers the search
-              experience in the HITS product.
-            </p>
-            <ul class="c-tech-list">
-              <li>TypeScript</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Author</li>
-          <li>2021</li>
-          <li>
-            <a href="https://github.com/chuanqisun/acs-expression-builder" class="c-meta-link">View source</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="c-entry c-entry--project">
-        <h3>Switchboard</h3>
-        <p>Instant access to Dynamics 365 demo environments.</p>
-        <div>
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://www.npmjs.com/package/jasmine-mock-factory">Jasmine Mock Factory</a>
+          </h3>
+          <p>A unit test utility that creates a mock of anything.</p>
           <details class="c-accordion">
             <summary class="c-accordion__trigger">Details</summary>
             <div class="c-accordion__body">
               <p>
-                Dynamics 365 is a B2B platform that creates apps on-demand for each customer, causing difficulty when
-                designers and PMs need to view their own
-                work. The tool provides a one-click solution to allow instant access to demo environments.
+                Test-driven development was hard to practice because of the up-front cost in wiring up the mocks. This utility solves the problem by providing a
+                universal mock object with zero setup for every unit test.
               </p>
               <p>
-                The app repurposed browser automation testing tool to co-pilot with human users, eliminating repetitive
-                and error-prone steps. The tool was
-                written from scratch three times, with each iteration learning from its predecessor while exploring new
-                opportunities.
+                I practiced TDD for the project itself and leveled up my TypeScript game as I worked with self-referential types from the
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" class="c-inline-link">ES6 Proxy API</a>. To
+                enable open-source contributions, I implemented a CI/CD pipeline with automated testing and coverage report.
               </p>
-              <ul class="c-inline-list">
-                <li>Initial version was a CLI. It was fast and nerdy, but became difficult for non-technical users.</li>
-                <li>The second version was a GUI app based on electron. It was intuitive to use but app installation
-                  became the bottleneck for adoption.</li>
-                <li>
-                  The current version is a cloud service that requires no installation. It has the lowest barrier to
-                  entry at the cost of limited integration
-                  with the native OS.
-                </li>
-              </ul>
               <ul class="c-tech-list">
-                <li>Node.js</li>
-                <li>Electron</li>
-                <li>Puppeteer</li>
-                <li>Svelte</li>
-                <li>Lit</li>
+                <li>TypeScript</li>
+                <li>Karma</li>
+                <li>Jasmine</li>
+                <li>Travis</li>
+                <li>Coveralls</li>
               </ul>
             </div>
           </details>
           <ul class="c-meta-list">
             <li>Author</li>
-            <li>2019+</li>
+            <li>2016-2019</li>
             <li>
-              <a href="https://github.com/switchboard-tool" class="c-meta-link">View source</a>
+              <a href="https://github.com/chuanqisun/jasmine-mock-factory" class="c-meta-link">View source</a>
             </li>
           </ul>
-        </div>
-      </section>
+        </section>
 
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://aka.ms/cursors">cursors</a>
-        </h3>
-        <p>A podcast about culture, design, and business at Microsoft.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              The project considers the producers’ experience as important as the listeners’. I adopted WordPress as a
-              headless CMS for its simple admin
-              experience. The frontend was intentionally decoupled from WordPress to realize a highly custom brutalist
-              design by
-              <a href="https://jeremybarnesdesign.com/" class="c-inline-link">Jeremy Barnes</a>. I also learned a great
-              deal building an audio player from
-              scratch, and publishing the podcast on iTunes.
-            </p>
-            <ul class="c-tech-list">
-              <li>Headless WordPress</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Web Audio</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Full-stack engineer</li>
-          <li>2017-2018</li>
-        </ul>
-      </section>
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://chuanqisun.github.io/oblique">Oblique</a>
+          </h3>
+          <p>Source of inspiration for creative professionals.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                A tongue-in-cheek inspiration generator. I practiced social platform API integration at the height of the Web 2.0 movement. I also sweat the
+                details in the logo.
+              </p>
+              <ul class="c-tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Facebook API</li>
+                <li>Twitter API</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Author</li>
+            <li>2017</li>
+            <li>
+              <a href="https://github.com/chuanqisun/oblique" class="c-meta-link">View source</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://529legion.com">529 Legion</a>
-        </h3>
-        <p>Web and print resume for a bike racing team.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              529 Legion is a mountain bike racing team and community event organizer. Every year 529 Legion presents
-              its achievements and calls for continued
-              support as it renews its sponsorship. I worked with the team manager to design and produce the print
-              resume and the team website for three years
-              in a row.
-            </p>
-            <a href="assets/529_legion_2019.pdf" class="c-inline-link">Read the resume (2019)</a>
-            <ul class="c-tech-list">
-              <li>Adobe Illustrator</li>
-              <li>Figma</li>
-              <li>Squarespace</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Designer</li>
-          <li>2015-2019</li>
-        </ul>
-      </section>
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="assets/course_insight.pdf">Course inSight</a>
+          </h3>
+          <p>Interactive course browser that uses machine learning and data visualization to help students design their academic path.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                The project integrates a course catalog with natural language processing and cloud database to provide recommendations based on the concepts
+                extracted from a given course, revealing meaningful connections between courses that are not available through existing technologies.
+              </p>
+              <p>The project synthesized several concepts floating in my head around that time:</p>
+              <ul class="c-inline-list">
+                <li>The course catalog crawler was designed based on the search engine crawler from CS50 (Software Design and Implementation).</li>
+                <li>
+                  The Natural Language Processing algorithm was inspired by the Machine Learning lectures from CS74 (Machine Learning and Statistical Data
+                  Analysis).
+                </li>
+                <li>The data visualization was inspired by my internship with Microsoft on the Power BI product.</li>
+              </ul>
+              <ul class="c-tech-list">
+                <li>Bash script</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>D3.js</li>
+                <li>Alchemy API (IBM Watson)</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Author</li>
+            <li>2015</li>
+            <li>
+              <a href="https://github.com/chuanqisun/cs98-cloud-nlp" class="c-meta-link">View source</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="c-entry c-entry--project">
-        <h3>Power Loops</h3>
-        <p>The next gen dev experience for Microsoft Power Apps Control Framework.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              The project was a concept demo, inspired by the hot module reloading from webpack. Developer productivity
-              was low because each change could only be reviewed after a full deployment. The concept demo solves the
-              problem by creating a mini container environment to satisfy all the I/O requirements (similar to Docker),
-              so developers can preview their changes locally, with instant reload.
-            </p>
-            <p>
-              The project was successfully productized into the
-              <a href="https://docs.microsoft.com/en-us/powerapps/developer/data-platform/powerapps-cli"
-                class="c-inline-link">Power Platform CLI</a>.
-            </p>
-            <ul class="c-tech-list">
-              <li>Node.js</li>
-              <li>Yeoman</li>
-              <li>Commander</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Co-author</li>
-          <li>2018</li>
-        </ul>
-      </section>
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://www.youtube.com/watch?v=5P4_eVL8ZzU">Hanover Weather Audiovisual Experience</a>
+          </h3>
+          <p>Transform weather data into an audiovisual rollercoaster ride.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                An experiential art project produced for a film and music studies class. To put my learning from CS02 (Programming for Interactive Audio-Visual
+                Arts) into practice, I composed this piece in Processing and had loads of fun watching the reaction from my professor and classmates. While
+                collaborating with 2 other students, I am the primary creator of the experience.
+              </p>
+              <ul class="c-tech-list">
+                <li>Processing</li>
+                <li>Java</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Artist</li>
+            <li>2015</li>
+          </ul>
+        </section>
 
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://chuanqisun.github.io/contrast-matrix">Contrast Matrix</a>
-        </h3>
-        <p>Ensure accessibility for an entire palette.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              WCAG 2.0 requires minimum contrast ratio for UI elements. Existing tools only validate one
-              foreground/background pair at a time, creating a
-              bottleneck in the designer’s workflow as the complexity of the UI grow. The tool solves the problem by
-              generating a matrix of
-              foreground/background color pairs so all possible color pairs can be validated at once. The palette can
-              then be exported and imported for reuse.
-            </p>
-            <p>I collaborated with <a href="https://adamferch.com" class="c-inline-link">Adam Ferch</a> to realize his
-              design in code.</p>
-            <ul class="c-tech-list">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Engineer</li>
-          <li>2016</li>
-          <li>
-            <a href="https://github.com/chuanqisun/contrast-matrix" class="c-meta-link">View source</a>
-          </li>
-        </ul>
-      </section>
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://github.com/chuanqisun/midi-evo/blob/master/User_Manual.pdf">MidiEvo</a>
+          </h3>
+          <p>A sequencer and looper for any MIDI input device.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                A tool for musicians to compose MIDI loops. Ensuring the speed of I/O became the critical piece for this project. Without using expensive
+                hardware, I implemented a quantized time alignment algorithm to improve the output quality.
+              </p>
+              <ul class="c-tech-list">
+                <li>Processing</li>
+                <li>Java</li>
+                <li>MIDI</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Author</li>
+            <li>2015</li>
+            <li>
+              <a href="https://github.com/chuanqisun/midi-evo" class="c-meta-link">View source</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://www.npmjs.com/package/jasmine-mock-factory">Jasmine Mock Factory</a>
-        </h3>
-        <p>A unit test utility that creates a mock of anything.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              Test-driven development was hard to practice because of the up-front cost in wiring up the mocks. This
-              utility solves the problem by providing a
-              universal mock object with zero setup for every unit test.
-            </p>
-            <p>
-              I practiced TDD for the project itself and leveled up my TypeScript game as I worked with self-referential
-              types from the
-              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy"
-                class="c-inline-link">ES6 Proxy API</a>. To
-              enable open-source contributions, I implemented a CI/CD pipeline with automated testing and coverage
-              report.
-            </p>
-            <ul class="c-tech-list">
-              <li>TypeScript</li>
-              <li>Karma</li>
-              <li>Jasmine</li>
-              <li>Travis</li>
-              <li>Coveralls</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Author</li>
-          <li>2016-2019</li>
-          <li>
-            <a href="https://github.com/chuanqisun/jasmine-mock-factory" class="c-meta-link">View source</a>
-          </li>
-        </ul>
-      </section>
+        <section class="c-entry c-entry--project">
+          <h3>IoT Lights Control Panel</h3>
+          <p>An IoT Hub controlling smart lights for a 91,800 sqft field house.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                The smart lights installed in the field house at Dartmouth was not conserving energy as much as it should due to an outdated centralized
+                scheduling system. To improve lighting efficiency, I worked with
+                <a href="https://dali.dartmouth.edu/" class="c-inline-link">DALI lab</a> to allow field house users adjust lighting on-demand. The project
+                taught me lessons in collaboration with stakeholders and designers. I also had fun learning a NoSQL cloud database and the Backbone framework.
+              </p>
+              <ul class="c-tech-list">
+                <li>IoT</li>
+                <li>Parse</li>
+                <li>Backbone</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Full-stack engineer</li>
+            <li>2014</li>
+          </ul>
+        </section>
 
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://chuanqisun.github.io/oblique">Oblique</a>
-        </h3>
-        <p>Source of inspiration for creative professionals.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              A tongue-in-cheek inspiration generator. I practiced social platform API integration at the height of the
-              Web 2.0 movement. I also sweat the
-              details in the logo.
-            </p>
-            <ul class="c-tech-list">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Facebook API</li>
-              <li>Twitter API</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Author</li>
-          <li>2017</li>
-          <li>
-            <a href="https://github.com/chuanqisun/oblique" class="c-meta-link">View source</a>
-          </li>
-        </ul>
-      </section>
+        <section class="c-entry c-entry--project">
+          <h3>
+            <a class="c-title-link" href="https://www.youtube.com/watch?v=N_xgy5yofBw">Gesture-controlled Learning Game</a>
+          </h3>
+          <p>Help users achieve learning goals while winning $1000 from Intel.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                Using a prototype infrared camera and a computer vision SDK for head and hand tracking, I created a primitive 3D environment to explore the use
+                cases of novel interaction. The project revealed the performance limitation from the hardware and software at the time, but our gesture-based
+                navigation pattern had become commonplace in today’s AR/VR applications.
+              </p>
+              <p>
+                My team, led by <a href="https://www.linkedin.com/in/fei-yu-68a8923/" class="c-inline-link">Fei Yu</a>, had won the $1000 early submission prize
+                from the Intel Perceptual Computing Challenge.
+              </p>
+              <ul class="c-tech-list">
+                <li>Intel Perceptual SDK</li>
+                <li>Unity</li>
+                <li>C#</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Lead engineer</li>
+            <li>2013</li>
+          </ul>
+        </section>
 
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="assets/course_insight.pdf">Course inSight</a>
-        </h3>
-        <p>Interactive course browser that uses machine learning and data visualization to help students design their
-          academic path.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              The project integrates a course catalog with natural language processing and cloud database to provide
-              recommendations based on the concepts
-              extracted from a given course, revealing meaningful connections between courses that are not available
-              through existing technologies.
-            </p>
-            <p>The project synthesized several concepts floating in my head around that time:</p>
-            <ul class="c-inline-list">
-              <li>The course catalog crawler was designed based on the search engine crawler from CS50 (Software Design
-                and Implementation).</li>
-              <li>
-                The Natural Language Processing algorithm was inspired by the Machine Learning lectures from CS74
-                (Machine Learning and Statistical Data
+        <section class="c-entry c-entry--project">
+          <h3>Eye Tracker Data Analysis</h3>
+          <p>Modeling cognitive bias from eye movement.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                A research project lead by
+                <a href="https://scholar.google.com/citations?user=iV8mtiwAAAAJ&hl=en" class="c-inline-link">Alireza Soltani</a>. I used machine learning
+                techniques to identify correlations between brain activities and eye saccades. The research project taught me the rigor and patience in the
+                scientific endeavor, and also showed me the practical side of machine learning just as I finished CS74 (Machine Learning and Statistical Data
                 Analysis).
-              </li>
-              <li>The data visualization was inspired by my internship with Microsoft on the Power BI product.</li>
-            </ul>
-            <ul class="c-tech-list">
-              <li>Bash script</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>D3.js</li>
-              <li>Alchemy API (IBM Watson)</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Author</li>
-          <li>2015</li>
-          <li>
-            <a href="https://github.com/chuanqisun/cs98-cloud-nlp" class="c-meta-link">View source</a>
-          </li>
-        </ul>
+              </p>
+              <ul class="c-tech-list">
+                <li>MATLAB</li>
+                <li>Support Vector Machines</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Research engineer</li>
+            <li>2013-2014</li>
+          </ul>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>Language Detection from Speech Samples</h3>
+          <p>Detect spoken language using a natural language processing pipeline.</p>
+          <details class="c-accordion">
+            <summary class="c-accordion__trigger">Details</summary>
+            <div class="c-accordion__body">
+              <p>
+                A research project in collaboration with
+                <a href="https://www.linkedin.com/in/jing-wei-pan/" class="c-inline-link">Jingwei Pan</a>, for CS74 (Machine Learning and Statistical Data
+                Analysis). I experimented with Support Vector Machine and Neural Network to differentiate Chinese, French, and English.
+              </p>
+              <ul class="c-tech-list">
+                <li>MATLAB</li>
+                <li>Support Vector Machine</li>
+                <li>Neural Network</li>
+              </ul>
+            </div>
+          </details>
+          <ul class="c-meta-list">
+            <li>Engineer</li>
+            <li>2013</li>
+          </ul>
+        </section>
       </section>
 
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://www.youtube.com/watch?v=5P4_eVL8ZzU">Hanover Weather Audiovisual
-            Experience</a>
-        </h3>
-        <p>Transform weather data into an audiovisual rollercoaster ride.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              An experiential art project produced for a film and music studies class. To put my learning from CS02
-              (Programming for Interactive Audio-Visual
-              Arts) into practice, I composed this piece in Processing and had loads of fun watching the reaction from
-              my professor and classmates. While
-              collaborating with 2 other students, I am the primary creator of the experience.
-            </p>
-            <ul class="c-tech-list">
-              <li>Processing</li>
-              <li>Java</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Artist</li>
-          <li>2015</li>
-        </ul>
-      </section>
+      <!-- IO SECTION -->
 
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://github.com/chuanqisun/midi-evo/blob/master/User_Manual.pdf">MidiEvo</a>
-        </h3>
-        <p>A sequencer and looper for any MIDI input device.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              A tool for musicians to compose MIDI loops. Ensuring the speed of I/O became the critical piece for this
-              project. Without using expensive
-              hardware, I implemented a quantized time alignment algorithm to improve the output quality.
-            </p>
-            <ul class="c-tech-list">
-              <li>Processing</li>
-              <li>Java</li>
-              <li>MIDI</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Author</li>
-          <li>2015</li>
-          <li>
-            <a href="https://github.com/chuanqisun/midi-evo" class="c-meta-link">View source</a>
-          </li>
-        </ul>
-      </section>
+      <section id="io" class="c-scroll-anchor c-main-section c-main-section--io c-section-grid">
+        <h2 class="c-section-grid__item--fill">I/O</h2>
 
-      <section class="c-entry c-entry--project">
-        <h3>IoT Lights Control Panel</h3>
-        <p>An IoT Hub controlling smart lights for a 91,800 sqft field house.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              The smart lights installed in the field house at Dartmouth was not conserving energy as much as it should
-              due to an outdated centralized scheduling system. To improve lighting efficiency, I worked with
-              <a href="https://dali.dartmouth.edu/" class="c-inline-link">DALI lab</a> to allow field house users adjust
-              lighting on-demand. The project taught me lessons in collaboration with stakeholders and designers. I also
-              had fun learning a NoSQL cloud database and the Backbone framework.
-            </p>
-            <ul class="c-tech-list">
-              <li>IoT</li>
-              <li>Parse</li>
-              <li>Backbone</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Full-stack engineer</li>
-          <li>2014</li>
-        </ul>
-      </section>
+        <svg class="c-section-art c-section-grid__item--fill" width="64" height="64" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="15.5" stroke="currentColor" />
+          <circle cx="8" cy="16" r="7.5" stroke="currentColor" />
+          <circle cx="12" cy="16" r="11.5" stroke="currentColor" />
+        </svg>
 
-      <section class="c-entry c-entry--project">
-        <h3>
-          <a class="c-title-link" href="https://www.youtube.com/watch?v=N_xgy5yofBw">Gesture-controlled Learning
-            Game</a>
-        </h3>
-        <p>Help users achieve learning goals while winning $1000 from Intel.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              Using a prototype infrared camera and a computer vision SDK for head and hand tracking, I created a
-              primitive 3D environment to explore the use cases of novel interaction. The project revealed the
-              performance limitation from the hardware and software at the time, but our gesture-based navigation
-              pattern had become commonplace in today’s AR/VR applications.
-            </p>
-            <p>
-              My team, led by <a href="https://www.linkedin.com/in/fei-yu-68a8923/" class="c-inline-link">Fei Yu</a>,
-              had won the $1000 early submission
-              prize from the Intel Perceptual Computing Challenge.
-            </p>
-            <ul class="c-tech-list">
-              <li>Intel Perceptual SDK</li>
-              <li>Unity</li>
-              <li>C#</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Lead engineer</li>
-          <li>2013</li>
-        </ul>
-      </section>
-
-      <section class="c-entry c-entry--project">
-        <h3>Eye Tracker Data Analysis</h3>
-        <p>Modeling cognitive bias from eye movement.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              A research project lead by
-              <a href="https://scholar.google.com/citations?user=iV8mtiwAAAAJ&hl=en" class="c-inline-link">Alireza
-                Soltani</a>. I used machine learning
-              techniques to identify correlations between brain activities and eye saccades. The research project taught
-              me the rigor and patience in the
-              scientific endeavor, and also showed me the practical side of machine learning just as I finished CS74
-              (Machine Learning and Statistical Data
-              Analysis).
-            </p>
-            <ul class="c-tech-list">
-              <li>MATLAB</li>
-              <li>Support Vector Machines</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Research engineer</li>
-          <li>2013-2014</li>
-        </ul>
-      </section>
-
-      <section class="c-entry c-entry--project">
-        <h3>Language Detection from Speech Samples</h3>
-        <p>Detect spoken language using a natural language processing pipeline.</p>
-        <details class="c-accordion">
-          <summary class="c-accordion__trigger">Details</summary>
-          <div class="c-accordion__body">
-            <p>
-              A research project in collaboration with
-              <a href="https://www.linkedin.com/in/jing-wei-pan/" class="c-inline-link">Jingwei Pan</a>, for CS74
-              (Machine Learning and Statistical Data Analysis). I experimented with Support Vector Machine and Neural
-              Network to differentiate Chinese, French, and English.
-            </p>
-            <ul class="c-tech-list">
-              <li>MATLAB</li>
-              <li>Support Vector Machine</li>
-              <li>Neural Network</li>
-            </ul>
-          </div>
-        </details>
-        <ul class="c-meta-list">
-          <li>Engineer</li>
-          <li>2013</li>
-        </ul>
-      </section>
-    </section>
-
-    <!-- IO SECTION -->
-
-    <section id="io" class="c-scroll-anchor c-main-section c-main-section--io c-section-grid">
-      <h2 class="c-section-grid__item--fill">I/O</h2>
-
-      <svg class="c-section-art c-section-grid__item--fill" width="64" height="64" viewBox="0 0 32 32" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="16" r="15.5" stroke="currentColor" />
-        <circle cx="8" cy="16" r="7.5" stroke="currentColor" />
-        <circle cx="12" cy="16" r="11.5" stroke="currentColor" />
-      </svg>
-
-      <p class="c-section-grid__item--fill">
-        I collect beautiful gems from brilliant minds, and occasionally throw a few back into the pond, watching the
-        ripples unwind.
-      </p>
-
-      <div class="spacer"></div>
-
-      <section class="c-section-grid__item--fill c-io-section">
-        <h3>Blog</h3>
-        <ul>
-          <li>
-            <a class="c-io-link" href="https://stackdiver.com/">Stack Diver - An Inquiry into Zeros and Ones</a>
-          </li>
-        </ul>
-      </section>
-      <section class="c-section-grid__item--fill c-io-section">
-        <h3 class="c-section-grid__item--fill">Essays</h3>
-        <ul class="c-section-grid__item--fill">
-          <li>
-            <a class="c-io-link" href="https://uxdesign.cc/the-vanishing-designer-6d3d999f9540">The Vanishing
-              Designer</a>
-          </li>
-          <li>
-            <a class="c-io-link" href="https://uxdesign.cc/a-case-against-pixel-perfect-design-ce00cd3eabc9">A Case
-              Against “Pixel Perfect” Design</a>
-          </li>
-          <li>
-            <a class="c-io-link" href="https://uxdesign.cc/are-you-experiencing-the-kessler-syndrome-23bab3cdd446">Are
-              You Experiencing The Kessler Syndrome?</a>
-          </li>
-          <li>
-            <a class="c-io-link" href="https://medium.com/@chuanqisun/post-occupancy-evaluation-466d86d0c136">Don’t Be
-              an Ostrich</a>
-          </li>
-          <li>
-            <a class="c-io-link" href="https://medium.com/@chuanqisun/functional-prototyping-e1bc243b0707">Functional
-              Prototyping</a>
-          </li>
-          <li>
-            <a class="c-io-link"
-              href="https://medium.com/@chuanqisun/beyond-artboards-the-pursuit-of-lossless-design-development-handoffs-9abb698b7ee8">Beyond
-              Artboards</a>
-          </li>
-          <li>
-            <a class="c-io-link" href="assets/a_ride_that_was_never_told.pdf">A Ride That Was Never Told</a>
-          </li>
-          <li>
-            <a class="c-io-link" href="assets/second_life.pdf">Virtual Religion in Second Life</a>
-          </li>
-        </ul>
-      </section>
-      <section class="c-section-grid__item--fill c-io-section">
-        <h3>Digests</h3>
-        <ul>
-          <li>
-            <a class="c-io-link" href="https://dailyread.netlify.app/">Daily Read for Web Developers</a>
-          </li>
-          <li>
-            <a class="c-io-link" href="https://github.com/chuanqisun/memo/blob/master/README.md">Web Developer
-              Bookmarks</a>
-          </li>
-        </ul>
-      </section>
-      <section class="c-section-grid__item--fill c-io-section">
-        <h3>Education</h3>
-        <p>
-          I’m forever grateful for my liberal arts education at
-          <a href="https://home.dartmouth.edu/" class="c-io-link--inline">Dartmouth College</a>. In addition to all the
-          courses you would expect from a
-          Computer Science degree, I have also received rigorous training in drawing, photography, film studies,
-          audio-visual programming, and 3D animation.
-          The most unforgettable lecture? Having Alison Ouellette-Kirby and Noah Kirby teach us melting and
-          <a href="images/iron-casting.jpg" class="c-io-link--inline">pouring 2,220°F liquid iron</a> into our
-          hand-prepared clay molds! I graduated in 2015
-          with the highest honors.
+        <p class="c-section-grid__item--fill">
+          I collect beautiful gems from brilliant minds, and occasionally throw a few back into the pond, watching the ripples unwind.
         </p>
+
+        <div class="spacer"></div>
+
+        <section class="c-section-grid__item--fill c-io-section">
+          <h3>Blog</h3>
+          <ul>
+            <li>
+              <a class="c-io-link" href="https://stackdiver.com/">Stack Diver - An Inquiry into Zeros and Ones</a>
+            </li>
+          </ul>
+        </section>
+        <section class="c-section-grid__item--fill c-io-section">
+          <h3 class="c-section-grid__item--fill">Essays</h3>
+          <ul class="c-section-grid__item--fill">
+            <li>
+              <a class="c-io-link" href="https://uxdesign.cc/the-vanishing-designer-6d3d999f9540">The Vanishing Designer</a>
+            </li>
+            <li>
+              <a class="c-io-link" href="https://uxdesign.cc/a-case-against-pixel-perfect-design-ce00cd3eabc9">A Case Against “Pixel Perfect” Design</a>
+            </li>
+            <li>
+              <a class="c-io-link" href="https://uxdesign.cc/are-you-experiencing-the-kessler-syndrome-23bab3cdd446"
+                >Are You Experiencing The Kessler Syndrome?</a
+              >
+            </li>
+            <li>
+              <a class="c-io-link" href="https://medium.com/@chuanqisun/post-occupancy-evaluation-466d86d0c136">Don’t Be an Ostrich</a>
+            </li>
+            <li>
+              <a class="c-io-link" href="https://medium.com/@chuanqisun/functional-prototyping-e1bc243b0707">Functional Prototyping</a>
+            </li>
+            <li>
+              <a class="c-io-link" href="https://medium.com/@chuanqisun/beyond-artboards-the-pursuit-of-lossless-design-development-handoffs-9abb698b7ee8"
+                >Beyond Artboards</a
+              >
+            </li>
+            <li>
+              <a class="c-io-link" href="assets/a_ride_that_was_never_told.pdf">A Ride That Was Never Told</a>
+            </li>
+            <li>
+              <a class="c-io-link" href="assets/second_life.pdf">Virtual Religion in Second Life</a>
+            </li>
+          </ul>
+        </section>
+        <section class="c-section-grid__item--fill c-io-section">
+          <h3>Digests</h3>
+          <ul>
+            <li>
+              <a class="c-io-link" href="https://dailyread.netlify.app/">Daily Read for Web Developers</a>
+            </li>
+            <li>
+              <a class="c-io-link" href="https://github.com/chuanqisun/memo/blob/master/README.md">Web Developer Bookmarks</a>
+            </li>
+          </ul>
+        </section>
+        <section class="c-section-grid__item--fill c-io-section">
+          <h3>Education</h3>
+          <p>
+            I’m forever grateful for my liberal arts education at
+            <a href="https://home.dartmouth.edu/" class="c-io-link--inline">Dartmouth College</a>. In addition to all the courses you would expect from a
+            Computer Science degree, I have also received rigorous training in drawing, photography, film studies, audio-visual programming, and 3D animation.
+            The most unforgettable lecture? Having Alison Ouellette-Kirby and Noah Kirby teach us melting and
+            <a href="images/iron-casting.jpg" class="c-io-link--inline">pouring 2,220°F liquid iron</a> into our hand-prepared clay molds! I graduated in 2015
+            with the highest honors.
+          </p>
+        </section>
       </section>
-    </section>
 
-    <!-- ETC SECTION -->
+      <!-- ETC SECTION -->
 
-    <footer id="etc" class="c-scroll-anchor c-main-section c-main-section--etc c-section-grid">
-      <h2 class="c-section-grid__item--fill">ETC</h2>
+      <footer id="etc" class="c-scroll-anchor c-main-section c-main-section--etc c-section-grid">
+        <h2 class="c-section-grid__item--fill">ETC</h2>
 
-      <svg class="c-section-art c-section-grid__item--fill" width="64" height="64" viewBox="0 0 32 32" fill="none"
-        stroke-width="0.6" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="16" r="15.5" stroke="currentColor" />
-        <path
-          d="M25.5 16C25.5 20.3396 24.3997 24.2446 22.6471 27.0487C20.8901 29.8599 18.5268 31.5 16 31.5C13.4732 31.5 11.1099 29.8599 9.35293 27.0487C7.60034 24.2446 6.5 20.3396 6.5 16C6.5 11.6604 7.60034 7.75543 9.35293 4.95129C11.1099 2.1401 13.4732 0.5 16 0.5C18.5268 0.5 20.8901 2.1401 22.6471 4.95129C24.3997 7.75543 25.5 11.6604 25.5 16Z"
-          stroke="currentColor" />
-        <path
-          d="M19.5 16C19.5 20.3897 19.0547 24.3471 18.3434 27.1924C17.9867 28.619 17.57 29.7379 17.1265 30.4882C16.6633 31.272 16.2664 31.5 16 31.5C15.7336 31.5 15.3367 31.272 14.8735 30.4882C14.43 29.7379 14.0133 28.619 13.6566 27.1924C12.9453 24.3471 12.5 20.3897 12.5 16C12.5 11.6103 12.9453 7.65294 13.6566 4.80756C14.0133 3.38102 14.43 2.26206 14.8735 1.51177C15.3367 0.728016 15.7336 0.5 16 0.5C16.2664 0.5 16.6633 0.728016 17.1265 1.51177C17.57 2.26206 17.9867 3.38102 18.3434 4.80756C19.0547 7.65294 19.5 11.6103 19.5 16Z"
-          stroke="currentColor" />
-      </svg>
+        <svg
+          class="c-section-art c-section-grid__item--fill"
+          width="64"
+          height="64"
+          viewBox="0 0 32 32"
+          fill="none"
+          stroke-width="0.6"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="16" cy="16" r="15.5" stroke="currentColor" />
+          <path
+            d="M25.5 16C25.5 20.3396 24.3997 24.2446 22.6471 27.0487C20.8901 29.8599 18.5268 31.5 16 31.5C13.4732 31.5 11.1099 29.8599 9.35293 27.0487C7.60034 24.2446 6.5 20.3396 6.5 16C6.5 11.6604 7.60034 7.75543 9.35293 4.95129C11.1099 2.1401 13.4732 0.5 16 0.5C18.5268 0.5 20.8901 2.1401 22.6471 4.95129C24.3997 7.75543 25.5 11.6604 25.5 16Z"
+            stroke="currentColor"
+          />
+          <path
+            d="M19.5 16C19.5 20.3897 19.0547 24.3471 18.3434 27.1924C17.9867 28.619 17.57 29.7379 17.1265 30.4882C16.6633 31.272 16.2664 31.5 16 31.5C15.7336 31.5 15.3367 31.272 14.8735 30.4882C14.43 29.7379 14.0133 28.619 13.6566 27.1924C12.9453 24.3471 12.5 20.3897 12.5 16C12.5 11.6103 12.9453 7.65294 13.6566 4.80756C14.0133 3.38102 14.43 2.26206 14.8735 1.51177C15.3367 0.728016 15.7336 0.5 16 0.5C16.2664 0.5 16.6633 0.728016 17.1265 1.51177C17.57 2.26206 17.9867 3.38102 18.3434 4.80756C19.0547 7.65294 19.5 11.6103 19.5 16Z"
+            stroke="currentColor"
+          />
+        </svg>
 
-      <div class="spacer"></div>
+        <div class="spacer"></div>
 
-      <h3 class="c-section-grid__item--fill">Links</h3>
-      <ul class="c-section-grid__item--fill">
-        <li><a href="https://github.com/chuanqisun" class="c-footer-link">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/chuanqi-sun/" class="c-footer-link">LinkedIn</a></li>
-        <li><a href="resume/resume.html" class="c-footer-link u-no-print">Resume</a></li>
-        <li><a href="https://portfolio.chuanqisun.com" class="c-footer-link">Portfolio</a></li>
-      </ul>
+        <h3 class="c-section-grid__item--fill">Links</h3>
+        <ul class="c-section-grid__item--fill">
+          <li><a href="https://github.com/chuanqisun" class="c-footer-link">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/chuanqi-sun/" class="c-footer-link">LinkedIn</a></li>
+          <li><a href="resume/resume.html" class="c-footer-link u-no-print">Resume</a></li>
+          <li><a href="https://portfolio.chuanqisun.com" class="c-footer-link">Portfolio</a></li>
+        </ul>
 
-      <h3 class="c-section-grid__item--fill u-no-print">Meta</h3>
-      <p class="c-section-grid__item--fill u-no-print">
-        The display font is <a href="https://fonts.google.com/specimen/Fira+Mono" class="c-inline-link">Fira Mono</a>.
-        The body font is
-        <a href="https://css-tricks.com/snippets/css/system-font-stack/" class="c-inline-link">system font</a>. The
-        color theme is based on
-        <a href="https://github.com/morhetz/gruvbox" class="c-inline-link">gruvbox</a>. Vector arts are made with
-        <a href="https://www.figma.com/" class="c-inline-link">Figma</a>. This static site is hand-crafted with
-        plain, old, but resilient HTML. You can
-        <a href="https://github.com/chuanqisun/me" class="c-inline-link">view source on GitHub</a> or equivalently,
-        right click and inspect.
-      </p>
+        <h3 class="c-section-grid__item--fill u-no-print">Meta</h3>
+        <p class="c-section-grid__item--fill u-no-print">
+          The display font is <a href="https://fonts.google.com/specimen/Fira+Mono" class="c-inline-link">Fira Mono</a>. The body font is
+          <a href="https://css-tricks.com/snippets/css/system-font-stack/" class="c-inline-link">system font</a>. The color theme is based on
+          <a href="https://github.com/morhetz/gruvbox" class="c-inline-link">gruvbox</a>. Vector arts are made with
+          <a href="https://www.figma.com/" class="c-inline-link">Figma</a>. This static site is hand-crafted with plain, old, but resilient HTML. You can
+          <a href="https://github.com/chuanqisun/me" class="c-inline-link">view source on GitHub</a> or equivalently, right click and inspect.
+        </p>
 
-      <h3 class="c-section-grid__item--fill u-no-print">Disclaimers</h3>
-      <ul class="c-section-grid__item--fill c-inline-list u-no-print">
-        <li>Opinions are mine, and mine only.</li>
-        <li>I don’t collect any data from you.</li>
-        <li>
-          Contact me for any issues or concerns
-          <a href="https://github.com/chuanqisun/me/issues/new" class="c-inline-link">via GitHub</a>.
-        </li>
-      </ul>
-      <p class="c-copyright">© <time datetime="2024-01-01" id="js-copyright-year">2024</time>Chuánqí Sun</p>
-    </footer>
-  </main>
+        <h3 class="c-section-grid__item--fill u-no-print">Disclaimers</h3>
+        <ul class="c-section-grid__item--fill c-inline-list u-no-print">
+          <li>Opinions are mine, and mine only.</li>
+          <li>I don’t collect any data from you.</li>
+          <li>
+            Contact me for any issues or concerns
+            <a href="https://github.com/chuanqisun/me/issues/new" class="c-inline-link">via GitHub</a>.
+          </li>
+        </ul>
+        <p class="c-copyright">© <time datetime="2024-01-01" id="js-copyright-year">2024</time>Chuánqí Sun</p>
+      </footer>
+    </main>
 
-  <script>
-    const now = new Date();
+    <script>
+      const now = new Date();
 
-    const timeElement = document.querySelector("#js-copyright-year");
-    if (timeElement) {
-      timeElement.setAttribute("datetime", now.toISOString());
-      timeElement.innerHTML = now.getFullYear();
-    }
+      const timeElement = document.querySelector("#js-copyright-year");
+      if (timeElement) {
+        timeElement.setAttribute("datetime", now.toISOString());
+        timeElement.innerHTML = now.getFullYear();
+      }
 
-    // 1. open closed accordions for printing
-    // 2. normalize urls
-    let closedAccordions = [];
-    let anchors = [];
-    window.addEventListener("beforeprint", () => {
-      closedAccordions = [...document.querySelectorAll("details")].filter((accordion) => !accordion.open);
-      closedAccordions.forEach((accordion) => accordion.open = true);
+      // 1. open closed accordions for printing
+      // 2. normalize urls
+      let closedAccordions = [];
+      let anchors = [];
+      window.addEventListener("beforeprint", () => {
+        closedAccordions = [...document.querySelectorAll("details")].filter((accordion) => !accordion.open);
+        closedAccordions.forEach((accordion) => (accordion.open = true));
 
-      anchors = [...document.querySelectorAll("a")]
-      anchors.forEach((anchor) => anchor.setAttribute("href", anchor.href));
-    })
-    window.addEventListener("afterprint", () => closedAccordions.forEach((accordion) => accordion.open = false));
-  </script>
-</body>
-
+        anchors = [...document.querySelectorAll("a")];
+        anchors.forEach((anchor) => anchor.setAttribute("href", anchor.href));
+      });
+      window.addEventListener("afterprint", () => closedAccordions.forEach((accordion) => (accordion.open = false)));
+    </script>
+  </body>
 </html>
