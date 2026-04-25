@@ -330,6 +330,42 @@
 
         <section class="c-entry c-entry--project">
           <h3>
+            <a class="c-title-link" href="https://chuanqisun.github.io/eigen-db/">Eigen DB</a>
+          </h3>
+          <p>Vector DB for the web</p>
+          <div>
+            <details class="c-accordion">
+              <summary class="c-accordion__trigger">Details</summary>
+              <div class="c-accordion__body">
+                <p>
+                  I built Eigen DB to bring high-performance vector search directly to the browser. The database supports KNN queries with pluggable storage
+                  backends, uses OPFS for persistence, accelerates compute with Web Assembly
+                  <a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/SIMD" class="c-inline-link">SIMD</a> when available, and falls back to
+                  JavaScript when the browser lacks SIMD support.
+                </p>
+                <p>
+                  The project taught me how to move hot paths into WASM, use benchmark-driven development to compare SIMD against JavaScript, and how to design
+                  a storage model with extensible API. As part of that learning, I open sourced
+                  <a href="https://github.com/chuanqisun/fast-theta" class="c-inline-link">fast-theta</a> to help other developers achieve faster vector math.
+                </p>
+                <ul class="c-tech-list">
+                  <li>TypeScript</li>
+                  <li>Web Assembly</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+          <ul class="c-meta-list">
+            <li>Author</li>
+            <li>2026</li>
+            <li>
+              <a href="https://github.com/chuanqisun/eigen-db" class="c-meta-link">View source</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="c-entry c-entry--project">
+          <h3>
             <a class="c-title-link" href="https://chuanqisun.github.io/courseek/">Courseek</a>
           </h3>
           <p>Vibe-coded MIT Course Catalog</p>
